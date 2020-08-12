@@ -1,0 +1,2 @@
+node do_work(m,n:int) returns (x:int);
+var s:int;

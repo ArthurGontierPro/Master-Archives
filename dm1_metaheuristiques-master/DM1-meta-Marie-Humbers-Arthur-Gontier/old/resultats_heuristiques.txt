@@ -1,0 +1,2411 @@
+machine : 
+RAM : 4 Gio
+CPU : Intel® Core™ i3-7130U CPU @ 2.70GHz × 4 
+GPU : Intel® HD Graphics 620 (Kaby Lake GT2)
+
+
+  didactic.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000001 seconds (1 allocation: 160 bytes)
+ z = 10
+Solution gloutonne plus intelligente :
+  0.000003 seconds (6 allocations: 816 bytes)
+ z = 30
+Solution gloutonne a supression de matrice :
+  0.000017 seconds (184 allocations: 11.641 KiB)
+ z = 30
+Solution gloutonne a manipulation de matrice :
+  0.000008 seconds (69 allocations: 6.828 KiB)
+ z = 30
+Solution gloutonne a manipulation de vecteurs :
+  0.000004 seconds (52 allocations: 1.781 KiB)
+ z = 30
+|----------ECHANGES----------|
+  0.000007 seconds (67 allocations: 6.391 KiB)
+échange glouton débil : 
+ z = 30
+  0.000005 seconds (59 allocations: 5.563 KiB)
+échange glouton intéligent : 
+ z = 30
+  0.000076 seconds (716 allocations: 21.375 KiB)
+échangeVxV glouton débil : 
+ z = 13
+  0.000024 seconds (427 allocations: 14.438 KiB)
+échangeVxV glouton intéligent : 
+ z = 30
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.000208 seconds (128 allocations: 13.656 KiB)
+Problème Résolu !!!
+30.0
+
+  pb_1000rnd0100.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.002910 seconds (1 allocation: 7.938 KiB)
+ z = 22
+Solution gloutonne plus intelligente :
+  0.004676 seconds (6 allocations: 39.703 KiB)
+ z = 50
+Solution gloutonne a supression de matrice :
+  0.236940 seconds (82.88 k allocations: 164.933 MiB, 76.24% gc time)
+ z = 49
+Solution gloutonne a manipulation de matrice :
+  0.043410 seconds (3.98 k allocations: 41.486 MiB, 1.48% gc time)
+ z = 49
+Solution gloutonne a manipulation de vecteurs :
+  0.000661 seconds (5.62 k allocations: 174.516 KiB)
+ z = 49
+|----------ECHANGES----------|
+  2.567145 seconds (517.34 k allocations: 1.362 GiB, 2.87% gc time)
+échange glouton débil : 
+ z = 38
+  2.929453 seconds (601.27 k allocations: 1.583 GiB, 2.85% gc time)
+échange glouton intéligent : 
+ z = 50
+  0.400351 seconds (4.01 M allocations: 69.461 MiB, 0.79% gc time)
+échangeVxV glouton débil : 
+ z = 22
+  0.302148 seconds (4.01 M allocations: 84.878 MiB, 1.28% gc time)
+échangeVxV glouton intéligent : 
+ z = 49
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  4.775086 seconds (2.22 k allocations: 13.276 MiB, 0.07% gc time)
+Résolution exacte trop lourde
+
+  pb_1000rnd0200.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.003347 seconds (1 allocation: 7.938 KiB)
+ z = 2
+Solution gloutonne plus intelligente :
+  0.004891 seconds (6 allocations: 39.703 KiB)
+ z = 2
+Solution gloutonne a supression de matrice :
+  0.271307 seconds (89.37 k allocations: 167.901 MiB, 74.93% gc time)
+ z = 3
+Solution gloutonne a manipulation de matrice :
+  0.029445 seconds (3.47 k allocations: 41.087 MiB, 2.81% gc time)
+ z = 3
+Solution gloutonne a manipulation de vecteurs :
+  0.000621 seconds (5.80 k allocations: 177.219 KiB)
+ z = 3
+|----------ECHANGES----------|
+  4.221417 seconds (873.37 k allocations: 2.301 GiB, 2.82% gc time)
+échange glouton débil : 
+ z = 2
+  4.122645 seconds (873.37 k allocations: 2.301 GiB, 2.92% gc time)
+échange glouton intéligent : 
+ z = 2
+  0.401000 seconds (4.00 M allocations: 69.276 MiB, 1.01% gc time)
+échangeVxV glouton débil : 
+ z = 2
+  0.341325 seconds (4.01 M allocations: 84.755 MiB, 1.20% gc time)
+échangeVxV glouton intéligent : 
+ z = 3
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+ 20.845825 seconds (2.21 k allocations: 13.216 MiB, 0.02% gc time)
+Résolution exacte trop lourde
+
+  pb_1000rnd0300.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.017493 seconds (1 allocation: 7.938 KiB)
+ z = 351
+Solution gloutonne plus intelligente :
+  0.011068 seconds (6 allocations: 39.703 KiB)
+ z = 504
+Solution gloutonne a supression de matrice :
+  1.951351 seconds (1.00 M allocations: 1.984 GiB, 53.95% gc time)
+ z = 507
+Solution gloutonne a manipulation de matrice :
+  0.120443 seconds (6.90 k allocations: 45.167 MiB, 2.29% gc time)
+ z = 507
+Solution gloutonne a manipulation de vecteurs :
+  0.002297 seconds (61.16 k allocations: 1.234 MiB)
+ z = 507
+|----------ECHANGES----------|
+  5.707620 seconds (2.48 M allocations: 6.693 GiB, 5.64% gc time)
+échange glouton débil : 
+ z = 528
+  8.858514 seconds (3.80 M allocations: 10.221 GiB, 5.59% gc time)
+échange glouton intéligent : 
+ z = 504
+  7.681063 seconds (14.35 M allocations: 2.984 GiB, 2.38% gc time)
+échangeVxV glouton débil : 
+ z = 372
+  9.261247 seconds (6.47 M allocations: 3.942 GiB, 2.23% gc time)
+échangeVxV glouton intéligent : 
+ z = 508
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  3.833182 seconds (2.27 k allocations: 3.364 MiB)
+Résolution exacte trop lourde
+
+  pb_1000rnd0400.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.017020 seconds (1 allocation: 7.938 KiB)
+ z = 29
+Solution gloutonne plus intelligente :
+  0.009775 seconds (6 allocations: 39.703 KiB)
+ z = 29
+Solution gloutonne a supression de matrice :
+  2.417585 seconds (1.24 M allocations: 2.386 GiB, 54.35% gc time)
+ z = 37
+Solution gloutonne a manipulation de matrice :
+  0.136721 seconds (7.34 k allocations: 45.651 MiB, 0.77% gc time)
+ z = 37
+Solution gloutonne a manipulation de vecteurs :
+  0.002572 seconds (72.98 k allocations: 1.461 MiB)
+ z = 37
+|----------ECHANGES----------|
+ 12.054947 seconds (5.16 M allocations: 13.855 GiB, 5.57% gc time)
+échange glouton débil : 
+ z = 29
+ 12.073843 seconds (5.16 M allocations: 13.855 GiB, 5.56% gc time)
+échange glouton intéligent : 
+ z = 29
+  7.145970 seconds (4.32 M allocations: 3.043 GiB, 2.20% gc time)
+échangeVxV glouton débil : 
+ z = 29
+ 10.726959 seconds (4.56 M allocations: 4.914 GiB, 2.31% gc time)
+échangeVxV glouton intéligent : 
+ z = 37
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+ 10.618935 seconds (2.22 k allocations: 3.352 MiB, 0.03% gc time)
+Résolution exacte trop lourde
+
+  pb_1000rnd0500.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.002159 seconds (1 allocation: 7.938 KiB)
+ z = 86
+Solution gloutonne plus intelligente :
+  0.002733 seconds (6 allocations: 39.703 KiB)
+ z = 193
+Solution gloutonne a supression de matrice :
+  0.072667 seconds (89.59 k allocations: 151.068 MiB, 15.92% gc time)
+ z = 154
+Solution gloutonne a manipulation de matrice :
+  0.011862 seconds (2.18 k allocations: 9.830 MiB)
+ z = 154
+Solution gloutonne a manipulation de vecteurs :
+  0.000782 seconds (22.73 k allocations: 481.906 KiB)
+ z = 154
+|----------ECHANGES----------|
+  2.045792 seconds (615.92 k allocations: 1.930 GiB, 5.01% gc time)
+échange glouton débil : 
+ z = 161
+  0.743831 seconds (175.31 k allocations: 564.115 MiB, 3.98% gc time)
+échange glouton intéligent : 
+ z = 193
+  0.670243 seconds (9.99 M allocations: 333.177 MiB, 6.93% gc time)
+échangeVxV glouton débil : 
+ z = 92
+  0.795754 seconds (8.01 M allocations: 495.093 MiB, 5.80% gc time)
+échangeVxV glouton intéligent : 
+ z = 165
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.289058 seconds (2.56 k allocations: 2.879 MiB, 0.15% gc time)
+Résolution exacte trop lourde
+
+  pb_1000rnd0600.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.002003 seconds (1 allocation: 7.938 KiB)
+ z = 9
+Solution gloutonne plus intelligente :
+  0.002635 seconds (6 allocations: 39.703 KiB)
+ z = 9
+Solution gloutonne a supression de matrice :
+  0.156327 seconds (77.75 k allocations: 113.419 MiB, 67.00% gc time)
+ z = 11
+Solution gloutonne a manipulation de matrice :
+  0.011452 seconds (2.01 k allocations: 9.643 MiB, 7.80% gc time)
+ z = 11
+Solution gloutonne a manipulation de vecteurs :
+  0.000715 seconds (21.66 k allocations: 457.188 KiB)
+ z = 11
+|----------ECHANGES----------|
+  1.573259 seconds (607.05 k allocations: 1.890 GiB, 5.18% gc time)
+échange glouton débil : 
+ z = 9
+  1.581104 seconds (607.05 k allocations: 1.890 GiB, 5.15% gc time)
+échange glouton intéligent : 
+ z = 9
+  0.423715 seconds (3.84 M allocations: 335.031 MiB, 3.90% gc time)
+échangeVxV glouton débil : 
+ z = 9
+  0.652134 seconds (3.85 M allocations: 480.069 MiB, 3.49% gc time)
+échangeVxV glouton intéligent : 
+ z = 11
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.943210 seconds (2.37 k allocations: 2.918 MiB)
+Résolution exacte trop lourde
+
+  pb_1000rnd0700.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.004454 seconds (1 allocation: 7.938 KiB)
+ z = 1229
+Solution gloutonne plus intelligente :
+  0.005379 seconds (6 allocations: 39.703 KiB)
+ z = 1878
+Solution gloutonne a supression de matrice :
+  1.809891 seconds (1.25 M allocations: 2.772 GiB, 36.63% gc time)
+ z = 2050
+Solution gloutonne a manipulation de matrice :
+  0.093806 seconds (4.47 k allocations: 15.093 MiB, 2.52% gc time)
+ z = 2050
+Solution gloutonne a manipulation de vecteurs :
+  0.006533 seconds (295.10 k allocations: 5.694 MiB)
+ z = 2050
+|----------ECHANGES----------|
+  2.642118 seconds (1.30 M allocations: 4.894 GiB, 9.06% gc time)
+échange glouton débil : 
+ z = 2077
+ 12.397188 seconds (6.31 M allocations: 22.216 GiB, 9.05% gc time)
+échange glouton intéligent : 
+ z = 1878
+^[^[[24~ 43.547991 seconds (90.75 M allocations: 63.857 GiB, 7.58% gc time)
+échangeVxV glouton débil : 
+ z = 1427
+111.528493 seconds (58.66 M allocations: 223.215 GiB, 8.85% gc time)
+échangeVxV glouton intéligent : 
+ z = 2074
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.214566 seconds (2.65 k allocations: 904.219 KiB)
+Résolution exacte trop lourde
+
+  pb_1000rnd0800.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.004431 seconds (1 allocation: 7.938 KiB)
+ z = 108
+Solution gloutonne plus intelligente :
+  0.005065 seconds (6 allocations: 39.703 KiB)
+ z = 108
+Solution gloutonne a supression de matrice :
+  2.022076 seconds (1.37 M allocations: 3.024 GiB, 37.39% gc time)
+ z = 154
+Solution gloutonne a manipulation de matrice :
+  0.102164 seconds (4.36 k allocations: 15.034 MiB, 2.25% gc time)
+ z = 154
+Solution gloutonne a manipulation de vecteurs :
+  0.006745 seconds (303.13 k allocations: 5.840 MiB)
+ z = 154
+|----------ECHANGES----------|
+ 13.853746 seconds (7.21 M allocations: 25.412 GiB, 9.05% gc time)
+échange glouton débil : 
+ z = 108
+ 13.823787 seconds (7.21 M allocations: 25.412 GiB, 9.04% gc time)
+échange glouton intéligent : 
+ z = 108
+ 21.276243 seconds (8.60 M allocations: 39.066 GiB, 8.21% gc time)
+échangeVxV glouton débil : 
+ z = 108
+ 40.510914 seconds (13.34 M allocations: 75.497 GiB, 8.27% gc time)
+échangeVxV glouton intéligent : 
+ z = 154
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.363205 seconds (2.54 k allocations: 910.219 KiB)
+Résolution exacte trop lourde
+
+  pb_100rnd0100.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000066 seconds (1 allocation: 896 bytes)
+ z = 296
+Solution gloutonne plus intelligente :
+  0.000068 seconds (6 allocations: 4.391 KiB)
+ z = 322
+Solution gloutonne a supression de matrice :
+  0.012708 seconds (62.48 k allocations: 28.763 MiB, 19.63% gc time)
+ z = 342
+Solution gloutonne a manipulation de matrice :
+  0.000704 seconds (1.28 k allocations: 685.469 KiB)
+ z = 342
+Solution gloutonne a manipulation de vecteurs :
+  0.000127 seconds (4.74 k allocations: 101.313 KiB)
+ z = 342
+|----------ECHANGES----------|
+  0.021720 seconds (35.23 k allocations: 16.317 MiB, 18.67% gc time)
+échange glouton débil : 
+ z = 348
+  0.020598 seconds (37.88 k allocations: 17.337 MiB, 27.70% gc time)
+échange glouton intéligent : 
+ z = 322
+  0.041120 seconds (119.53 k allocations: 19.632 MiB, 20.37% gc time)
+échangeVxV glouton débil : 
+ z = 326
+  0.042349 seconds (85.26 k allocations: 24.912 MiB, 15.46% gc time)
+échangeVxV glouton intéligent : 
+ z = 347
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.001774 seconds (148.85 k allocations: 3.209 MiB)
+Résolution exacte trop lourde
+
+  pb_100rnd0200.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000076 seconds (1 allocation: 896 bytes)
+ z = 29
+Solution gloutonne plus intelligente :
+  0.000086 seconds (6 allocations: 4.391 KiB)
+ z = 29
+Solution gloutonne a supression de matrice :
+  0.019054 seconds (69.69 k allocations: 30.410 MiB, 41.50% gc time)
+ z = 29
+Solution gloutonne a manipulation de matrice :
+  0.001034 seconds (1.41 k allocations: 718.063 KiB)
+ z = 29
+Solution gloutonne a manipulation de vecteurs :
+  0.000260 seconds (5.67 k allocations: 120.094 KiB)
+ z = 29
+|----------ECHANGES----------|
+  0.024763 seconds (50.32 k allocations: 23.279 MiB, 22.22% gc time)
+échange glouton débil : 
+ z = 29
+  0.027254 seconds (50.32 k allocations: 23.279 MiB, 19.78% gc time)
+échange glouton intéligent : 
+ z = 29
+  0.038270 seconds (63.86 k allocations: 25.213 MiB, 14.07% gc time)
+échangeVxV glouton débil : 
+ z = 29
+  0.038545 seconds (63.86 k allocations: 25.213 MiB, 14.01% gc time)
+échangeVxV glouton intéligent : 
+ z = 29
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.002472 seconds (89.11 k allocations: 2.129 MiB)
+Résolution exacte trop lourde
+
+  pb_100rnd0300.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000049 seconds (1 allocation: 896 bytes)
+ z = 128
+Solution gloutonne plus intelligente :
+  0.000054 seconds (6 allocations: 4.391 KiB)
+ z = 144
+Solution gloutonne a supression de matrice :
+  0.009690 seconds (32.95 k allocations: 14.439 MiB, 47.21% gc time)
+ z = 193
+Solution gloutonne a manipulation de matrice :
+  0.000454 seconds (1.06 k allocations: 626.703 KiB)
+ z = 193
+Solution gloutonne a manipulation de vecteurs :
+  0.000094 seconds (2.69 k allocations: 60.734 KiB)
+ z = 193
+|----------ECHANGES----------|
+  0.002627 seconds (8.68 k allocations: 3.917 MiB)
+échange glouton débil : 
+ z = 179
+  0.006757 seconds (18.88 k allocations: 8.518 MiB)
+échange glouton intéligent : 
+ z = 144
+  0.017345 seconds (106.08 k allocations: 6.056 MiB, 34.83% gc time)
+échangeVxV glouton débil : 
+ z = 155
+  0.013461 seconds (46.37 k allocations: 7.325 MiB)
+échangeVxV glouton intéligent : 
+ z = 193
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.625156 seconds (7.79 k allocations: 594.641 KiB)
+Problème Résolu !!!
+203.0
+
+  pb_100rnd0400.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000037 seconds (1 allocation: 896 bytes)
+ z = 8
+Solution gloutonne plus intelligente :
+  0.000048 seconds (6 allocations: 4.391 KiB)
+ z = 8
+Solution gloutonne a supression de matrice :
+  0.008781 seconds (32.05 k allocations: 12.928 MiB, 49.97% gc time)
+ z = 13
+Solution gloutonne a manipulation de matrice :
+  0.000422 seconds (898 allocations: 593.031 KiB)
+ z = 13
+Solution gloutonne a manipulation de vecteurs :
+  0.000080 seconds (2.42 k allocations: 55.656 KiB)
+ z = 13
+|----------ECHANGES----------|
+  0.009831 seconds (30.21 k allocations: 13.652 MiB)
+échange glouton débil : 
+ z = 8
+  0.017477 seconds (30.21 k allocations: 13.652 MiB, 37.75% gc time)
+échange glouton intéligent : 
+ z = 8
+  0.004650 seconds (40.72 k allocations: 2.832 MiB)
+échangeVxV glouton débil : 
+ z = 8
+  0.015139 seconds (44.30 k allocations: 6.419 MiB)
+échangeVxV glouton intéligent : 
+ z = 13
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.011153 seconds (11.42 k allocations: 738.641 KiB)
+Résolution exacte trop lourde
+
+  pb_100rnd0500.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000022 seconds (1 allocation: 896 bytes)
+ z = 533
+Solution gloutonne plus intelligente :
+  0.000039 seconds (6 allocations: 4.391 KiB)
+ z = 623
+Solution gloutonne a supression de matrice :
+  0.010010 seconds (35.85 k allocations: 11.111 MiB, 56.18% gc time)
+ z = 621
+Solution gloutonne a manipulation de matrice :
+  0.000312 seconds (663 allocations: 294.188 KiB)
+ z = 621
+Solution gloutonne a manipulation de vecteurs :
+  0.000158 seconds (8.59 k allocations: 177.547 KiB)
+ z = 621
+|----------ECHANGES----------|
+  0.011210 seconds (19.34 k allocations: 10.809 MiB, 34.66% gc time)
+échange glouton débil : 
+ z = 621
+  0.005921 seconds (12.74 k allocations: 6.957 MiB)
+échange glouton intéligent : 
+ z = 623
+  0.113908 seconds (350.62 k allocations: 110.588 MiB, 25.78% gc time)
+échangeVxV glouton débil : 
+ z = 573
+  0.081427 seconds (182.64 k allocations: 88.427 MiB, 29.95% gc time)
+échangeVxV glouton intéligent : 
+ z = 625
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.000785 seconds (316 allocations: 59.844 KiB)
+Problème Résolu !!!
+639.0
+
+  pb_100rnd0600.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000025 seconds (1 allocation: 896 bytes)
+ z = 55
+Solution gloutonne plus intelligente :
+  0.000042 seconds (6 allocations: 4.391 KiB)
+ z = 55
+Solution gloutonne a supression de matrice :
+  0.009464 seconds (35.94 k allocations: 10.678 MiB, 53.89% gc time)
+ z = 61
+Solution gloutonne a manipulation de matrice :
+  0.000234 seconds (657 allocations: 293.078 KiB)
+ z = 61
+Solution gloutonne a manipulation de vecteurs :
+  0.000138 seconds (9.05 k allocations: 184.844 KiB)
+ z = 61
+|----------ECHANGES----------|
+  0.004236 seconds (14.20 k allocations: 7.721 MiB)
+échange glouton débil : 
+ z = 55
+  0.004227 seconds (14.20 k allocations: 7.721 MiB)
+échange glouton intéligent : 
+ z = 55
+  0.054920 seconds (91.12 k allocations: 57.509 MiB, 31.61% gc time)
+échangeVxV glouton débil : 
+ z = 55
+  0.056810 seconds (95.87 k allocations: 61.395 MiB, 29.32% gc time)
+échangeVxV glouton intéligent : 
+ z = 61
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.000876 seconds (313 allocations: 59.203 KiB)
+Problème Résolu !!!
+64.0
+
+  pb_100rnd0700.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000020 seconds (1 allocation: 896 bytes)
+ z = 365
+Solution gloutonne plus intelligente :
+  0.000035 seconds (6 allocations: 4.391 KiB)
+ z = 469
+Solution gloutonne a supression de matrice :
+  0.003373 seconds (27.65 k allocations: 8.849 MiB)
+ z = 495
+Solution gloutonne a manipulation de matrice :
+  0.000251 seconds (549 allocations: 254.563 KiB)
+ z = 495
+Solution gloutonne a manipulation de vecteurs :
+  0.000131 seconds (6.95 k allocations: 143.109 KiB)
+ z = 495
+|----------ECHANGES----------|
+  0.007225 seconds (8.01 k allocations: 4.344 MiB, 67.12% gc time)
+échange glouton débil : 
+ z = 495
+  0.004032 seconds (13.70 k allocations: 6.943 MiB)
+échange glouton intéligent : 
+ z = 469
+  0.047319 seconds (196.81 k allocations: 40.115 MiB, 22.79% gc time)
+échangeVxV glouton débil : 
+ z = 393
+  0.029208 seconds (75.31 k allocations: 37.771 MiB, 18.24% gc time)
+échangeVxV glouton intéligent : 
+ z = 495
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.001581 seconds (313 allocations: 68.391 KiB)
+Problème Résolu !!!
+503.0
+
+  pb_100rnd0800.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000020 seconds (1 allocation: 896 bytes)
+ z = 32
+Solution gloutonne plus intelligente :
+  0.000032 seconds (6 allocations: 4.391 KiB)
+ z = 32
+Solution gloutonne a supression de matrice :
+  0.009296 seconds (26.00 k allocations: 8.188 MiB, 56.74% gc time)
+ z = 37
+Solution gloutonne a manipulation de matrice :
+  0.000271 seconds (556 allocations: 250.234 KiB)
+ z = 37
+Solution gloutonne a manipulation de vecteurs :
+  0.000254 seconds (6.25 k allocations: 129.703 KiB)
+ z = 37
+|----------ECHANGES----------|
+  0.005840 seconds (17.08 k allocations: 8.945 MiB)
+échange glouton débil : 
+ z = 32
+  0.012020 seconds (17.08 k allocations: 8.945 MiB, 55.88% gc time)
+échange glouton intéligent : 
+ z = 32
+  0.031333 seconds (65.67 k allocations: 29.352 MiB, 23.46% gc time)
+échangeVxV glouton débil : 
+ z = 32
+  0.039979 seconds (72.86 k allocations: 36.366 MiB, 30.78% gc time)
+échangeVxV glouton intéligent : 
+ z = 37
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.001215 seconds (313 allocations: 69.891 KiB)
+Problème Résolu !!!
+39.0
+
+  pb_100rnd0900.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000041 seconds (1 allocation: 896 bytes)
+ z = 308
+Solution gloutonne plus intelligente :
+  0.000060 seconds (6 allocations: 4.391 KiB)
+ z = 435
+Solution gloutonne a supression de matrice :
+  0.015065 seconds (54.38 k allocations: 22.827 MiB, 26.03% gc time)
+ z = 442
+Solution gloutonne a manipulation de matrice :
+  0.000769 seconds (1.16 k allocations: 527.828 KiB)
+ z = 442
+Solution gloutonne a manipulation de vecteurs :
+  0.000147 seconds (7.09 k allocations: 146.781 KiB)
+ z = 442
+|----------ECHANGES----------|
+  0.017009 seconds (34.25 k allocations: 16.420 MiB, 27.86% gc time)
+échange glouton débil : 
+ z = 422
+  0.011797 seconds (31.59 k allocations: 14.953 MiB)
+échange glouton intéligent : 
+ z = 435
+  0.052831 seconds (215.18 k allocations: 32.919 MiB, 19.97% gc time)
+échangeVxV glouton débil : 
+ z = 340
+  0.041314 seconds (74.32 k allocations: 35.017 MiB, 12.85% gc time)
+échangeVxV glouton intéligent : 
+ z = 442
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.112732 seconds (3.17 k allocations: 251.875 KiB)
+Problème Résolu !!!
+463.0
+
+  pb_100rnd1000.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000045 seconds (1 allocation: 896 bytes)
+ z = 33
+Solution gloutonne plus intelligente :
+  0.000058 seconds (6 allocations: 4.391 KiB)
+ z = 33
+Solution gloutonne a supression de matrice :
+  0.017485 seconds (65.43 k allocations: 28.123 MiB, 45.07% gc time)
+ z = 36
+Solution gloutonne a manipulation de matrice :
+  0.000491 seconds (1.02 k allocations: 501.594 KiB)
+ z = 36
+Solution gloutonne a manipulation de vecteurs :
+  0.000125 seconds (7.08 k allocations: 146.547 KiB)
+ z = 36
+|----------ECHANGES----------|
+  0.026834 seconds (58.66 k allocations: 28.064 MiB, 18.54% gc time)
+échange glouton débil : 
+ z = 33
+  0.023760 seconds (58.66 k allocations: 28.064 MiB, 28.88% gc time)
+échange glouton intéligent : 
+ z = 33
+  0.045964 seconds (69.58 k allocations: 30.797 MiB, 23.06% gc time)
+échangeVxV glouton débil : 
+ z = 33
+  0.042641 seconds (73.49 k allocations: 35.003 MiB, 12.35% gc time)
+échangeVxV glouton intéligent : 
+ z = 36
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.302767 seconds (8.20 k allocations: 510.484 KiB)
+Problème Résolu !!!
+40.0
+
+  pb_100rnd1100.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000031 seconds (1 allocation: 896 bytes)
+ z = 170
+Solution gloutonne plus intelligente :
+  0.000046 seconds (6 allocations: 4.391 KiB)
+ z = 175
+Solution gloutonne a supression de matrice :
+  0.009353 seconds (30.21 k allocations: 12.440 MiB, 51.66% gc time)
+ z = 306
+Solution gloutonne a manipulation de matrice :
+  0.000325 seconds (832 allocations: 435.469 KiB)
+ z = 306
+Solution gloutonne a manipulation de vecteurs :
+  0.000088 seconds (3.59 k allocations: 77.547 KiB)
+ z = 306
+|----------ECHANGES----------|
+  0.001440 seconds (5.45 k allocations: 2.563 MiB)
+échange glouton débil : 
+ z = 306
+  0.006260 seconds (21.47 k allocations: 9.923 MiB)
+échange glouton intéligent : 
+ z = 175
+  0.019899 seconds (106.09 k allocations: 7.449 MiB, 30.86% gc time)
+échangeVxV glouton débil : 
+ z = 198
+  0.016753 seconds (50.95 k allocations: 12.450 MiB)
+échangeVxV glouton intéligent : 
+ z = 306
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.079303 seconds (1.26 k allocations: 185.078 KiB)
+Problème Résolu !!!
+306.0
+
+  pb_100rnd1200.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000032 seconds (1 allocation: 896 bytes)
+ z = 17
+Solution gloutonne plus intelligente :
+  0.000044 seconds (6 allocations: 4.391 KiB)
+ z = 17
+Solution gloutonne a supression de matrice :
+  0.009576 seconds (33.15 k allocations: 12.989 MiB, 52.47% gc time)
+ z = 21
+Solution gloutonne a manipulation de matrice :
+  0.000376 seconds (894 allocations: 451.000 KiB)
+ z = 21
+Solution gloutonne a manipulation de vecteurs :
+  0.000106 seconds (4.00 k allocations: 85.578 KiB)
+ z = 21
+|----------ECHANGES----------|
+  0.014250 seconds (23.46 k allocations: 10.970 MiB, 32.85% gc time)
+échange glouton débil : 
+ z = 17
+  0.006955 seconds (23.46 k allocations: 10.970 MiB)
+échange glouton intéligent : 
+ z = 17
+  0.023883 seconds (49.22 k allocations: 10.273 MiB, 36.57% gc time)
+échangeVxV glouton débil : 
+ z = 17
+  0.013945 seconds (52.87 k allocations: 14.777 MiB)
+échangeVxV glouton intéligent : 
+ z = 21
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.752792 seconds (10.93 k allocations: 671.688 KiB)
+Problème Résolu !!!
+23.0
+
+  pb_2000rnd0100.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.011788 seconds (1 allocation: 15.750 KiB)
+ z = 29
+Solution gloutonne plus intelligente :
+  0.016647 seconds (6 allocations: 78.766 KiB)
+ z = 40
+Solution gloutonne a supression de matrice :
+  0.491874 seconds (104.58 k allocations: 615.165 MiB, 51.81% gc time)
+ z = 37
+Solution gloutonne a manipulation de matrice :
+  0.147190 seconds (5.98 k allocations: 161.409 MiB, 0.63% gc time)
+ z = 37
+Solution gloutonne a manipulation de vecteurs :
+  0.001655 seconds (7.88 k allocations: 280.031 KiB)
+ z = 37
+|----------ECHANGES----------|
+ 34.628366 seconds (2.60 M allocations: 13.300 GiB, 1.62% gc time)
+échange glouton débil : 
+ z = 29
+ 23.389779 seconds (1.76 M allocations: 9.007 GiB, 1.61% gc time)
+échange glouton intéligent : 
+ z = 40
+  2.357339 seconds (16.03 M allocations: 276.264 MiB, 0.46% gc time)
+échangeVxV glouton débil : 
+ z = 29
+  2.348711 seconds (16.03 M allocations: 276.264 MiB, 0.54% gc time)
+échangeVxV glouton intéligent : 
+ z = 37
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+ 41.554432 seconds (4.21 k allocations: 51.212 MiB, 0.03% gc time)
+Résolution exacte trop lourde
+
+  pb_2000rnd0200.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.006127 seconds (1 allocation: 15.750 KiB)
+ z = 1
+Solution gloutonne plus intelligente :
+  0.009208 seconds (6 allocations: 78.766 KiB)
+ z = 1
+Solution gloutonne a supression de matrice :
+  0.417051 seconds (113.16 k allocations: 616.555 MiB, 43.29% gc time)
+ z = 2
+Solution gloutonne a manipulation de matrice :
+  0.145510 seconds (5.33 k allocations: 160.471 MiB, 0.68% gc time)
+ z = 2
+Solution gloutonne a manipulation de vecteurs :
+  0.001568 seconds (7.95 k allocations: 281.094 KiB)
+ z = 2
+|----------ECHANGES----------|
+ 36.310603 seconds (2.70 M allocations: 13.835 GiB, 1.64% gc time)
+échange glouton débil : 
+ z = 1
+ 36.310211 seconds (2.70 M allocations: 13.835 GiB, 1.62% gc time)
+échange glouton intéligent : 
+ z = 1
+  2.405081 seconds (16.00 M allocations: 275.850 MiB, 0.47% gc time)
+échangeVxV glouton débil : 
+ z = 1
+  2.376384 seconds (16.00 M allocations: 275.773 MiB, 0.52% gc time)
+échangeVxV glouton intéligent : 
+ z = 2
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+336.936491 seconds (4.20 k allocations: 51.215 MiB, 0.00% gc time)
+Résolution exacte trop lourde
+
+  pb_2000rnd0300.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.023226 seconds (1 allocation: 15.750 KiB)
+ z = 163
+Solution gloutonne plus intelligente :
+  0.037671 seconds (6 allocations: 78.766 KiB)
+ z = 351
+Solution gloutonne a supression de matrice :
+  4.965495 seconds (1.35 M allocations: 4.377 GiB, 36.03% gc time)
+ z = 359
+Solution gloutonne a manipulation de matrice :
+  0.370628 seconds (9.74 k allocations: 169.120 MiB, 0.39% gc time)
+ z = 359
+Solution gloutonne a manipulation de vecteurs :
+  0.004632 seconds (81.75 k allocations: 1.692 MiB)
+ z = 359
+|----------ECHANGES----------|
+ 37.052611 seconds (2.75 M allocations: 14.187 GiB, 1.97% gc time)
+échange glouton débil : 
+ z = 351
+ 50.725474 seconds (3.74 M allocations: 19.311 GiB, 1.93% gc time)
+échange glouton intéligent : 
+ z = 351
+ 14.210745 seconds (72.25 M allocations: 3.643 GiB, 1.70% gc time)
+échangeVxV glouton débil : 
+ z = 214
+ 20.527490 seconds (16.37 M allocations: 6.481 GiB, 1.47% gc time)
+échangeVxV glouton intéligent : 
+ z = 359
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+ 42.051158 seconds (4.20 k allocations: 11.645 MiB, 0.01% gc time)
+Résolution exacte trop lourde
+
+  pb_2000rnd0400.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.022992 seconds (1 allocation: 15.750 KiB)
+ z = 20
+Solution gloutonne plus intelligente :
+  0.038583 seconds (6 allocations: 78.766 KiB)
+ z = 20
+Solution gloutonne a supression de matrice :
+  5.343251 seconds (1.53 M allocations: 4.700 GiB, 37.67% gc time)
+ z = 25
+Solution gloutonne a manipulation de matrice :
+  0.415487 seconds (10.50 k allocations: 170.549 MiB, 0.47% gc time)
+ z = 25
+Solution gloutonne a manipulation de vecteurs :
+  0.005080 seconds (97.09 k allocations: 1.988 MiB)
+ z = 25
+|----------ECHANGES----------|
+170.903910 seconds (12.51 M allocations: 64.694 GiB, 2.00% gc time)
+échange glouton débil : 
+ z = 20
+168.897855 seconds (12.51 M allocations: 64.694 GiB, 1.99% gc time)
+échange glouton intéligent : 
+ z = 20
+ 17.589028 seconds (16.23 M allocations: 5.888 GiB, 1.67% gc time)
+échangeVxV glouton débil : 
+ z = 20
+ 24.410980 seconds (16.43 M allocations: 9.137 GiB, 1.76% gc time)
+échangeVxV glouton intéligent : 
+ z = 25
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+247.827819 seconds (4.20 k allocations: 11.686 MiB)
+Résolution exacte trop lourde
+
+  pb_2000rnd0500.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.005229 seconds (1 allocation: 15.750 KiB)
+ z = 36
+Solution gloutonne plus intelligente :
+  0.008789 seconds (6 allocations: 78.766 KiB)
+ z = 91
+Solution gloutonne a supression de matrice :
+  0.327728 seconds (118.14 k allocations: 278.938 MiB, 63.77% gc time)
+ z = 128
+Solution gloutonne a manipulation de matrice :
+  0.053817 seconds (3.15 k allocations: 35.656 MiB, 1.59% gc time)
+ z = 128
+Solution gloutonne a manipulation de vecteurs :
+  0.002192 seconds (27.49 k allocations: 602.625 KiB)
+ z = 128
+|----------ECHANGES----------|
+  3.413965 seconds (285.28 k allocations: 1.588 GiB, 2.03% gc time)
+échange glouton débil : 
+ z = 120
+  7.922442 seconds (696.64 k allocations: 3.883 GiB, 2.09% gc time)
+échange glouton intéligent : 
+ z = 91
+  1.415868 seconds (31.99 M allocations: 583.432 MiB, 1.77% gc time)
+échangeVxV glouton débil : 
+ z = 49
+  1.428978 seconds (16.02 M allocations: 888.471 MiB, 2.48% gc time)
+échangeVxV glouton intéligent : 
+ z = 128
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  4.912353 seconds (4.22 k allocations: 10.646 MiB, 0.05% gc time)
+Résolution exacte trop lourde
+
+  pb_2000rnd0600.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.005115 seconds (1 allocation: 15.750 KiB)
+ z = 4
+Solution gloutonne plus intelligente :
+  0.008232 seconds (6 allocations: 78.766 KiB)
+ z = 4
+Solution gloutonne a supression de matrice :
+  0.302099 seconds (111.12 k allocations: 265.792 MiB, 61.64% gc time)
+ z = 7
+Solution gloutonne a manipulation de matrice :
+  0.043326 seconds (3.16 k allocations: 35.649 MiB, 2.09% gc time)
+ z = 7
+Solution gloutonne a manipulation de vecteurs :
+  0.001452 seconds (26.44 k allocations: 586.203 KiB)
+ z = 7
+|----------ECHANGES----------|
+ 25.449563 seconds (2.26 M allocations: 12.582 GiB, 2.10% gc time)
+échange glouton débil : 
+ z = 4
+ 25.456453 seconds (2.26 M allocations: 12.582 GiB, 2.10% gc time)
+échange glouton intéligent : 
+ z = 4
+  0.921071 seconds (15.45 M allocations: 420.658 MiB, 1.89% gc time)
+échangeVxV glouton débil : 
+ z = 4
+  1.433231 seconds (15.46 M allocations: 879.885 MiB, 2.57% gc time)
+échangeVxV glouton intéligent : 
+ z = 7
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+ 14.658162 seconds (4.22 k allocations: 10.723 MiB, 0.02% gc time)
+Résolution exacte trop lourde
+
+  pb_2000rnd0700.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.020362 seconds (1 allocation: 15.750 KiB)
+ z = 866
+Solution gloutonne plus intelligente :
+  0.030980 seconds (6 allocations: 78.766 KiB)
+ z = 1310
+Solution gloutonne a supression de matrice :
+  6.355261 seconds (1.83 M allocations: 5.983 GiB, 49.72% gc time)
+ z = 1524
+Solution gloutonne a manipulation de matrice :
+  0.265754 seconds (7.00 k allocations: 46.415 MiB, 0.37% gc time)
+ z = 1524
+Solution gloutonne a manipulation de vecteurs :
+  0.013556 seconds (414.26 k allocations: 7.981 MiB, 15.68% gc time)
+ z = 1524
+|----------ECHANGES----------|
+ 13.929152 seconds (2.51 M allocations: 14.900 GiB, 4.46% gc time)
+échange glouton débil : 
+ z = 1515
+ 63.951051 seconds (11.58 M allocations: 67.547 GiB, 4.35% gc time)
+échange glouton intéligent : 
+ z = 1310
+ 92.863789 seconds (258.79 M allocations: 80.412 GiB, 4.38% gc time)
+échangeVxV glouton débil : 
+ z = 998
+176.801895 seconds (87.37 M allocations: 246.513 GiB, 5.84% gc time)
+échangeVxV glouton intéligent : 
+ z = 1535
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  3.133827 seconds (4.28 k allocations: 2.758 MiB)
+Résolution exacte trop lourde
+
+  pb_2000rnd0800.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.016178 seconds (1 allocation: 15.750 KiB)
+ z = 85
+Solution gloutonne plus intelligente :
+  0.024290 seconds (6 allocations: 78.766 KiB)
+ z = 85
+Solution gloutonne a supression de matrice :
+  7.762044 seconds (2.06 M allocations: 7.060 GiB, 50.02% gc time)
+ z = 113
+Solution gloutonne a manipulation de matrice :
+  0.284085 seconds (6.92 k allocations: 46.678 MiB, 0.42% gc time)
+ z = 113
+Solution gloutonne a manipulation de vecteurs :
+  0.014489 seconds (445.16 k allocations: 8.590 MiB, 14.09% gc time)
+ z = 113
+|----------ECHANGES----------|
+ 94.066827 seconds (17.00 M allocations: 101.097 GiB, 4.40% gc time)
+échange glouton débil : 
+ z = 85
+ 94.259112 seconds (17.00 M allocations: 101.097 GiB, 4.41% gc time)
+échange glouton intéligent : 
+ z = 85
+ 86.477143 seconds (21.61 M allocations: 102.909 GiB, 4.86% gc time)
+échangeVxV glouton débil : 
+ z = 85
+146.217746 seconds (26.65 M allocations: 179.577 GiB, 4.99% gc time)
+échangeVxV glouton intéligent : 
+ z = 113
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  5.460630 seconds (4.24 k allocations: 2.769 MiB, 0.04% gc time)
+Résolution exacte trop lourde
+
+  pb_200rnd0100.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000277 seconds (1 allocation: 1.766 KiB)
+ z = 215
+Solution gloutonne plus intelligente :
+  0.000213 seconds (6 allocations: 8.844 KiB)
+ z = 348
+Solution gloutonne a supression de matrice :
+  0.043831 seconds (121.41 k allocations: 78.063 MiB, 15.81% gc time)
+ z = 351
+Solution gloutonne a manipulation de matrice :
+  0.002746 seconds (1.99 k allocations: 2.210 MiB)
+ z = 351
+Solution gloutonne a manipulation de vecteurs :
+  0.000305 seconds (9.69 k allocations: 208.359 KiB)
+ z = 351
+|----------ECHANGES----------|
+  0.046083 seconds (74.57 k allocations: 55.612 MiB, 19.48% gc time)
+échange glouton débil : 
+ z = 375
+  0.088331 seconds (173.68 k allocations: 129.091 MiB, 25.76% gc time)
+échange glouton intéligent : 
+ z = 348
+  0.128495 seconds (839.44 k allocations: 72.978 MiB, 7.82% gc time)
+échangeVxV glouton débil : 
+ z = 254
+  0.140356 seconds (286.60 k allocations: 94.236 MiB, 9.33% gc time)
+échangeVxV glouton intéligent : 
+ z = 353
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.033100 seconds (4.10 k allocations: 573.266 KiB)
+Résolution exacte trop lourde
+
+  pb_200rnd0200.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000288 seconds (1 allocation: 1.766 KiB)
+ z = 22
+Solution gloutonne plus intelligente :
+  0.000553 seconds (6 allocations: 8.844 KiB)
+ z = 22
+Solution gloutonne a supression de matrice :
+  0.043690 seconds (128.68 k allocations: 85.638 MiB, 19.08% gc time)
+ z = 25
+Solution gloutonne a manipulation de matrice :
+  0.002192 seconds (2.05 k allocations: 2.232 MiB)
+ z = 25
+Solution gloutonne a manipulation de vecteurs :
+  0.000274 seconds (9.59 k allocations: 206.688 KiB)
+ z = 25
+|----------ECHANGES----------|
+  0.129936 seconds (280.44 k allocations: 208.134 MiB, 24.98% gc time)
+échange glouton débil : 
+ z = 22
+  0.136770 seconds (280.44 k allocations: 208.134 MiB, 24.06% gc time)
+échange glouton intéligent : 
+ z = 22
+  0.095937 seconds (191.77 k allocations: 73.294 MiB, 10.48% gc time)
+échangeVxV glouton débil : 
+ z = 22
+  0.132888 seconds (202.74 k allocations: 92.913 MiB, 9.83% gc time)
+échangeVxV glouton intéligent : 
+ z = 25
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.059486 seconds (3.48 k allocations: 529.672 KiB)
+Résolution exacte trop lourde
+
+  pb_200rnd0300.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000368 seconds (1 allocation: 1.766 KiB)
+ z = 424
+Solution gloutonne plus intelligente :
+  0.000298 seconds (6 allocations: 8.844 KiB)
+ z = 616
+Solution gloutonne a supression de matrice :
+  0.094762 seconds (282.53 k allocations: 206.350 MiB, 22.67% gc time)
+ z = 682
+Solution gloutonne a manipulation de matrice :
+  0.003760 seconds (3.21 k allocations: 2.679 MiB)
+ z = 682
+Solution gloutonne a manipulation de vecteurs :
+  0.000451 seconds (21.35 k allocations: 441.328 KiB)
+ z = 682
+|----------ECHANGES----------|
+  0.124923 seconds (269.25 k allocations: 204.757 MiB, 24.34% gc time)
+échange glouton débil : 
+ z = 677
+  0.211778 seconds (465.12 k allocations: 349.179 MiB, 25.90% gc time)
+échange glouton intéligent : 
+ z = 616
+  0.669795 seconds (1.50 M allocations: 524.574 MiB, 11.57% gc time)
+échangeVxV glouton débil : 
+ z = 524
+  0.460574 seconds (473.55 k allocations: 436.734 MiB, 14.19% gc time)
+échangeVxV glouton intéligent : 
+ z = 686
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.010294 seconds (6.65 k allocations: 584.578 KiB)
+Résolution exacte trop lourde
+
+  pb_200rnd0400.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000343 seconds (1 allocation: 1.766 KiB)
+ z = 52
+Solution gloutonne plus intelligente :
+  0.000302 seconds (6 allocations: 8.844 KiB)
+ z = 52
+Solution gloutonne a supression de matrice :
+  0.211418 seconds (323.79 k allocations: 239.113 MiB, 57.78% gc time)
+ z = 55
+Solution gloutonne a manipulation de matrice :
+  0.004326 seconds (2.92 k allocations: 2.600 MiB)
+ z = 55
+Solution gloutonne a manipulation de vecteurs :
+  0.000489 seconds (21.54 k allocations: 445.922 KiB)
+ z = 55
+|----------ECHANGES----------|
+  0.374134 seconds (596.11 k allocations: 450.369 MiB, 29.06% gc time)
+échange glouton débil : 
+ z = 52
+  0.373085 seconds (596.11 k allocations: 450.369 MiB, 28.88% gc time)
+échange glouton intéligent : 
+ z = 52
+  0.437508 seconds (337.12 k allocations: 340.623 MiB, 18.76% gc time)
+échangeVxV glouton débil : 
+ z = 52
+  0.492807 seconds (354.98 k allocations: 373.498 MiB, 17.56% gc time)
+échangeVxV glouton intéligent : 
+ z = 55
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.010383 seconds (6.71 k allocations: 601.672 KiB)
+Résolution exacte trop lourde
+
+  pb_200rnd0500.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000280 seconds (1 allocation: 1.766 KiB)
+ z = 102
+Solution gloutonne plus intelligente :
+  0.000158 seconds (6 allocations: 8.844 KiB)
+ z = 110
+Solution gloutonne a supression de matrice :
+  0.009617 seconds (47.35 k allocations: 25.751 MiB, 19.71% gc time)
+ z = 162
+Solution gloutonne a manipulation de matrice :
+  0.007135 seconds (1.52 k allocations: 1.990 MiB)
+ z = 162
+Solution gloutonne a manipulation de vecteurs :
+  0.000489 seconds (3.48 k allocations: 83.375 KiB)
+ z = 162
+|----------ECHANGES----------|
+  0.046395 seconds (54.05 k allocations: 38.655 MiB, 21.05% gc time)
+échange glouton débil : 
+ z = 120
+  0.043782 seconds (54.13 k allocations: 38.777 MiB, 11.75% gc time)
+échange glouton intéligent : 
+ z = 110
+  0.035649 seconds (326.62 k allocations: 13.010 MiB, 14.70% gc time)
+échangeVxV glouton débil : 
+ z = 109
+  0.033755 seconds (166.06 k allocations: 14.386 MiB, 21.51% gc time)
+échangeVxV glouton intéligent : 
+ z = 162
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.038158 seconds (3.97 k allocations: 755.484 KiB)
+Résolution exacte trop lourde
+
+  pb_200rnd0600.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000229 seconds (1 allocation: 1.766 KiB)
+ z = 10
+Solution gloutonne plus intelligente :
+  0.000156 seconds (6 allocations: 8.844 KiB)
+ z = 10
+Solution gloutonne a supression de matrice :
+  0.012777 seconds (56.35 k allocations: 32.392 MiB, 12.78% gc time)
+ z = 11
+Solution gloutonne a manipulation de matrice :
+  0.004517 seconds (1.46 k allocations: 1.978 MiB)
+ z = 11
+Solution gloutonne a manipulation de vecteurs :
+  0.000163 seconds (4.31 k allocations: 99.797 KiB)
+ z = 11
+|----------ECHANGES----------|
+  0.063199 seconds (85.91 k allocations: 61.653 MiB, 26.47% gc time)
+échange glouton débil : 
+ z = 10
+  0.061958 seconds (85.91 k allocations: 61.653 MiB, 27.04% gc time)
+échange glouton intéligent : 
+ z = 10
+  0.037402 seconds (166.52 k allocations: 17.253 MiB, 13.67% gc time)
+échangeVxV glouton débil : 
+ z = 10
+  0.041656 seconds (167.95 k allocations: 20.428 MiB, 14.66% gc time)
+échangeVxV glouton intéligent : 
+ z = 11
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.075597 seconds (2.99 k allocations: 716.609 KiB)
+Résolution exacte trop lourde
+
+  pb_200rnd0700.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000074 seconds (1 allocation: 1.766 KiB)
+ z = 702
+Solution gloutonne plus intelligente :
+  0.000105 seconds (6 allocations: 8.844 KiB)
+ z = 822
+Solution gloutonne a supression de matrice :
+  0.019172 seconds (96.54 k allocations: 58.119 MiB, 21.94% gc time)
+ z = 945
+Solution gloutonne a manipulation de matrice :
+  0.009300 seconds (981 allocations: 894.781 KiB, 80.81% gc time)
+ z = 945
+Solution gloutonne a manipulation de vecteurs :
+  0.000408 seconds (23.36 k allocations: 479.109 KiB)
+ z = 945
+|----------ECHANGES----------|
+  0.041828 seconds (39.90 k allocations: 43.180 MiB, 30.83% gc time)
+échange glouton débil : 
+ z = 937
+  0.100026 seconds (121.82 k allocations: 126.688 MiB, 27.68% gc time)
+échange glouton intéligent : 
+ z = 822
+  0.686256 seconds (1.91 M allocations: 706.294 MiB, 24.30% gc time)
+échangeVxV glouton débil : 
+ z = 775
+  1.054430 seconds (1.25 M allocations: 1.259 GiB, 28.07% gc time)
+échangeVxV glouton intéligent : 
+ z = 955
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.002315 seconds (522 allocations: 132.516 KiB)
+Problème Résolu !!!
+1004.0
+
+  pb_200rnd0800.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000066 seconds (1 allocation: 1.766 KiB)
+ z = 69
+Solution gloutonne plus intelligente :
+  0.000119 seconds (6 allocations: 8.844 KiB)
+ z = 69
+Solution gloutonne a supression de matrice :
+  0.028165 seconds (107.06 k allocations: 63.616 MiB, 10.22% gc time)
+ z = 75
+Solution gloutonne a manipulation de matrice :
+  0.003263 seconds (979 allocations: 909.859 KiB, 67.67% gc time)
+ z = 75
+Solution gloutonne a manipulation de vecteurs :
+  0.000373 seconds (25.46 k allocations: 519.078 KiB)
+ z = 75
+|----------ECHANGES----------|
+  0.127178 seconds (155.63 k allocations: 167.241 MiB, 30.09% gc time)
+échange glouton débil : 
+ z = 69
+  0.132679 seconds (155.63 k allocations: 167.241 MiB, 30.32% gc time)
+échange glouton intéligent : 
+ z = 69
+  0.422599 seconds (428.30 k allocations: 531.838 MiB, 29.28% gc time)
+échangeVxV glouton débil : 
+ z = 69
+  0.494393 seconds (464.59 k allocations: 599.975 MiB, 28.64% gc time)
+échangeVxV glouton intéligent : 
+ z = 75
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.004883 seconds (522 allocations: 130.891 KiB)
+Problème Résolu !!!
+83.0
+
+  pb_200rnd0900.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000086 seconds (1 allocation: 1.766 KiB)
+ z = 1015
+Solution gloutonne plus intelligente :
+  0.000125 seconds (6 allocations: 8.844 KiB)
+ z = 1267
+Solution gloutonne a supression de matrice :
+  0.032506 seconds (132.43 k allocations: 75.824 MiB, 16.33% gc time)
+ z = 1279
+Solution gloutonne a manipulation de matrice :
+  0.001357 seconds (1.28 k allocations: 1.086 MiB)
+ z = 1279
+Solution gloutonne a manipulation de vecteurs :
+  0.000495 seconds (35.55 k allocations: 722.578 KiB)
+ z = 1279
+|----------ECHANGES----------|
+  0.144688 seconds (159.52 k allocations: 174.845 MiB, 28.15% gc time)
+échange glouton débil : 
+ z = 1276
+  0.129448 seconds (154.40 k allocations: 166.565 MiB, 31.07% gc time)
+échange glouton intéligent : 
+ z = 1267
+  2.416845 seconds (3.62 M allocations: 2.685 GiB, 25.79% gc time)
+échangeVxV glouton débil : 
+ z = 1119
+  2.081778 seconds (2.43 M allocations: 2.619 GiB, 29.10% gc time)
+échangeVxV glouton intéligent : 
+ z = 1302
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.001674 seconds (514 allocations: 110.547 KiB)
+Problème Résolu !!!
+1324.0
+
+  pb_200rnd1000.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000085 seconds (1 allocation: 1.766 KiB)
+ z = 103
+Solution gloutonne plus intelligente :
+  0.000175 seconds (6 allocations: 8.844 KiB)
+ z = 103
+Solution gloutonne a supression de matrice :
+  0.039943 seconds (152.66 k allocations: 87.515 MiB, 20.96% gc time)
+ z = 115
+Solution gloutonne a manipulation de matrice :
+  0.001408 seconds (1.26 k allocations: 1.092 MiB)
+ z = 115
+Solution gloutonne a manipulation de vecteurs :
+  0.000564 seconds (37.06 k allocations: 751.438 KiB)
+ z = 115
+|----------ECHANGES----------|
+  0.158480 seconds (183.66 k allocations: 204.254 MiB, 30.25% gc time)
+échange glouton débil : 
+ z = 103
+  0.147578 seconds (183.66 k allocations: 204.254 MiB, 30.84% gc time)
+échange glouton intéligent : 
+ z = 103
+  0.685009 seconds (615.45 k allocations: 880.266 MiB, 28.65% gc time)
+échangeVxV glouton débil : 
+ z = 103
+  0.748103 seconds (660.64 k allocations: 962.360 MiB, 28.78% gc time)
+échangeVxV glouton intéligent : 
+ z = 115
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.001964 seconds (514 allocations: 110.547 KiB)
+Problème Résolu !!!
+118.0
+
+  pb_200rnd1100.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000049 seconds (1 allocation: 1.766 KiB)
+ z = 354
+Solution gloutonne plus intelligente :
+  0.000117 seconds (6 allocations: 8.844 KiB)
+ z = 501
+Solution gloutonne a supression de matrice :
+  0.014155 seconds (52.02 k allocations: 30.021 MiB, 42.97% gc time)
+ z = 531
+Solution gloutonne a manipulation de matrice :
+  0.001461 seconds (946 allocations: 770.766 KiB)
+ z = 531
+Solution gloutonne a manipulation de vecteurs :
+  0.000257 seconds (13.85 k allocations: 286.422 KiB)
+ z = 531
+|----------ECHANGES----------|
+  0.009526 seconds (17.32 k allocations: 17.332 MiB)
+échange glouton débil : 
+ z = 518
+  0.040686 seconds (46.45 k allocations: 45.207 MiB, 24.26% gc time)
+échange glouton intéligent : 
+ z = 501
+  0.110181 seconds (601.50 k allocations: 96.698 MiB, 22.94% gc time)
+échangeVxV glouton débil : 
+ z = 385
+  0.176852 seconds (344.35 k allocations: 207.688 MiB, 24.77% gc time)
+échangeVxV glouton intéligent : 
+ z = 534
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.035790 seconds (936 allocations: 191.766 KiB)
+Problème Résolu !!!
+545.0000000000001
+
+  pb_200rnd1200.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000057 seconds (1 allocation: 1.766 KiB)
+ z = 35
+Solution gloutonne plus intelligente :
+  0.000094 seconds (6 allocations: 8.844 KiB)
+ z = 35
+Solution gloutonne a supression de matrice :
+  0.025307 seconds (61.95 k allocations: 36.468 MiB, 30.96% gc time)
+ z = 42
+Solution gloutonne a manipulation de matrice :
+  0.000718 seconds (956 allocations: 788.719 KiB)
+ z = 42
+Solution gloutonne a manipulation de vecteurs :
+  0.000275 seconds (15.30 k allocations: 318.063 KiB)
+ z = 42
+|----------ECHANGES----------|
+  0.049344 seconds (57.41 k allocations: 56.543 MiB, 28.08% gc time)
+échange glouton débil : 
+ z = 35
+  0.045474 seconds (57.41 k allocations: 56.543 MiB, 29.05% gc time)
+échange glouton intéligent : 
+ z = 35
+  0.153085 seconds (234.20 k allocations: 171.445 MiB, 26.84% gc time)
+échangeVxV glouton débil : 
+ z = 35
+  0.200540 seconds (264.74 k allocations: 236.616 MiB, 27.29% gc time)
+échangeVxV glouton intéligent : 
+ z = 42
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.173693 seconds (2.05 k allocations: 249.484 KiB)
+Problème Résolu !!!
+43.0
+
+  pb_200rnd1300.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000177 seconds (1 allocation: 1.766 KiB)
+ z = 374
+Solution gloutonne plus intelligente :
+  0.000200 seconds (6 allocations: 8.844 KiB)
+ z = 457
+Solution gloutonne a supression de matrice :
+  0.045365 seconds (119.72 k allocations: 86.645 MiB, 22.68% gc time)
+ z = 497
+Solution gloutonne a manipulation de matrice :
+  0.001939 seconds (1.65 k allocations: 1.598 MiB)
+ z = 497
+Solution gloutonne a manipulation de vecteurs :
+  0.000300 seconds (14.76 k allocations: 307.094 KiB)
+ z = 497
+|----------ECHANGES----------|
+  0.089719 seconds (106.72 k allocations: 92.572 MiB, 21.42% gc time)
+échange glouton débil : 
+ z = 506
+  0.098036 seconds (136.99 k allocations: 119.207 MiB, 28.27% gc time)
+échange glouton intéligent : 
+ z = 457
+  0.274828 seconds (827.69 k allocations: 200.165 MiB, 15.89% gc time)
+échangeVxV glouton débil : 
+ z = 413
+  0.328885 seconds (464.38 k allocations: 273.457 MiB, 20.68% gc time)
+échangeVxV glouton intéligent : 
+ z = 499
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.014482 seconds (5.25 k allocations: 502.578 KiB)
+Résolution exacte trop lourde
+
+  pb_200rnd1400.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000163 seconds (1 allocation: 1.766 KiB)
+ z = 30
+Solution gloutonne plus intelligente :
+  0.000154 seconds (6 allocations: 8.844 KiB)
+ z = 30
+Solution gloutonne a supression de matrice :
+  0.043133 seconds (131.10 k allocations: 96.241 MiB, 17.88% gc time)
+ z = 39
+Solution gloutonne a manipulation de matrice :
+  0.004691 seconds (1.61 k allocations: 1.593 MiB, 60.58% gc time)
+ z = 39
+Solution gloutonne a manipulation de vecteurs :
+  0.000467 seconds (15.19 k allocations: 315.594 KiB)
+ z = 39
+|----------ECHANGES----------|
+  0.100206 seconds (141.93 k allocations: 123.977 MiB, 24.15% gc time)
+échange glouton débil : 
+ z = 30
+  0.102698 seconds (141.93 k allocations: 123.977 MiB, 29.81% gc time)
+échange glouton intéligent : 
+ z = 30
+  0.164444 seconds (222.97 k allocations: 129.879 MiB, 17.58% gc time)
+échangeVxV glouton débil : 
+ z = 30
+  0.233978 seconds (265.47 k allocations: 208.031 MiB, 18.42% gc time)
+échangeVxV glouton intéligent : 
+ z = 39
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.031407 seconds (5.07 k allocations: 476.953 KiB)
+Résolution exacte trop lourde
+
+  pb_200rnd1500.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000207 seconds (1 allocation: 1.766 KiB)
+ z = 619
+Solution gloutonne plus intelligente :
+  0.000226 seconds (6 allocations: 8.844 KiB)
+ z = 809
+Solution gloutonne a supression de matrice :
+  0.082435 seconds (232.76 k allocations: 182.778 MiB, 20.97% gc time)
+ z = 887
+Solution gloutonne a manipulation de matrice :
+  0.003027 seconds (2.44 k allocations: 1.982 MiB)
+ z = 887
+Solution gloutonne a manipulation de vecteurs :
+  0.000493 seconds (28.55 k allocations: 583.828 KiB)
+ z = 887
+|----------ECHANGES----------|
+  0.187927 seconds (254.47 k allocations: 236.238 MiB, 29.68% gc time)
+échange glouton débil : 
+ z = 856
+  0.244934 seconds (351.97 k allocations: 319.162 MiB, 29.67% gc time)
+échange glouton intéligent : 
+ z = 809
+  0.929417 seconds (1.97 M allocations: 799.457 MiB, 19.03% gc time)
+échangeVxV glouton débil : 
+ z = 715
+  0.780735 seconds (878.43 k allocations: 734.865 MiB, 20.03% gc time)
+échangeVxV glouton intéligent : 
+ z = 895
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.007288 seconds (8.85 k allocations: 662.266 KiB)
+Résolution exacte trop lourde
+
+  pb_200rnd1600.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000207 seconds (1 allocation: 1.766 KiB)
+ z = 62
+Solution gloutonne plus intelligente :
+  0.000217 seconds (6 allocations: 8.844 KiB)
+ z = 62
+Solution gloutonne a supression de matrice :
+  0.085540 seconds (263.99 k allocations: 213.898 MiB, 14.69% gc time)
+ z = 70
+Solution gloutonne a manipulation de matrice :
+  0.002897 seconds (2.08 k allocations: 1.859 MiB)
+ z = 70
+Solution gloutonne a manipulation de vecteurs :
+  0.000470 seconds (27.43 k allocations: 561.063 KiB)
+ z = 70
+|----------ECHANGES----------|
+  0.257986 seconds (367.95 k allocations: 334.329 MiB, 28.66% gc time)
+échange glouton débil : 
+ z = 62
+  0.254986 seconds (367.95 k allocations: 334.329 MiB, 29.86% gc time)
+échange glouton intéligent : 
+ z = 62
+  0.501738 seconds (396.95 k allocations: 452.122 MiB, 19.87% gc time)
+échangeVxV glouton débil : 
+ z = 62
+  0.602958 seconds (446.69 k allocations: 543.444 MiB, 19.64% gc time)
+échangeVxV glouton intéligent : 
+ z = 70
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.006731 seconds (10.00 k allocations: 656.516 KiB)
+Résolution exacte trop lourde
+
+  pb_200rnd1700.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000112 seconds (1 allocation: 1.766 KiB)
+ z = 129
+Solution gloutonne plus intelligente :
+  0.000132 seconds (6 allocations: 8.844 KiB)
+ z = 202
+Solution gloutonne a supression de matrice :
+  0.009868 seconds (44.54 k allocations: 28.452 MiB, 16.74% gc time)
+ z = 217
+Solution gloutonne a manipulation de matrice :
+  0.001055 seconds (1.24 k allocations: 1.359 MiB)
+ z = 217
+Solution gloutonne a manipulation de vecteurs :
+  0.000178 seconds (5.99 k allocations: 131.594 KiB)
+ z = 217
+|----------ECHANGES----------|
+  0.022439 seconds (22.18 k allocations: 18.910 MiB, 32.38% gc time)
+échange glouton débil : 
+ z = 219
+  0.064723 seconds (84.25 k allocations: 71.585 MiB, 22.40% gc time)
+échange glouton intéligent : 
+ z = 202
+  0.051660 seconds (573.20 k allocations: 25.699 MiB, 9.32% gc time)
+échangeVxV glouton débil : 
+ z = 151
+  0.060957 seconds (177.60 k allocations: 40.544 MiB, 15.77% gc time)
+échangeVxV glouton intéligent : 
+ z = 217
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.017901 seconds (5.09 k allocations: 599.234 KiB)
+Résolution exacte trop lourde
+
+  pb_200rnd1800.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000104 seconds (1 allocation: 1.766 KiB)
+ z = 12
+Solution gloutonne plus intelligente :
+  0.000111 seconds (6 allocations: 8.844 KiB)
+ z = 12
+Solution gloutonne a supression de matrice :
+  0.015246 seconds (47.62 k allocations: 31.881 MiB, 36.18% gc time)
+ z = 15
+Solution gloutonne a manipulation de matrice :
+  0.001029 seconds (1.14 k allocations: 1.323 MiB)
+ z = 15
+Solution gloutonne a manipulation de vecteurs :
+  0.000172 seconds (5.49 k allocations: 122.031 KiB)
+ z = 15
+|----------ECHANGES----------|
+  0.025405 seconds (27.79 k allocations: 23.902 MiB, 16.33% gc time)
+échange glouton débil : 
+ z = 12
+  0.026484 seconds (27.79 k allocations: 23.902 MiB, 27.35% gc time)
+échange glouton intéligent : 
+ z = 12
+  0.041909 seconds (167.94 k allocations: 23.867 MiB, 11.41% gc time)
+échangeVxV glouton débil : 
+ z = 12
+  0.061207 seconds (173.73 k allocations: 35.947 MiB, 25.01% gc time)
+échangeVxV glouton intéligent : 
+ z = 15
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.047981 seconds (5.39 k allocations: 623.109 KiB)
+Résolution exacte trop lourde
+
+  pb_500rnd0100.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.002140 seconds (1 allocation: 4.063 KiB)
+ z = 181
+Solution gloutonne plus intelligente :
+  0.002035 seconds (6 allocations: 20.328 KiB)
+ z = 241
+Solution gloutonne a supression de matrice :
+  0.204626 seconds (252.56 k allocations: 255.392 MiB, 49.49% gc time)
+ z = 285
+Solution gloutonne a manipulation de matrice :
+  0.019742 seconds (3.71 k allocations: 11.602 MiB, 6.04% gc time)
+ z = 285
+Solution gloutonne a manipulation de vecteurs :
+  0.000612 seconds (16.93 k allocations: 365.125 KiB)
+ z = 285
+|----------ECHANGES----------|
+  0.292730 seconds (224.20 k allocations: 328.491 MiB, 6.99% gc time)
+échange glouton débil : 
+ z = 276
+  0.544236 seconds (433.43 k allocations: 633.326 MiB, 7.28% gc time)
+échange glouton intéligent : 
+ z = 241
+  0.447546 seconds (3.03 M allocations: 157.370 MiB, 4.03% gc time)
+échangeVxV glouton débil : 
+ z = 197
+  0.512064 seconds (1.05 M allocations: 275.922 MiB, 3.48% gc time)
+échangeVxV glouton intéligent : 
+ z = 285
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.350388 seconds (1.38 k allocations: 1.720 MiB)
+Résolution exacte trop lourde
+
+  pb_500rnd0200.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.002013 seconds (1 allocation: 4.063 KiB)
+ z = 14
+Solution gloutonne plus intelligente :
+  0.002022 seconds (6 allocations: 20.328 KiB)
+ z = 14
+Solution gloutonne a supression de matrice :
+  0.223644 seconds (266.93 k allocations: 294.998 MiB, 47.50% gc time)
+ z = 19
+Solution gloutonne a manipulation de matrice :
+  0.018089 seconds (3.76 k allocations: 11.627 MiB)
+ z = 19
+Solution gloutonne a manipulation de vecteurs :
+  0.000694 seconds (17.68 k allocations: 384.828 KiB)
+ z = 19
+|----------ECHANGES----------|
+  1.053553 seconds (1.06 M allocations: 1.511 GiB, 8.53% gc time)
+échange glouton débil : 
+ z = 14
+  1.056210 seconds (1.06 M allocations: 1.511 GiB, 8.53% gc time)
+échange glouton intéligent : 
+ z = 14
+  0.401165 seconds (1.03 M allocations: 190.791 MiB, 2.80% gc time)
+échangeVxV glouton débil : 
+ z = 14
+  0.663369 seconds (1.07 M allocations: 341.570 MiB, 3.26% gc time)
+échangeVxV glouton intéligent : 
+ z = 19
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.920717 seconds (1.32 k allocations: 1.680 MiB)
+Résolution exacte trop lourde
+
+  pb_500rnd0300.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.003437 seconds (1 allocation: 4.063 KiB)
+ z = 453
+Solution gloutonne plus intelligente :
+  0.003297 seconds (6 allocations: 20.328 KiB)
+ z = 635
+Solution gloutonne a supression de matrice :
+  0.601960 seconds (682.44 k allocations: 848.720 MiB, 48.93% gc time)
+ z = 674
+Solution gloutonne a manipulation de matrice :
+  0.048629 seconds (5.30 k allocations: 12.894 MiB, 3.83% gc time)
+ z = 674
+Solution gloutonne a manipulation de vecteurs :
+  0.001286 seconds (44.89 k allocations: 919.250 KiB)
+ z = 674
+|----------ECHANGES----------|
+  1.931173 seconds (2.10 M allocations: 3.058 GiB, 9.46% gc time)
+échange glouton débil : 
+ z = 598
+  1.622569 seconds (1.71 M allocations: 2.486 GiB, 9.29% gc time)
+échange glouton intéligent : 
+ z = 635
+  5.713558 seconds (7.39 M allocations: 3.549 GiB, 4.12% gc time)
+échangeVxV glouton débil : 
+ z = 543
+  2.726061 seconds (1.43 M allocations: 1.835 GiB, 4.13% gc time)
+échangeVxV glouton intéligent : 
+ z = 674
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.323374 seconds (1.54 k allocations: 1.078 MiB)
+Résolution exacte trop lourde
+
+  pb_500rnd0400.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.003213 seconds (1 allocation: 4.063 KiB)
+ z = 43
+Solution gloutonne plus intelligente :
+  0.003365 seconds (6 allocations: 20.328 KiB)
+ z = 43
+Solution gloutonne a supression de matrice :
+  0.655321 seconds (790.21 k allocations: 977.366 MiB, 45.64% gc time)
+ z = 47
+Solution gloutonne a manipulation de matrice :
+  0.046444 seconds (4.78 k allocations: 12.615 MiB)
+ z = 47
+Solution gloutonne a manipulation de vecteurs :
+  0.001296 seconds (46.30 k allocations: 945.453 KiB)
+ z = 47
+|----------ECHANGES----------|
+  2.483150 seconds (2.60 M allocations: 3.794 GiB, 9.20% gc time)
+échange glouton débil : 
+ z = 43
+  2.478760 seconds (2.60 M allocations: 3.794 GiB, 9.18% gc time)
+échange glouton intéligent : 
+ z = 43
+  2.491471 seconds (1.36 M allocations: 1.613 GiB, 4.03% gc time)
+échangeVxV glouton débil : 
+ z = 43
+  3.145459 seconds (1.44 M allocations: 1.912 GiB, 3.79% gc time)
+échangeVxV glouton intéligent : 
+ z = 47
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.620995 seconds (1.44 k allocations: 1.072 MiB)
+Résolution exacte trop lourde
+
+  pb_500rnd0500.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.001571 seconds (1 allocation: 4.063 KiB)
+ z = 72
+Solution gloutonne plus intelligente :
+  0.002203 seconds (6 allocations: 20.328 KiB)
+ z = 96
+Solution gloutonne a supression de matrice :
+  0.041903 seconds (85.29 k allocations: 81.043 MiB, 26.08% gc time)
+ z = 84
+Solution gloutonne a manipulation de matrice :
+  0.013732 seconds (2.23 k allocations: 10.671 MiB)
+ z = 84
+Solution gloutonne a manipulation de vecteurs :
+  0.000309 seconds (4.77 k allocations: 126.500 KiB)
+ z = 84
+|----------ECHANGES----------|
+  0.296244 seconds (130.90 k allocations: 189.632 MiB, 4.70% gc time)
+échange glouton débil : 
+ z = 87
+  0.251623 seconds (114.88 k allocations: 166.552 MiB, 4.95% gc time)
+échange glouton intéligent : 
+ z = 96
+  0.139921 seconds (1.51 M allocations: 43.173 MiB, 5.05% gc time)
+échangeVxV glouton débil : 
+ z = 80
+  0.129860 seconds (1.00 M allocations: 35.143 MiB, 3.29% gc time)
+échangeVxV glouton intéligent : 
+ z = 84
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.365094 seconds (1.44 k allocations: 2.952 MiB)
+Résolution exacte trop lourde
+
+  pb_500rnd0600.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.001403 seconds (1 allocation: 4.063 KiB)
+ z = 5
+Solution gloutonne plus intelligente :
+  0.002460 seconds (6 allocations: 20.328 KiB)
+ z = 5
+Solution gloutonne a supression de matrice :
+  0.143051 seconds (87.52 k allocations: 82.856 MiB, 75.36% gc time)
+ z = 6
+Solution gloutonne a manipulation de matrice :
+  0.008839 seconds (2.48 k allocations: 10.805 MiB)
+ z = 6
+Solution gloutonne a manipulation de vecteurs :
+  0.000473 seconds (5.74 k allocations: 145.656 KiB)
+ z = 6
+|----------ECHANGES----------|
+  0.675204 seconds (386.44 k allocations: 557.714 MiB, 5.07% gc time)
+échange glouton débil : 
+ z = 5
+  0.681176 seconds (386.44 k allocations: 557.714 MiB, 4.92% gc time)
+échange glouton intéligent : 
+ z = 5
+  0.113442 seconds (998.91 k allocations: 35.050 MiB, 2.48% gc time)
+échangeVxV glouton débil : 
+ z = 5
+  0.130501 seconds (998.36 k allocations: 44.762 MiB, 2.30% gc time)
+échangeVxV glouton intéligent : 
+ z = 6
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  2.238573 seconds (1.32 k allocations: 2.918 MiB)
+Résolution exacte trop lourde
+
+  pb_500rnd0700.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000453 seconds (1 allocation: 4.063 KiB)
+ z = 667
+Solution gloutonne plus intelligente :
+  0.000527 seconds (6 allocations: 20.328 KiB)
+ z = 936
+Solution gloutonne a supression de matrice :
+  0.153234 seconds (267.20 k allocations: 362.766 MiB, 16.73% gc time)
+ z = 1043
+Solution gloutonne a manipulation de matrice :
+  0.006567 seconds (2.04 k allocations: 3.891 MiB)
+ z = 1043
+Solution gloutonne a manipulation de vecteurs :
+  0.001281 seconds (73.56 k allocations: 1.435 MiB)
+ z = 1043
+|----------ECHANGES----------|
+  0.116541 seconds (122.93 k allocations: 287.228 MiB, 15.86% gc time)
+échange glouton débil : 
+ z = 1008
+  0.446079 seconds (519.57 k allocations: 1.121 GiB, 15.12% gc time)
+échange glouton intéligent : 
+ z = 936
+  1.818742 seconds (8.99 M allocations: 2.600 GiB, 7.95% gc time)
+échangeVxV glouton débil : 
+ z = 719
+  3.913645 seconds (6.26 M allocations: 7.302 GiB, 10.05% gc time)
+échangeVxV glouton intéligent : 
+ z = 1065
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.035674 seconds (3.77 k allocations: 580.766 KiB)
+Résolution exacte trop lourde
+
+  pb_500rnd0800.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000509 seconds (1 allocation: 4.063 KiB)
+ z = 63
+Solution gloutonne plus intelligente :
+  0.000551 seconds (6 allocations: 20.328 KiB)
+ z = 63
+Solution gloutonne a supression de matrice :
+  0.168894 seconds (307.55 k allocations: 421.474 MiB, 15.76% gc time)
+ z = 78
+Solution gloutonne a manipulation de matrice :
+  0.011636 seconds (1.94 k allocations: 3.857 MiB, 22.51% gc time)
+ z = 78
+Solution gloutonne a manipulation de vecteurs :
+  0.001320 seconds (75.67 k allocations: 1.479 MiB)
+ z = 78
+|----------ECHANGES----------|
+  0.758288 seconds (908.09 k allocations: 1.982 GiB, 15.20% gc time)
+échange glouton débil : 
+ z = 63
+  0.760370 seconds (908.09 k allocations: 1.982 GiB, 15.38% gc time)
+échange glouton intéligent : 
+ z = 63
+  1.642211 seconds (1.71 M allocations: 3.320 GiB, 10.89% gc time)
+échangeVxV glouton débil : 
+ z = 63
+  2.546054 seconds (2.11 M allocations: 4.923 GiB, 10.32% gc time)
+échangeVxV glouton intéligent : 
+ z = 78
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.074538 seconds (3.29 k allocations: 559.578 KiB)
+Résolution exacte trop lourde
+
+  pb_500rnd0900.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000790 seconds (1 allocation: 4.063 KiB)
+ z = 1527
+Solution gloutonne plus intelligente :
+  0.000950 seconds (6 allocations: 20.328 KiB)
+ z = 2032
+Solution gloutonne a supression de matrice :
+  0.299025 seconds (554.66 k allocations: 769.651 MiB, 16.43% gc time)
+ z = 2163
+Solution gloutonne a manipulation de matrice :
+  0.014700 seconds (2.57 k allocations: 5.004 MiB)
+ z = 2163
+Solution gloutonne a manipulation de vecteurs :
+  0.004823 seconds (142.82 k allocations: 2.773 MiB, 49.98% gc time)
+ z = 2163
+|----------ECHANGES----------|
+  0.577341 seconds (642.68 k allocations: 1.564 GiB, 15.78% gc time)
+échange glouton débil : 
+ z = 2143
+  0.961841 seconds (1.18 M allocations: 2.748 GiB, 16.21% gc time)
+échange glouton intéligent : 
+ z = 2032
+ 16.489363 seconds (26.16 M allocations: 28.022 GiB, 9.47% gc time)
+échangeVxV glouton débil : 
+ z = 1663
+ 31.501306 seconds (23.41 M allocations: 67.272 GiB, 11.67% gc time)
+échangeVxV glouton intéligent : 
+ z = 2185
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.013915 seconds (1.14 k allocations: 334.078 KiB)
+Problème Résolu !!!
+2236.0
+
+  pb_500rnd1000.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000774 seconds (1 allocation: 4.063 KiB)
+ z = 139
+Solution gloutonne plus intelligente :
+  0.001843 seconds (6 allocations: 20.328 KiB)
+ z = 139
+Solution gloutonne a supression de matrice :
+  0.341118 seconds (612.57 k allocations: 852.965 MiB, 16.16% gc time)
+ z = 171
+Solution gloutonne a manipulation de matrice :
+  0.013283 seconds (2.70 k allocations: 5.151 MiB)
+ z = 171
+Solution gloutonne a manipulation de vecteurs :
+  0.002280 seconds (146.83 k allocations: 2.858 MiB)
+ z = 171
+|----------ECHANGES----------|
+  1.456832 seconds (1.78 M allocations: 4.098 GiB, 16.69% gc time)
+échange glouton débil : 
+ z = 139
+  1.460730 seconds (1.78 M allocations: 4.098 GiB, 16.71% gc time)
+échange glouton intéligent : 
+ z = 139
+  6.239074 seconds (4.23 M allocations: 13.426 GiB, 11.86% gc time)
+échangeVxV glouton débil : 
+ z = 139
+  8.426439 seconds (5.53 M allocations: 18.538 GiB, 12.14% gc time)
+échangeVxV glouton intéligent : 
+ z = 171
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.105820 seconds (1.36 k allocations: 344.422 KiB)
+Problème Résolu !!!
+179.0
+
+  pb_500rnd1100.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000422 seconds (1 allocation: 4.063 KiB)
+ z = 257
+Solution gloutonne plus intelligente :
+  0.000472 seconds (6 allocations: 20.328 KiB)
+ z = 349
+Solution gloutonne a supression de matrice :
+  0.047388 seconds (81.27 k allocations: 95.162 MiB, 19.94% gc time)
+ z = 344
+Solution gloutonne a manipulation de matrice :
+  0.003241 seconds (1.43 k allocations: 2.983 MiB)
+ z = 344
+Solution gloutonne a manipulation de vecteurs :
+  0.000596 seconds (23.43 k allocations: 479.453 KiB)
+ z = 344
+|----------ECHANGES----------|
+  0.085636 seconds (76.18 k allocations: 160.820 MiB, 11.85% gc time)
+échange glouton débil : 
+ z = 363
+  0.147414 seconds (141.73 k allocations: 298.497 MiB, 13.61% gc time)
+échange glouton intéligent : 
+ z = 349
+  0.379062 seconds (4.50 M allocations: 373.890 MiB, 6.65% gc time)
+échangeVxV glouton débil : 
+ z = 284
+  0.488602 seconds (1.64 M allocations: 730.408 MiB, 8.36% gc time)
+échangeVxV glouton intéligent : 
+ z = 345
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.057292 seconds (3.41 k allocations: 831.984 KiB)
+Résolution exacte trop lourde
+
+  pb_500rnd1200.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000441 seconds (1 allocation: 4.063 KiB)
+ z = 21
+Solution gloutonne plus intelligente :
+  0.000848 seconds (6 allocations: 20.328 KiB)
+ z = 21
+Solution gloutonne a supression de matrice :
+  0.061657 seconds (104.35 k allocations: 132.125 MiB, 18.01% gc time)
+ z = 28
+Solution gloutonne a manipulation de matrice :
+  0.003289 seconds (1.50 k allocations: 3.065 MiB)
+ z = 28
+Solution gloutonne a manipulation de vecteurs :
+  0.000679 seconds (27.40 k allocations: 557.578 KiB)
+ z = 28
+|----------ECHANGES----------|
+  0.293016 seconds (294.05 k allocations: 619.351 MiB, 12.93% gc time)
+échange glouton débil : 
+ z = 21
+  0.292712 seconds (294.05 k allocations: 619.351 MiB, 13.15% gc time)
+échange glouton intéligent : 
+ z = 21
+  0.285687 seconds (1.02 M allocations: 413.270 MiB, 8.44% gc time)
+échangeVxV glouton débil : 
+ z = 21
+  0.484558 seconds (1.09 M allocations: 721.950 MiB, 8.64% gc time)
+échangeVxV glouton intéligent : 
+ z = 28
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.100998 seconds (2.44 k allocations: 765.750 KiB)
+Résolution exacte trop lourde
+
+  pb_500rnd1300.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.001821 seconds (1 allocation: 4.063 KiB)
+ z = 219
+Solution gloutonne plus intelligente :
+  0.001610 seconds (6 allocations: 20.328 KiB)
+ z = 379
+Solution gloutonne a supression de matrice :
+  0.266551 seconds (225.93 k allocations: 270.951 MiB, 47.52% gc time)
+ z = 380
+Solution gloutonne a manipulation de matrice :
+  0.020068 seconds (3.04 k allocations: 7.597 MiB)
+ z = 380
+Solution gloutonne a manipulation de vecteurs :
+  0.000951 seconds (25.96 k allocations: 538.969 KiB)
+ z = 380
+|----------ECHANGES----------|
+  0.306503 seconds (283.97 k allocations: 444.466 MiB, 10.26% gc time)
+échange glouton débil : 
+ z = 415
+  0.417902 seconds (421.08 k allocations: 655.743 MiB, 9.32% gc time)
+échange glouton intéligent : 
+ z = 379
+  0.549875 seconds (4.06 M allocations: 327.691 MiB, 3.56% gc time)
+échangeVxV glouton débil : 
+ z = 255
+  1.507016 seconds (2.79 M allocations: 1.253 GiB, 5.08% gc time)
+échangeVxV glouton intéligent : 
+ z = 384
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.206283 seconds (1.94 k allocations: 1.103 MiB)
+Résolution exacte trop lourde
+
+  pb_500rnd1400.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.001418 seconds (1 allocation: 4.063 KiB)
+ z = 23
+Solution gloutonne plus intelligente :
+  0.001457 seconds (6 allocations: 20.328 KiB)
+ z = 23
+Solution gloutonne a supression de matrice :
+  0.141470 seconds (284.85 k allocations: 328.086 MiB, 18.38% gc time)
+ z = 31
+Solution gloutonne a manipulation de matrice :
+  0.016953 seconds (3.16 k allocations: 7.705 MiB, 12.16% gc time)
+ z = 31
+Solution gloutonne a manipulation de vecteurs :
+  0.000866 seconds (29.63 k allocations: 612.438 KiB)
+ z = 31
+|----------ECHANGES----------|
+  0.506383 seconds (568.96 k allocations: 887.087 MiB, 10.44% gc time)
+échange glouton débil : 
+ z = 23
+  0.508239 seconds (568.96 k allocations: 887.087 MiB, 10.78% gc time)
+échange glouton intéligent : 
+ z = 23
+  0.646026 seconds (1.09 M allocations: 493.753 MiB, 4.44% gc time)
+échangeVxV glouton débil : 
+ z = 23
+  0.911149 seconds (1.18 M allocations: 880.105 MiB, 5.79% gc time)
+échangeVxV glouton intéligent : 
+ z = 31
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.485829 seconds (1.52 k allocations: 1.083 MiB)
+Résolution exacte trop lourde
+
+  pb_500rnd1500.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.002343 seconds (1 allocation: 4.063 KiB)
+ z = 690
+Solution gloutonne plus intelligente :
+  0.002362 seconds (6 allocations: 20.328 KiB)
+ z = 956
+Solution gloutonne a supression de matrice :
+  0.488967 seconds (693.20 k allocations: 976.265 MiB, 28.15% gc time)
+ z = 1059
+Solution gloutonne a manipulation de matrice :
+  0.039123 seconds (4.38 k allocations: 8.919 MiB)
+ z = 1059
+Solution gloutonne a manipulation de vecteurs :
+  0.001654 seconds (72.27 k allocations: 1.419 MiB)
+ z = 1059
+|----------ECHANGES----------|
+  0.773432 seconds (1.04 M allocations: 1.672 GiB, 13.30% gc time)
+échange glouton débil : 
+ z = 1039
+  1.142839 seconds (1.53 M allocations: 2.406 GiB, 12.44% gc time)
+échange glouton intéligent : 
+ z = 956
+  4.528817 seconds (10.80 M allocations: 3.497 GiB, 5.30% gc time)
+échangeVxV glouton débil : 
+ z = 771
+  6.824289 seconds (5.78 M allocations: 7.200 GiB, 6.26% gc time)
+échangeVxV glouton intéligent : 
+ z = 1075
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.148112 seconds (1.80 k allocations: 732.031 KiB)
+Résolution exacte trop lourde
+
+  pb_500rnd1600.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.003235 seconds (1 allocation: 4.063 KiB)
+ z = 60
+Solution gloutonne plus intelligente :
+  0.002262 seconds (6 allocations: 20.328 KiB)
+ z = 60
+Solution gloutonne a supression de matrice :
+  0.371002 seconds (698.15 k allocations: 960.415 MiB, 14.91% gc time)
+ z = 72
+Solution gloutonne a manipulation de matrice :
+  0.038240 seconds (3.97 k allocations: 8.656 MiB)
+ z = 72
+Solution gloutonne a manipulation de vecteurs :
+  0.001638 seconds (69.08 k allocations: 1.362 MiB)
+ z = 72
+|----------ECHANGES----------|
+  2.049359 seconds (2.78 M allocations: 4.371 GiB, 12.88% gc time)
+échange glouton débil : 
+ z = 60
+  2.046434 seconds (2.78 M allocations: 4.371 GiB, 12.73% gc time)
+échange glouton intéligent : 
+ z = 60
+  2.928140 seconds (1.72 M allocations: 3.032 GiB, 6.16% gc time)
+échangeVxV glouton débil : 
+ z = 60
+  4.227353 seconds (2.01 M allocations: 4.252 GiB, 5.93% gc time)
+échangeVxV glouton intéligent : 
+ z = 72
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.324763 seconds (1.62 k allocations: 728.531 KiB)
+Résolution exacte trop lourde
+
+  pb_500rnd1700.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.001107 seconds (1 allocation: 4.063 KiB)
+ z = 98
+Solution gloutonne plus intelligente :
+  0.000959 seconds (6 allocations: 20.328 KiB)
+ z = 122
+Solution gloutonne a supression de matrice :
+  0.063392 seconds (77.89 k allocations: 77.478 MiB, 56.65% gc time)
+ z = 150
+Solution gloutonne a manipulation de matrice :
+  0.006421 seconds (1.97 k allocations: 6.798 MiB)
+ z = 150
+Solution gloutonne a manipulation de vecteurs :
+  0.000309 seconds (7.85 k allocations: 179.047 KiB)
+ z = 150
+|----------ECHANGES----------|
+  0.281608 seconds (172.09 k allocations: 265.254 MiB, 32.10% gc time)
+échange glouton débil : 
+ z = 138
+  0.193587 seconds (130.17 k allocations: 200.528 MiB, 5.53% gc time)
+échange glouton intéligent : 
+ z = 122
+  0.157397 seconds (2.02 M allocations: 69.800 MiB, 3.21% gc time)
+échangeVxV glouton débil : 
+ z = 101
+  0.127526 seconds (1.01 M allocations: 70.142 MiB, 2.79% gc time)
+échangeVxV glouton intéligent : 
+ z = 150
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.181695 seconds (1.76 k allocations: 1.809 MiB)
+Résolution exacte trop lourde
+
+  pb_500rnd1800.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.001076 seconds (1 allocation: 4.063 KiB)
+ z = 8
+Solution gloutonne plus intelligente :
+  0.001129 seconds (6 allocations: 20.328 KiB)
+ z = 8
+Solution gloutonne a supression de matrice :
+  0.042527 seconds (88.92 k allocations: 87.851 MiB, 12.97% gc time)
+ z = 9
+Solution gloutonne a manipulation de matrice :
+  0.007580 seconds (1.88 k allocations: 6.760 MiB, 13.10% gc time)
+ z = 9
+Solution gloutonne a manipulation de vecteurs :
+  0.000357 seconds (8.57 k allocations: 194.297 KiB)
+ z = 9
+|----------ECHANGES----------|
+  0.423577 seconds (374.03 k allocations: 573.242 MiB, 8.02% gc time)
+échange glouton débil : 
+ z = 8
+  0.421965 seconds (374.03 k allocations: 573.242 MiB, 7.91% gc time)
+échange glouton intéligent : 
+ z = 8
+  0.124582 seconds (990.64 k allocations: 69.801 MiB, 4.51% gc time)
+échangeVxV glouton débil : 
+ z = 8
+  0.178809 seconds (993.53 k allocations: 85.258 MiB, 2.94% gc time)
+échangeVxV glouton intéligent : 
+ z = 9
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+  1.593022 seconds (1.40 k allocations: 1.816 MiB)
+Résolution exacte trop lourde
+

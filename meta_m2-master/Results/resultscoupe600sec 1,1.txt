@@ -1,0 +1,12 @@
+Data/Instances_Set_A/022_3_4_EP_RAF_ENP/
+Coupe à 20 voitures
+            OPTIMAL
+
+Coupe à 30 voitures
+            OPTIMAL
+
+Coupe à 40 voitures
+            TIME OUT
+
+Coupe à 50 voitures
+            TIME OUT

@@ -1,0 +1,177 @@
+% Document : compte rendu des DM
+% Auteur : Xavier Gandibleux
+% Année académique : 2018-2019
+
+\documentclass[a4paper,10pt]{article}
+
+
+% passe en mode large sur la page A4
+\usepackage{a4wide} 
+
+% document francisé
+\usepackage[francais]{babel} 
+
+% permet la frappe de caracteres accentues (sur macOS)
+\usepackage[utf8x]{inputenc} 
+
+\usepackage{graphicx,float,subcaption} % figure et placement de figure
+\usepackage[top=10mm, bottom=10mm, left=15mm, right=10mm]{geometry}
+
+\usepackage{multicol}
+%\usepackage[T1]{fontenc}
+%\usepackage{graphicx}
+%\usepackage{grffile}
+%\usepackage{longtable}
+%\usepackage{wrapfig}
+%\usepackage{rotating}
+%\usepackage[normalem]{ulem}
+%\usepackage{amsmath}
+%\usepackage{textcomp}
+%\usepackage{amssymb}
+%\usepackage{capt-of}
+%\usepackage{hyperref}% \documentclass[a4paper,11pt]{article}
+% \usepackage[margin=2cm]{geometry}
+% \usepackage[utf8]{inputenc}
+
+%\usepackage{graphicx} 
+%\usepackage{wrapfig}
+\usepackage{color}
+\usepackage{xcolor}
+%\usepackage{hyperref}
+
+
+%\usepackage[]{amsmath,amsfonts,amssymb,stmaryrd,amsthm}
+%\usepackage{fullpage}
+%\usepackage{multirow}
+%\usepackage[rounded]{syntax}
+%\usepackage[section]{placeins}
+\newtheorem{example}{Exemple} %%% modifier ici si on veut en fr/en
+
+\usepackage{todonotes}
+\usepackage{listings} 
+\input{alllistings}
+
+\newcommand{\arthur}[1]{\textcolor{violet}{#1}}
+\newcommand{\marie}[1]{\textcolor{red}{#1}}
+\newcommand{\prof}[1]{\textcolor{gray}{#1}}
+
+%% IL faut mettre le package pour tabular 
+
+
+% individualisation des parametres de la page
+\parskip8pt
+\setlength{\topmargin}{-25mm}
+\setlength{\textheight}{250mm}
+
+%
+% -----------------------------------------------------------------------------------------------------------------------------------------------------
+%
+
+\begin{document}
+\pagestyle{empty}
+{\begin{center}
+  {  \fbox{Langages de programmation de haut niveau}\\
+      \vspace{1mm}
+  \begin{minipage}{0.45 \textwidth}
+	\begin{flushleft}
+     Rapport TP1 R
+	\end{flushleft}
+  \end{minipage}
+  \begin{minipage}{0.45 \textwidth}
+	\begin{flushright}
+     Marie Humbert--Ropers ; Arthur Gontier
+	\end{flushright}
+  \end{minipage}
+  }  
+\end{center}
+}
+      %\vspace{1mm}
+%\noindent
+\fbox{
+  \begin{minipage}{0.97 \textwidth}
+    \begin{center}
+      \vspace{1mm}
+	{a) Comparaisons des temps de calculs}
+      \vspace{1mm}
+    \end{center}
+  \end{minipage}
+}
+\vspace{1mm}
+\begin{multicols}{2}
+	\par{
+Sur 1 000 000 d'itérations, on obtient les temps de calculs suivants :\\
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+     fonction & utilisateur & système & écoulé\\
+     \hline
+     rectangle & 0.546 & 0.00 & 0.545\\
+     \hline
+     rectangle1l & 0.119 & 0.004 & 0.123\\
+     \hline
+     montecarlo & 3.968 & 0.004 & 3.971\\
+     \hline
+     montecarlo1l & 0.107 & 0.004 & 0.110\\
+     \hline
+    \end{tabular}
+}
+\par{
+Pour chaque méthode, il existe deux versions: l'une utilisant les fonctions des bibliothèques de R et l'autre n'utilisant que des boucles.\\
+	Nous pouvons donc remarquer que les fonctions utilisant le plus possible les bibliothèques compilés de R sont 5 fois plus rapides pour la méthode du rectangle, et 40 fois plus rapides pour la méthode de Monte-Carlo.
+}
+\end{multicols}
+Pour la suite, nous utilisons uniquement les versions rapides de ces algorithmes.
+
+\vspace{1mm}
+\noindent
+\fbox{
+  \begin{minipage}{0.97 \textwidth}
+    \begin{center}
+      \vspace{1mm}
+      {b) Précision du résultat en fonction de n}
+      \vspace{1mm}
+    \end{center}
+  \end{minipage}
+}
+%\vspace{1mm}
+
+On note que l'on compare ici les résultats avec la valeur "exacte" donnée par la machine, qui n'est pas complètement exact mais, en admettant qu'elle en est très proche, cela donne un ordre d'idée concernant la précision de ces méthodes. \\
+%Pour cette même raison, nous présentons un graphe avec la droite "exacte" et les autres résultats.\\
+\begin{minipage}{0.5\textwidth}
+\begin{flushleft}
+      \includegraphics[scale=0.5]{fig/precision_iteration.png}
+\end{flushleft}
+\end{minipage}
+\hspace{1cm}
+\begin{minipage}{0.45\textwidth}
+	Nous remarquons que la méthode des rectangles converge très rapidement, au bout d'une cinquantaine d'itérations vers la solution exacte avec une précision de l'ordre du millième. La méthode aléatoire de monte-carlo finit aussi par converger mais avec une plus grande lenteur et une moins grande précision. L'exemple ci-contre a été réalisé avec 500 itérations, nous avons aussi constaté que la convergence s'accentue pour un plus grand nombre d'itérations. La précision dans cet exemple varie de 0.005 pour la méthode des rectangles contrairement à 0.1 dans le pire des cas pour la méthode de monte-carlo. On remarque via le vecteur des résultats que la précision de cette dernière est moins constante sur les résultats que celle avec les rectangles: la précision peut-être très bonne puis très mauvaise à l'itération suivante.
+\end{minipage}
+
+\vspace{1mm}
+\noindent
+\fbox{
+  \begin{minipage}{0.97 \textwidth}
+    \begin{center}
+      \vspace{1mm}
+      {c) précision du résultat en fonction du temps de calcul}
+      \vspace{1mm}
+    \end{center}
+  \end{minipage}
+}
+\vspace{1mm}
+
+Dans cette partie, nous avons mesuré pour chaque pas de temps (ici 0.009s), quel était le résultat de chaque méthode
+\begin{minipage}{0.5\textwidth}
+\begin{flushleft}
+      \includegraphics[scale=0.5]{fig/precision_temps.png}
+\end{flushleft}
+\end{minipage}
+\hspace{1cm}
+\begin{minipage}{0.45\textwidth}
+	Comme précèdemment, nous remarquons que sur 3 secondes d'itérations, la convergence de la méthode des rectangles est très rapide: autour de 0.2 secondes. Pour la méthode aléatoire de monte-carlo, nous constatons que la méthode à tendance à se rapprocher de la valeur "exacte" retenue par la machine. Par calcul, nous vérifions que la précision varie toujours de plus/moins 0.0001 pour la méthode des rectangles contrairement à celle de monte-carlo dont la précision varie de 0.05.
+
+
+\end{minipage}
+
+
+\end{document}
+

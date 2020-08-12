@@ -1,0 +1,8 @@
+node obs(o_reset:bool) returns(ok:bool);
+var
+  o_sevseg:int;
+  o_led_on:bool;
+let
+  o_sevseg,o_led_on = cpt(o_reset);
+  ok = o_sevseg >= 0 and o_sevseg <= 9;
+tel

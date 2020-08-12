@@ -1,0 +1,573 @@
+% Document : compte rendu des DM
+% Auteur : Xavier Gandibleux
+% Année académique : 2018-2019
+
+\documentclass[a4paper,12pt]{article}
+%\usepackage{tikz}
+
+
+% passe en mode large sur la page A4
+\usepackage{a4wide} 
+
+% document francisé
+\usepackage[francais]{babel} 
+
+% permet la frappe de caracteres accentues (sur macOS)
+\usepackage[utf8x]{inputenc} 
+
+%\usepackage{graphicx,float,subcaption} % figure et placement de figure
+\usepackage[top=5mm, bottom=5mm, left=10mm, right=10mm]{geometry}
+
+%\usepackage[linesnumbered,frenchkw,ruled,french]{algorithm2e}
+
+\usepackage{multirow}
+\usepackage{listingsutf8}
+\usepackage{jlcode}
+\usepackage{caption}
+%\usepackage[T1]{fontenc}
+%\usepackage{graphicx}
+%\usepackage{grffile}
+%\usepackage{longtable}
+%\usepackage{wrapfig}
+%\usepackage{rotating}
+%\usepackage[normalem]{ulem}
+%\usepackage{amsmath}
+%\usepackage{textcomp}
+%\usepackage{amssymb}
+%\usepackage{capt-of}
+%\usepackage{hyperref}% \documentclass[a4paper,12pt]{article}
+%\usepackage[margin=2cm]{geometry}
+
+
+\usepackage{color}
+\usepackage{xcolor}
+
+\usepackage[]{amsmath,amsfonts,stmaryrd,amssymb,amsthm}
+%\usepackage{fullpage}
+%\usepackage{multirow}
+%\usepackage[rounded]{syntax}
+%\usepackage[section]{placeins}
+\newtheorem{example}{Exemple} %%% modifier ici si on veut en fr/en
+
+\usepackage{todonotes}
+%\usepackage{listings} 
+%\input{alllistings}
+
+\newcommand{\arthur}[1]{\textcolor{violet}{#1}}
+\newcommand{\marie}[1]{\textcolor{red}{#1}}
+\newcommand{\prof}[1]{\textcolor{gray}{#1}}
+
+% individualisation des parametres de la page
+\parskip8pt
+\setlength{\topmargin}{-25mm}
+\setlength{\textheight}{250mm}
+
+
+\lstdefinestyle{mystyle}{
+    language=julia,
+    inputencoding=utf8/latin1,
+    %backgroundcolor=\color{backcolour},   
+    %commentstyle=\color{codegreen},
+    keywordstyle=\color{black},
+    %numberstyle=\tiny\color{codegray},
+    %stringstyle=\color{codepurple},
+    %basicstyle=\footnotesize,
+    breakatwhitespace=true,         
+    breaklines=true,                 
+    %captionpos=b,                    
+    %keepspaces=true,                 
+    %numbers=left,                    
+    %numbersep=5pt,                  
+    %showspaces=false,                
+    %showstringspaces=false,
+    %showtabs=false,                  
+    tabsize=2
+}
+ 
+\lstset{style=mystyle}
+%\lstset{inputencoding=utf8/latin1}
+\addlitjlbase{&&}{\&\&}{2}
+\addlitjlbase{'"'}{'"'}{3}
+%
+% -----------------------------------------------------------------------------------------------------------------------------------------------------
+%
+
+\begin{document}
+
+%\lstset{language=julia}
+
+
+~
+\vspace{50mm}
+{\large
+\begin{center}
+  Université de Nantes --- UFR Sciences et Techniques\\
+  Master informatique parcours ``optimisation en recherche opérationnelle (ORO)''\\
+  Année académique 2018-2019
+  \vspace{30mm}
+ 
+  { \LARGE
+ 
+     \vspace{5mm}
+ 
+     {\huge \textbf{Projet de Langages de programmation de haut niveau}}
+     \vspace{5mm}
+ 
+     Marie \textsc{Humbert--Ropers}$^1$ --  Arthur \textsc{Gontier}$^2$
+     \vspace{50mm}
+  
+     \today
+  }  
+\end{center}
+}
+
+\vfill
+\break
+
+\tableofcontents
+
+\vfill
+\break
+
+\section{Structures de données utilisées}
+L'objectif de ce projet est de comparer deux structures de données: un tableau et un arbre. Nous voulons déterminer laquelle est la plus utile dans le cadre d'un stockage d'informations sur les mots d'un texte et pour l'exploration de ces données. \\
+Pour ce faire, huit fonctions ont été implémentées pour chacune des deux structures de données.
+\begin{itemize}
+\item remplissage : Remplissage de la structure de données à partir d'un texte donné
+\item motPresent : Test si un mot est présent dans le texte
+\item longMoyenne : Recherche de la longueur moyenne des mots du texte
+\item NbmotsDistincts : Recherche du nombre de mots distincts présents dans le texte
+\item ListeMotsDeb : Recherche d'une liste de mot avec un préfixe donné
+\item ListeMotsFin : Recherche d'une liste de mot avec un suffixe donné
+\item NbOccurLettre : Recherche du nombre d'occurrences d'une lettre
+\item NbMotsAvecNLettres : Recherche du nombre de mots avec un certain nombre de fois une lettre
+\end{itemize}
+
+
+\section{Problèmes rencontrés lors de l'implémentation et solutions}
+\subsection{Les caractères spéciaux}
+Le problème récurrent dans ce projet a été le traitement des caractères spéciaux en Unicode, en particulier sur les lettres accentuées.\\
+En julia, les string peuvent être pris comme des tableux de caractères. Nous avons considéré chaque mot comme une string, et donc comme un tableau de lettres. Nous avons implémenté les fonctions donnant les listes de mots contenant un certain préfixe, ou suffixe, en utilisant cette particularité. Or, les caractères spéciaux d' Unicode prennent plus de place en mémoire. Nous avons pu constaté que, si l'un des caractères du mot est un caractère non présent dans la table ASCII mais Unicode, alors son codage est plus conséquent et ne prend pas une case du tableau de caractères mais deux. L'appel à la première de ces deux cases rend le bon caractère, cependant la lecture de la deuxième case renvoie une erreur : "UnicodeError: invalid character index". Ainsi, il était impossible de parcourir le tableau issu d'une string. Afin de ne pas prendre en compte cette case invalide, nous avons utilisé la fonction isvalid() qui permet de tester si la case donnée représente un caractère. \\
+L'implémentation réalisée fait donc parcourir tout le tableau en vérifiant la validité de chacune des cases. Cependant, cette implémentation engendre un second problème. Nous remarquons que la fonction length() renvoie le nombre de caractère d'un mot et pas la taille du tableau, c'est-à-dire que length() compte bien chaque caractère Unicode comme un caractère. Nous avons donc utilisé la fonction sizeof() afin d'obtenir la taille des tableaux et de les parcourir.\\
+
+\subsection{Les structures}
+La définition des structures est bien reconnue par Julia. Cependant, la structure récursive des arbres ne peut être définie qu'une seule fois dans le REPL.
+
+
+
+\section{Comparaison des temps et espaces des différentes fonctions}
+Premiers constats après quelques tests :
+\begin{itemize}
+\item D'après les résultats, deux fonctions avec le même objectif mais pas la même structure de données renvoient bien entendu le même résultat mais, une liste rendue par la fonction utilisant un tableau sera toujours triée contrairement à celle utilisant un arbre.
+\item Les temps de recherches sont rapides et de l'ordre de $10^{-3}$ au maximum. Afin d'avoir des temps significatifs pour comparer les fonctions et de s'assurer d'avoir des différences de temps dues aux structures de données, les temps d'exécutions retenus correspondent à 1000 exécutions d'une même fonction, à l'exception des fonctions de remplissage.\\
+\end{itemize}
+
+Afin d'avoir une idée des fonctions les plus coûteuses en temps, nous estimons ces coûts dans le pire des cas. En particulier, le nombre de mots distincts dans le pire des cas sera le nombre de mots $n$. Cela implique, par exemple, que le nombre de noeuds de l'arbre correspond au nombre de mots fois la somme $m$ de la taille de chacun des mots. La taille des mots en français étant inférieure ou égal à 26, on estime que la taille des mots est négligeable. On note $S$ l'ensemble des noeuds de l'arbre. Grâce à la structure de cet arbre, la complexité du parcours de tous les noeuds est de $\mathcal{O}(Card(S))$.
+Les coûts théoriques des fonctions sont récapitulées dans le tableau suivant, avec $Nb$ un nombre de lettre : 
+\begin{center}
+  \begin{tabular}{|c|c|c|}
+	\hline
+	 & Arbre & Tableau\\ 
+	\hline
+	remplissage & $\mathcal{O}(n * m)$ (pire des cas) & $\mathcal{O}(n)$\\	
+	\hline
+	motPresent & $\mathcal{O}(1)$ (la taille du mot est une constante)& $\mathcal{O}(log(n))$\\
+	\hline
+	longMoyenne & $\mathcal{O}(Card(S))$ & $\mathcal{O}(n)$\\
+	\hline
+	NbmotsDistincts & $\mathcal{O}(Card(S))$ & $\mathcal{O}(1)$\\
+	\hline
+	ListeMotsDeb & $\mathcal{O}(Card(S))$ (pire des cas) & $\mathcal{O}(n)$ (pire des cas)\\
+	\hline
+	ListeMotsFin & $\mathcal{O}(Card(S))$ & $\mathcal{O}(n)$\\
+	\hline
+	NbOccurLettre & $\mathcal{O}(Card(S))$ & $\mathcal{O}(n)$\\
+	\hline
+	NbMotsAvecNLettres & $\mathcal{O}(n * Nb)$ (pire des cas) & $\mathcal{O}(n)$\\
+	\hline
+   \end{tabular}
+\captionof{table}{Tableau du coût théorique de chacune des fonctions}
+\end{center}
+(Pour les fonctions retournant des listes, il faut aussi prendre en compte le nombre d'opérations de la fonction append! de julia.)\\ 
+
+Nous avons comme fichiers de test, deux oeuvres : Cyrano de Bergerac et Le petit Prince.  
+Les résultats sur ces deux instances sont les suivants :
+\subsection{Fonction de remplissage}
+\begin{center}
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+    Texte & Structure & Temps & Espace (allocations)\\
+    \hline
+    \multirow{2}{*}{cyrano} & arbre & 0.029531 s & 298.03 k allocations: 16.615 MiB\\
+    \cline{2-4}
+    & tableau & 0.088888 s & 475.58 k allocations: 20.463 MiB, 11.61\% gc time\\
+    \hline
+    \multirow{2}{*}{le petit prince} & arbre & 0.013424 s & 115.28 k allocations: 6.776 MiB\\
+    \cline{2-4}
+    & tableau & 0.059184 s & 234.19 k allocations: 10.536 MiB\\
+    \hline
+  \end{tabular}
+\captionof{table}{Tableau des tests de la fonction de remplissage passant du texte à un tableau ou un arbre}
+\end{center}
+
+La fonction de remplissage de l'arbre est moins coûteuse en allocations. Cette structure de données a l'avantage de prendre moins d'espace mémoire et de ne pas nécessiter de garbage collector time. L'arbre est aussi plus rapide à produire que le tableau.
+
+
+
+\subsection{Recherche de mots présents dans l'arbre et le tableau}
+\begin{center}
+  \begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    Texte & Mot & Méthode & Temps & Espace & Résultat \\
+    \hline
+    \multirow{8}{*}{cyrano} & \multirow{2}{*}{À} & arbre & 0.000023 s &  & \multirow{2}{*}{true}\\
+    \cline{3-5}
+        & & tableau & 0.000597 s & 23.00 k allocations: 359.375 KiB & \\
+   \cline{2-6}
+    & \multirow{2}{*}{FÊTE} & arbre & 0.000137 s &  & \multirow{2}{*}{false}\\
+    \cline{3-5}
+        & & tableau & 0.000978 s & 35.00 k allocations: 546.875 KiB & \\
+   \cline{2-6}
+    & \multirow{2}{*}{FÊTES} & arbre &  0.000133 s &  & \multirow{2}{*}{true}\\
+    \cline{3-5}
+        & & tableau & 0.000499 s & 25.00 k allocations: 390.625 KiB & \\
+   \cline{2-6}
+    & \multirow{2}{*}{TARTELETTE} & arbre & 0.000272 s &  & \multirow{2}{*}{true}\\
+    \cline{3-5}
+        & & tableau & 0.000667 s & 33.00 k allocations: 515.625 KiB & \\
+    \hline 
+
+
+    \multirow{8}{*}{le petit prince} & \multirow{2}{*}{À} & arbre & 0.000025 s &  & \multirow{2}{*}{true}\\
+    \cline{3-5}
+        & & tableau & 0.000532 s & 29.00 k allocations: 453.125 KiB & \\
+   \cline{2-6}
+    & \multirow{2}{*}{FÊTE} & arbre & 0.000102 s &  & \multirow{2}{*}{true}\\
+    \cline{3-5}
+        & & tableau & 0.000448 s & 25.00 k allocations: 390.625 KiB & \\
+   \cline{2-6}
+    & \multirow{2}{*}{FÊTES}  & arbre & 0.000129 s &  & \multirow{2}{*}{false}\\
+    \cline{3-5}
+        &  & tableau & 0.000503 s & 27.00 k allocations: 421.875 KiB & \\
+   \cline{2-6}
+
+    & \multirow{2}{*}{TARTELETTE} & arbre & 0.000194 &  & \multirow{2}{*}{false}\\
+    \cline{3-5}
+        & & tableau & 0.000649 & 35.00 k allocations: 546.875 KiB & \\
+    \hline 
+  \end{tabular}
+\captionof{table}{Tableau des tests de la fonction de présence de mots dans un texte}
+\end{center}
+
+Le temps de recherche de la présence du mot est le plus faible avec un arbre, pour toute taille de mot. Le temps de recherche dans un tableau est deux à trois fois supérieur mais, cela reste dans un temps très faible, par rapport au fonctions suivantes. L'arbre a aussi l'avantage de ne pas prendre autant d'espaces qu'un tableau : une centaine de KiB pour chaque recherche dans un tableau.\\
+Si l'on augmente la taille du fichier, il serait peut-être possible d'observer des écarts de temps plus marqués. En effet, l'arbre permet de descendre dans les noeuds directement pour reconstruire le mot en ne parcourant qu'une branche de l'arbre, contrairement au tableau qui nécessite de faire une recherche dichotomique.
+
+
+\subsection{Recherche de la longueur moyenne des mots}
+\begin{center}
+  \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    Texte & Structure & temps & espace (allocations) & résultats\\
+    \hline
+    \multirow{2}{*}{cyrano} & arbre & 1.941261 s &  & \multirow{2}{*}{4.28028}\\
+        \cline{2-4}
+    & tableau & 0.506642 s & 14.87 M allocations: 226.913 MiB, 3.16\% gc time & \\
+    \hline
+    \multirow{2}{*}{le petit prince} & arbre & 0.515998 s & & \multirow{2}{*}{4.06085}\\
+        \cline{2-4}
+    & tableau & 0.194193 s & & \\
+    \hline
+  \end{tabular}
+\captionof{table}{Tableau concernant la longueur moyenne des mots dans un texte}
+\end{center}
+
+
+La longueur moyenne des mots se retrouve plus facilement dans un tableau, parce que cela ne nécessite qu'un passage sur chaque case du tableau. Dans le cas d'un arbre, il est nécessaire de parcourir tous les noeuds de l'arbre pour reconstruire les mots et leurs nombres d'apparitions puis de récupérer ensuite toutes les tailles des mots. Le nombre d'opérations est donc supérieur pour l'arbre.
+
+
+\subsection{Nombre de mots distincts}
+\begin{center}
+  \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    Texte & Structure & Temps & Résultats\\
+    \hline
+    \multirow{2}{*}{cyrano} & arbre & 1.991831 seconds & \multirow{2}{*}{5467}\\
+    \cline{2-3}
+    & tableau & 0.000000 seconds & \\
+    \hline
+    \multirow{2}{*}{le petit prince} & arbre & 0.559963 seconds & \multirow{2}{*}{2355}\\
+    \cline{2-3}
+    & tableau & 0.000000 seconds & \\
+    \hline
+  \end{tabular}
+\captionof{table}{Tableau des tests du nombre de mots distincts dans un texte}
+\end{center}
+
+La longueur du tableau étant stocké en mémoire, le nombre de mots distincts est donc très rapide d'accès (temps constant). \`A l'inverse, l'arbre nécessite un parcours dans toutes les feuilles et donc, plus il y a de feuilles, plus le temps augmente. Cette quantité de feuilles a tendance à augmenter selon la taille du texte, en particulier si le nombre de mots avec un même préfixe est différent.
+
+
+\subsection{Liste de Mots commençant par un préfixe donné}
+Dans cette partie (et les deux suivantes), les résultats ne sont pas affichés. Cependant, on notera que les résultats sont des listes contenant les mêmes mots mais pas nécessairement rangés dans le même ordre. Le tableau rend une liste triée contrairement à l'arbre. Pour vérifier les résultats, il a été nécessaire de trier la liste provenant de l'arbre.
+
+\begin{center}
+  \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    Texte & Préfixe & Structure & Temps & Espace (allocations) \\
+    \hline
+    \multirow{8}{*}{cyrano} & \multirow{2}{*}{L} & arbre & 0.122319 s & 2.04 M allocations: 107.529 MiB, 11.62\% gc time\\
+    \cline{3-5}
+    &  & tableau &  0.007886 s & 377.00 k allocations: 7.172 MiB\\
+    \cline{2-5}
+    & \multirow{2}{*}{ÂM} & arbre & 0.000358 s & 7.00 k allocations: 406.250 KiB\\
+    \cline{3-5}
+    & & tableau & 0.001112 s & 45.00 k allocations: 796.875 KiB\\
+    \cline{2-5}
+    & \multirow{2}{*}{FON} & arbre & 0.003041 s & 80.00 k allocations: 4.135 MiB\\
+    \cline{3-5}
+    & & tableau & 0.001149 s & 50.00 k allocations: 906.250 KiB\\
+    \cline{2-5}
+    & \multirow{2}{*}{REPRÉSENT} & arbre & 0.004947 s & 37.00 k allocations: 1.984 MiB, 67.99\% gc time\\
+    \cline{3-5}
+    & & tableau & 0.001255 s & 44.00 k allocations: 796.875 KiB\\
+    \hline
+    \multirow{8}{*}{le petit prince} & \multirow{2}{*}{L} & arbre & 0.037506 s & 752.00 k allocations: 39.642 MiB, 17.54\% gc time\\
+    \cline{3-5}
+    & & tableau & 0.002586 s & 148.00 k allocations: 2.777 MiB\\
+    \cline{2-5}
+    & \multirow{2}{*}{ÂM} & arbre & 0.000035 s  & \\
+    \cline{3-5}
+    & & tableau & 0.000600 s & 33.00 k allocations: 578.125 KiB\\
+     \cline{2-5}
+    & \multirow{2}{*}{FON} & arbre & 0.001255 s & 34.00 k allocations: 1.785 MiB\\
+    \cline{3-5}
+    & & tableau & 0.000969 s & 45.00 k allocations: 812.500 KiB\\
+    \cline{2-5}
+    & \multirow{2}{*}{REPRÉSENT} & arbre & 0.000680 s & 15.00 k allocations: 828.125 KiB\\
+    \cline{3-5}
+    &  & tableau & 0.001009 s & 40.00 k allocations: 718.750 KiB\\
+    \hline
+
+  \end{tabular}
+\captionof{table}{Tableau des tests de la fonction retournant les mots avec un certain préfixe}
+\end{center}
+ 
+La taille des préfixes ne semble pas avoir d'impact sur le temps pris: pour un même préfixe, une structure de données peut-être plus rapide sur l'un des textes mais moins bon sur l'autre.  
+On peut supposer que cela provient du nombre de branches à parcourir. Entre deux textes, le lexique n'est pas le même et donc, pour un même préfixe, il peut y avoir des sous-arbres plus fournies. Dans ce cas, le temps nécessaire devient plus important.
+Le nombre d'allocations varie en fonction du texte. Néanmoins, dans tous les cas, l'espace mémoire pris est inférieur avec une structure en tableau.
+
+
+
+\subsection{Liste de Mots finissant par un suffixe donné}
+\begin{center}
+  \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    Texte & Suffixe & Structure & Temps & Espace (allocations) \\
+    \hline
+    \multirow{8}{*}{cyrano} & \multirow{2}{*}{LETTE} & arbre & 4.942784 s & 64.91 M allocations: 2.919 GiB, 4.45\% gc time\\
+    \cline{3-5}
+    & & tableau & 0.227852 s & 4.98 M allocations: 76.462 MiB, 1.81\% gc time\\
+    \cline{2-5}
+    & \multirow{2}{*}{AL} & arbre & 4.727459 s & 64.94 M allocations: 2.921 GiB, 4.52\% gc time\\
+    \cline{3-5}
+    & & tableau & 0.207198 s & 5.03 M allocations: 79.361 MiB, 1.43\% gc time\\
+    \cline{2-5}
+    & \multirow{2}{*}{S} & arbre & 4.940402 s & 66.01 M allocations: 3.047 GiB, 5.04\% gc time\\
+    \cline{3-5}
+    & & tableau & 0.310152 s & 8.06 M allocations: 238.098 MiB, 4.83\% gc time\\
+    \cline{2-5}
+    & \multirow{2}{*}{Q} & arbre & 4.801536 s & 64.91 M allocations: 2.919 GiB, 4.50\% gc time\\
+    \cline{3-5}
+    & & tableau & 0.170656 s & 4.96 M allocations: 76.004 MiB, 1.87\% gc time\\
+    \hline
+
+
+    \multirow{8}{*}{le petit prince} & \multirow{2}{*}{LETTE} & arbre & 1.843743 seconds & 29.03 M allocations: 1.303 GiB, 5.26\% gc time\\
+    \cline{3-5}
+    & & tableau & 0.082639 seconds & 1.85 M allocations: 28.412 MiB, 1.77\% gc time\\
+    \cline{2-5}
+    & \multirow{2}{*}{AL} & arbre & 1.837409 seconds & 29.04 M allocations: 1.303 GiB, 5.10\% gc time\\
+    \cline{3-5}
+    & & tableau & 0.071352 seconds & 1.86 M allocations: 28.778 MiB, 3.63\% gc time\\
+    \cline{2-5}
+    & \multirow{2}{*}{S} & arbre & 1.881201 seconds & 29.55 M allocations: 1.356 GiB, 5.60\% gc time\\
+    \cline{3-5}
+    & & tableau & 0.124459 seconds & 3.15 M allocations: 95.001 MiB, 6.15\% gc time\\
+    \cline{2-5}
+    &\multirow{2}{*}{Q} & arbre & 1.783175 seconds & 29.03 M allocations: 1.303 GiB, 5.26\% gc time\\
+    \cline{3-5}
+    &  & tableau & 0.068902 seconds & 1.85 M allocations: 28.366 MiB, 1.55\% gc time\\
+    \hline
+  \end{tabular}
+\captionof{table}{Tableau des tests de la fonction retournant les mots avec un certain suffixe}
+\end{center}
+
+La structure de l'arbre prend énormément de temps à retourner la liste de mots, en particulier pour des textes de plus grande taille comme Cyrano de Bergerac. 
+Dans le cas du tableau, retrouver la liste de mots avec un même suffixe nécessite seulement un parcours de tableau. Or, dans le cas de l'arbre, il est nécessaire de parcourir toutes les branches et de construire toutes les solutions possibles afin de les tester et de les récupérer. Le temps nécessaire est donc beaucoup plus long et le garbage time énorme par rapport au tableau, pour n'importe quelle instance. Pour un même texte et qu'importe le suffixe, le temps pour chaque recherche dans l'arbre est similaire.
+
+\newpage
+\subsection{Nombre d'occurrences d'une lettre donnée} 
+
+\begin{center}
+  \begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    Structure & Texte & Lettre & Temps & Espace (allocations) & Résultats \\
+    \hline
+    \multirow{6}{*}{cyrano} & \multirow{2}{*}{Â} & arbre & 1.824526 s &  & \multirow{2}{*}{131}\\
+    \cline{3-5}
+    & & tableau & 1.659301 s & 73.93 M allocations: 1.102 GiB, 2.21\% gc time & \\
+    \cline{2-6}
+    & \multirow{2}{*}{E} & arbre & 1.939374 s &  & \multirow{2}{*}{22735}\\
+    \cline{3-5}
+    & & tableau & 1.772380 s & 78.52 M allocations: 1.170 GiB, 2.18\% gc time & \\
+    \cline{2-6}
+    & \multirow{2}{*}{X} & arbre & 1.974165 s &  & \multirow{2}{*}{1154}\\
+    \cline{3-5}
+    & & tableau & 1.707353 s & 74.03 M allocations: 1.103 GiB, 2.16\% gc time & \\
+    \hline
+
+
+    \multirow{6}{*}{petit prince} & \multirow{2}{*}{Â}  & arbre & 0.535990 s &  & \multirow{2}{*}{32}\\
+    \cline{3-5}
+    & & tableau & 0.677904 s  & 26.93 M allocations: 410.843 MiB, 2.38\% gc time  & \\
+    \cline{2-6}
+    & \multirow{2}{*}{E} & arbre & 0.573226 s  &  & \multirow{2}{*}{9225} \\
+    \cline{3-5}
+    & & tableau & 0.752647 s  & 28.57 M allocations: 435.974 MiB, 1.94\% gc time  & \\
+    \cline{2-6}
+    & \multirow{2}{*}{X} & arbre & 0.551769 s &  & \multirow{2}{*}{233}\\
+    \cline{3-5}
+    & & tableau & 0.669091 s  & 26.98 M allocations: 411.606 MiB, 1.99\% gc time  & \\
+    \hline
+  \end{tabular}
+\captionof{table}{Tableau des tests de la fonction retournant le nombre d'occurrences d'une lettre dans un texte}
+\end{center}
+
+La fréquence de la lettre importe peu dans les temps de calculs. Dans le cas d'un tableau, il est obligatoire de parcourir chaque lettre de chaque mot. Dans le cas d'un arbre, il est nécessaire de parcourir chaque noeud. Pour nos exemples, le tableau est meilleur en temps pour Cyrano et l'arbre est meilleur pour le petit prince. Cela signifie donc qu'il y probablement plus de répétitions de mots dans le petit prince et donc, qu'il y a moins de noeuds à parcourir. Il est important de remarquer que seul le tableau prend beaucoup d'espace mémoire.
+
+
+\subsection{Liste de Mots d'une taille donnée} 
+
+\begin{center}
+  \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    Texte & Taille & Structure & Temps & Espace (allocations) \\
+    \hline
+    \multirow{8}{*}{cyrano} & \multirow{2}{*}{2} & arbre & 0.052327 s & 1.30 M allocations: 62.454 MiB, 8.68\% gc time\\
+    \cline{3-5}
+    &  & tableau & 0.269252 s & 5.09 M allocations: 85.114 MiB, 1.82\% gc time\\
+    \cline{2-5}
+    & \multirow{2}{*}{4} & arbre & 0.940385 s & 16.36 M allocations: 768.890 MiB, 6.26\% gc time \\
+    \cline{3-5}
+    & & tableau & 0.277955 s & 5.80 M allocations: 129.868 MiB, 2.87\% gc time\\
+    \cline{2-5}
+    & \multirow{2}{*}{6} & arbre & 2.846962 s & 40.81 M allocations: 1.886 GiB, 4.99\% gc time\\
+    \cline{3-5}
+    & & tableau & 0.312665 s & 6.95 M allocations: 216.858 MiB, 4.06\% gc time\\
+    \cline{2-5}
+    & \multirow{2}{*}{8} & arbre & 4.173200 s & 57.20 M allocations: 2.593 GiB, 4.61\% gc time\\
+    \cline{3-5}
+    & & tableau & 0.299343 s & 6.43 M allocations: 173.065 MiB, 3.61\% gc time\\
+    \hline
+
+
+    \multirow{8}{*}{le petit prince} & \multirow{2}{*}{2} & arbre & 0.042836 s  & 1.05 M allocations: 49.393 MiB, 9.60\% gc time\\
+    \cline{3-5}
+    & & tableau & 0.096633 s & 1.93 M allocations: 34.103 MiB, 3.56\% gc time\\
+    \cline{2-5}
+    & \multirow{2}{*}{4} & arbre & 0.419668 s & 8.93 M allocations: 418.442 MiB, 7.19\% gc time\\
+    \cline{3-5}
+    & & tableau & 0.101533 s & 2.26 M allocations: 55.359 MiB, 3.30\% gc time\\
+    \cline{2-5}
+    & \multirow{2}{*}{6} & arbre & 1.005271 s & 19.17 M allocations: 898.376 MiB, 6.31\% gc time\\
+    \cline{3-5}
+    & & tableau & 0.116624 s & 2.69 M allocations: 84.686 MiB, 3.76\% gc time\\
+    \cline{2-5}
+    & \multirow{2}{*}{8} & arbre & 1.571460 s & 25.81 M allocations: 1.169 GiB, 5.24\% gc time\\
+    \cline{3-5}
+    & & tableau & 0.108334 s & 2.43 M allocations: 70.480 MiB, 4.43\% gc time\\
+    \hline
+  \end{tabular}
+\captionof{table}{Tableau des tests de la fonction retournant les mots avec un certain nombre de lettres}
+\end{center}
+
+Pour des mots très courts, la structure d'arbre est utile afin de recupérer les mots de cette taille. Cependant, à partir de 4 lettres ou plus, le tableau devient intéressant au niveau du temps. De plus, l'espace mémoire pris par l'arbre est énorme par rapport au tableau pour toutes les recherches. Le temps de recherche pour un tableau reste similaire pour chaque recherche dans un texte.
+
+
+
+\section{Conclusion}
+Aucune des deux structures de données est toujours plus efficace que l'autre. La structure de données en arbre est plus performante en temps et en espace mémoire pour la fonction de remplissage, de la recherche d'un mot. 
+Tandis que la structure de données en tableau est recommendable lors de la recherche : de la longueur moyenne des mots d'un texte, des mots finissant par un suffixe, ou du nombre de mots distincts.\\
+Pour la fonction recherchant la liste de mot selon un préfixe donné et pour la fonction donnant le nombre d'occurrences d'une lettre donnée, la rapidité varie selon le lexique présent dans le texte, puisque cela change le nombre de branche à parcourir dans l'arbre. Au niveau de l'espace mémoire, le tableau est le plus économe pour la liste de mots avec préfixe. Cependant, la fonction calculant le nombre d'occurrences d'un mot est plus coûteuse en espace avec la structure en tableau.
+Pour la fonction cherchant les mots d'une taille donnée, l'arbre n'est intéressant que pour sa rapidité à récupérer les mots de quelques lettres, sinon le tableau est plus rapide pour des mots plus longs et moins coûteux en espace mémoire dans tous les cas. \\
+
+Ainsi, la structure de données en arbre est très utile lors de la manipulation de texte de très grande taille, en particulier dans le but de faire des recherches de données présentes dans un lieu précis de l'arbre, comme la présence d'un mot. La fonction de remplissage de l'arbre est peu coûteuse en temps et en espace, tout comme les fonctions de recherches de mot. Cependant, s'il faut fréquemment faire des recherches retournant une liste de mot, la structure de données en tableau est plus indiquée car, elle est plus économe en espace et en temps.  
+
+
+\newpage
+\appendix
+
+\vspace{5mm}
+\noindent
+\fbox{
+  \begin{minipage}{0.97 \textwidth}
+    \begin{center}
+      \vspace{1mm}
+      \section{Annexe}
+      \subsection{Structures}
+    \end{center}
+  \end{minipage}
+}
+\vspace{2mm}
+
+
+\lstinputlisting{../structures.jl}
+
+\vspace{5mm}
+\noindent
+\fbox{
+  \begin{minipage}{0.97 \textwidth}
+    \begin{center}
+      \vspace{1mm}
+      \subsection{Main}
+    \end{center}
+  \end{minipage}
+}
+\vspace{2mm}
+
+\lstinputlisting{../newmain.jl}
+
+\newpage
+
+\vspace{5mm}
+\noindent
+\fbox{
+  \begin{minipage}{0.97 \textwidth}
+    \begin{center}
+      \vspace{1mm}
+      \subsection{Arbres}
+    \end{center}
+  \end{minipage}
+}
+\vspace{2mm}
+
+\lstinputlisting{../prefixes_abr.jl}
+
+\vspace{5mm}
+\noindent
+\fbox{
+  \begin{minipage}{0.97 \textwidth}
+    \begin{center}
+      \vspace{1mm}
+      \subsection{Tableau}
+    \end{center}
+  \end{minipage}
+}
+\vspace{2mm}
+
+
+\lstinputlisting{../prefixes_tab.jl}
+
+
+
+\end{document}
+

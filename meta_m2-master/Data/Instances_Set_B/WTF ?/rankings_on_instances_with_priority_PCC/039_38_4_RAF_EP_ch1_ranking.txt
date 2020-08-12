@@ -1,0 +1,19 @@
+Rank ; Candidate      ; Results                                      ; Mark           ; Relative Mark
+1    ; Celso          ; 156.00 (HPRC) 0.00 (LPRC) 68.00 (PCC)        ; 68156000.00    ; 100.000%
+2    ; Stuetzle       ; 215.80 (HPRC) 0.00 (LPRC) 68.00 (PCC)        ; 68215800.00    ; 95.158%
+3    ; Ribeiro        ; 231.20 (HPRC) 0.00 (LPRC) 68.00 (PCC)        ; 68231200.00    ; 93.911%
+4    ; Zufferey       ; 244.60 (HPRC) 0.00 (LPRC) 68.00 (PCC)        ; 68244600.00    ; 92.826%
+5    ; VanWieren      ; 281.40 (HPRC) 0.00 (LPRC) 68.00 (PCC)        ; 68281400.00    ; 89.846%
+6    ; Pawlak         ; 285.00 (HPRC) 0.00 (LPRC) 68.00 (PCC)        ; 68285000.00    ; 89.555%
+7    ; Nouioua-Gardi  ; 289.20 (HPRC) 0.00 (LPRC) 68.00 (PCC)        ; 68289200.00    ; 89.215%
+8    ; Klau           ; 297.60 (HPRC) 0.00 (LPRC) 68.00 (PCC)        ; 68297600.00    ; 88.534%
+9    ; Nault          ; 379.00 (HPRC) 0.00 (LPRC) 68.00 (PCC)        ; 68379000.00    ; 81.943%
+10   ; Jourdan        ; 382.40 (HPRC) 0.00 (LPRC) 68.00 (PCC)        ; 68382400.00    ; 81.668%
+11   ; Dutot          ; 362.00 (HPRC) 0.00 (LPRC) 69.00 (PCC)        ; 69362000.00    ; 2.348%
+12   ; Bonizzoni      ; 364.00 (HPRC) 0.00 (LPRC) 69.00 (PCC)        ; 69364000.00    ; 2.186%
+13   ; Douche         ; 391.00 (HPRC) 0.00 (LPRC) 69.00 (PCC)        ; 69391000.00    ; 0.000%
+
+Legend :
+HPRC : number of violations of High Priority Ratio Constraints
+LPRC : number of violations of Low Priority Ratio Constraints
+PCC  : number of violations of Paint Color Changes

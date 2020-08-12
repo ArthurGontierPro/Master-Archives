@@ -1,0 +1,843 @@
+julia> include("main.jl")
+pwd = /home/marie/metaheuristiques/dm1_metaheuristiques/version2/data
+fname = didactic.dat
+fname = pb_1000.dat
+fname = pb_1000rnd0100.dat
+fname = pb_1000rnd0200.dat
+fname = pb_1000rnd0300.dat
+fname = pb_1000rnd0400.dat
+fname = pb_1000rnd0500.dat
+fname = pb_1000rnd0600.dat
+fname = pb_1000rnd0700.dat
+fname = pb_1000rnd0800.dat
+fname = pb_100.dat
+fname = pb_100rnd0100.dat
+fname = pb_100rnd0200.dat
+fname = pb_100rnd0300.dat
+fname = pb_100rnd0400.dat
+fname = pb_100rnd0500.dat
+fname = pb_100rnd0600.dat
+fname = pb_100rnd0700.dat
+fname = pb_100rnd0800.dat
+fname = pb_100rnd0900.dat
+fname = pb_100rnd1000.dat
+fname = pb_100rnd1100.dat
+fname = pb_100rnd1200.dat
+fname = pb_2000.dat
+fname = pb_2000rnd0100.dat
+fname = pb_2000rnd0200.dat
+fname = pb_2000rnd0300.dat
+fname = pb_2000rnd0400.dat
+fname = pb_2000rnd0500.dat
+fname = pb_2000rnd0600.dat
+fname = pb_2000rnd0700.dat
+fname = pb_2000rnd0800.dat
+fname = pb_200.dat
+fname = pb_200rnd0100.dat
+fname = pb_200rnd0200.dat
+fname = pb_200rnd0300.dat
+fname = pb_200rnd0400.dat
+fname = pb_200rnd0500.dat
+fname = pb_200rnd0600.dat
+fname = pb_200rnd0700.dat
+fname = pb_200rnd0800.dat
+fname = pb_200rnd0900.dat
+fname = pb_200rnd1000.dat
+fname = pb_200rnd1100.dat
+fname = pb_200rnd1200.dat
+fname = pb_200rnd1300.dat
+fname = pb_200rnd1400.dat
+fname = pb_200rnd1500.dat
+fname = pb_200rnd1600.dat
+fname = pb_200rnd1700.dat
+fname = pb_200rnd1800.dat
+fname = pb_500.dat
+fname = pb_500rnd0100.dat
+fname = pb_500rnd0200.dat
+fname = pb_500rnd0300.dat
+fname = pb_500rnd0400.dat
+fname = pb_500rnd0500.dat
+fname = pb_500rnd0600.dat
+fname = pb_500rnd0700.dat
+fname = pb_500rnd0800.dat
+fname = pb_500rnd0900.dat
+fname = pb_500rnd1000.dat
+fname = pb_500rnd1100.dat
+fname = pb_500rnd1200.dat
+fname = pb_500rnd1300.dat
+fname = pb_500rnd1400.dat
+fname = pb_500rnd1500.dat
+fname = pb_500rnd1600.dat
+fname = pb_500rnd1700.dat
+fname = pb_500rnd1800.dat
+
+  didactic.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000011 seconds (52 allocations: 1.781 KiB)
+ z = 30
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.000111 seconds (479 allocations: 16.219 KiB)
+ z = 30
+
+  pb_1000.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.001414 seconds (5.62 k allocations: 174.516 KiB)
+ z = 49
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.824609 seconds (4.02 M allocations: 85.049 MiB, 1.00% gc time)
+ z = 49
+
+  pb_1000rnd0100.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.001393 seconds (5.62 k allocations: 174.516 KiB)
+ z = 49
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  1.008323 seconds (4.02 M allocations: 85.049 MiB, 18.09% gc time)
+ z = 49
+
+  pb_1000rnd0200.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.001375 seconds (5.80 k allocations: 177.219 KiB)
+ z = 3
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.878416 seconds (4.01 M allocations: 84.928 MiB, 0.94% gc time)
+ z = 3
+
+  pb_1000rnd0300.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.007409 seconds (61.16 k allocations: 1.234 MiB, 31.82% gc time)
+ z = 507
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+ 24.824241 seconds (6.53 M allocations: 3.943 GiB, 1.86% gc time)
+ z = 508
+
+  pb_1000rnd0400.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.009342 seconds (72.98 k allocations: 1.461 MiB, 28.37% gc time)
+ z = 37
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+ 29.546286 seconds (4.63 M allocations: 4.915 GiB, 1.15% gc time)
+ z = 37
+
+  pb_1000rnd0500.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.001780 seconds (22.73 k allocations: 481.906 KiB)
+ z = 154
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  2.148231 seconds (8.03 M allocations: 495.563 MiB, 10.19% gc time)
+ z = 165
+
+  pb_1000rnd0600.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.001683 seconds (21.66 k allocations: 457.188 KiB)
+ z = 11
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  1.650573 seconds (3.87 M allocations: 480.516 MiB, 2.02% gc time)
+ z = 11
+
+  pb_1000rnd0700.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.012162 seconds (295.10 k allocations: 5.694 MiB)
+ z = 2050
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+360.855339 seconds (58.95 M allocations: 223.221 GiB, 4.18% gc time)
+ z = 2074
+
+  pb_1000rnd0800.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.014989 seconds (303.13 k allocations: 5.840 MiB, 15.43% gc time)
+ z = 154
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+127.791583 seconds (13.65 M allocations: 75.502 GiB, 4.12% gc time)
+ z = 154
+
+  pb_100.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000246 seconds (4.74 k allocations: 101.313 KiB)
+ z = 342
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.066437 seconds (90.00 k allocations: 25.011 MiB, 2.67% gc time)
+ z = 347
+
+  pb_100rnd0100.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000245 seconds (4.74 k allocations: 101.313 KiB)
+ z = 342
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.063770 seconds (90.00 k allocations: 25.011 MiB, 2.60% gc time)
+ z = 347
+
+  pb_100rnd0200.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000299 seconds (5.67 k allocations: 120.094 KiB)
+ z = 29
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.064000 seconds (69.53 k allocations: 25.330 MiB, 2.34% gc time)
+ z = 29
+
+  pb_100rnd0300.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000203 seconds (2.69 k allocations: 60.734 KiB)
+ z = 193
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.037527 seconds (49.07 k allocations: 7.384 MiB, 4.34% gc time)
+ z = 193
+
+  pb_100rnd0400.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000175 seconds (2.42 k allocations: 55.656 KiB)
+ z = 13
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.035657 seconds (46.73 k allocations: 6.474 MiB)
+ z = 13
+
+  pb_100rnd0500.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000293 seconds (8.59 k allocations: 177.547 KiB)
+ z = 621
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.072465 seconds (191.23 k allocations: 88.600 MiB, 7.62% gc time)
+ z = 625
+
+  pb_100rnd0600.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000543 seconds (9.05 k allocations: 184.844 KiB)
+ z = 61
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.044229 seconds (104.92 k allocations: 61.576 MiB, 8.27% gc time)
+ z = 61
+
+  pb_100rnd0700.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000252 seconds (6.95 k allocations: 143.109 KiB)
+ z = 495
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.045465 seconds (82.26 k allocations: 37.910 MiB, 6.50% gc time)
+ z = 495
+
+  pb_100rnd0800.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000237 seconds (6.25 k allocations: 129.703 KiB)
+ z = 37
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.039200 seconds (79.11 k allocations: 36.493 MiB, 6.53% gc time)
+ z = 37
+
+  pb_100rnd0900.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000303 seconds (7.09 k allocations: 146.781 KiB)
+ z = 442
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.049488 seconds (81.41 k allocations: 35.160 MiB, 3.21% gc time)
+ z = 442
+
+  pb_100rnd1000.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000298 seconds (7.08 k allocations: 146.547 KiB)
+ z = 36
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.069533 seconds (80.57 k allocations: 35.146 MiB, 4.84% gc time)
+ z = 36
+
+  pb_100rnd1100.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000197 seconds (3.59 k allocations: 77.547 KiB)
+ z = 306
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.041425 seconds (54.55 k allocations: 12.526 MiB)
+ z = 306
+
+  pb_100rnd1200.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000231 seconds (4.00 k allocations: 85.578 KiB)
+ z = 21
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.037152 seconds (56.87 k allocations: 14.861 MiB, 5.00% gc time)
+ z = 21
+
+  pb_2000.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.003799 seconds (7.88 k allocations: 280.031 KiB)
+ z = 37
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  5.787601 seconds (16.04 M allocations: 276.537 MiB, 0.40% gc time)
+ z = 37
+
+  pb_2000rnd0100.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.003758 seconds (7.88 k allocations: 280.031 KiB)
+ z = 37
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  6.026806 seconds (16.04 M allocations: 276.537 MiB, 0.39% gc time)
+ z = 37
+
+  pb_2000rnd0200.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.003688 seconds (7.95 k allocations: 281.094 KiB)
+ z = 2
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  5.988231 seconds (16.00 M allocations: 276.048 MiB, 0.38% gc time)
+ z = 2
+
+  pb_2000rnd0300.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.010453 seconds (81.75 k allocations: 1.692 MiB)
+ z = 359
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+ 45.840855 seconds (16.45 M allocations: 6.483 GiB, 0.88% gc time)
+ z = 359
+
+  pb_2000rnd0400.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.015698 seconds (97.09 k allocations: 1.988 MiB)
+ z = 25
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+ 54.742859 seconds (16.53 M allocations: 9.138 GiB, 1.04% gc time)
+ z = 25
+
+  pb_2000rnd0500.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.002992 seconds (27.49 k allocations: 602.625 KiB)
+ z = 128
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  3.984068 seconds (16.04 M allocations: 889.059 MiB, 1.57% gc time)
+ z = 128
+
+  pb_2000rnd0600.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.003007 seconds (26.44 k allocations: 586.203 KiB)
+ z = 7
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  4.174149 seconds (15.48 M allocations: 880.458 MiB, 6.37% gc time)
+ z = 7
+
+  pb_2000rnd0700.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.022352 seconds (414.26 k allocations: 7.981 MiB)
+ z = 1524
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+296.570119 seconds (87.79 M allocations: 246.521 GiB, 3.84% gc time)
+ z = 1535
+
+  pb_2000rnd0800.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.013314 seconds (445.16 k allocations: 8.590 MiB)
+ z = 113
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+188.234938 seconds (27.09 M allocations: 179.586 GiB, 3.91% gc time)
+ z = 113
+
+  pb_200.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000637 seconds (9.69 k allocations: 208.359 KiB)
+ z = 351
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.303217 seconds (296.29 k allocations: 94.439 MiB, 1.57% gc time)
+ z = 353
+
+  pb_200rnd0100.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000344 seconds (9.69 k allocations: 208.359 KiB)
+ z = 351
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.309249 seconds (296.29 k allocations: 94.439 MiB, 1.47% gc time)
+ z = 353
+
+  pb_200rnd0200.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000339 seconds (9.59 k allocations: 206.688 KiB)
+ z = 25
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.277310 seconds (212.32 k allocations: 93.115 MiB, 1.53% gc time)
+ z = 25
+
+  pb_200rnd0300.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000582 seconds (21.35 k allocations: 441.328 KiB)
+ z = 682
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.537045 seconds (494.90 k allocations: 437.165 MiB, 3.63% gc time)
+ z = 686
+
+  pb_200rnd0400.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000586 seconds (21.54 k allocations: 445.922 KiB)
+ z = 55
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.453018 seconds (376.52 k allocations: 373.933 MiB, 3.44% gc time)
+ z = 55
+
+  pb_200rnd0500.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000184 seconds (3.48 k allocations: 83.375 KiB)
+ z = 162
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.048032 seconds (169.55 k allocations: 14.467 MiB, 2.23% gc time)
+ z = 162
+
+  pb_200rnd0600.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000213 seconds (4.31 k allocations: 99.797 KiB)
+ z = 11
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.061570 seconds (172.27 k allocations: 20.525 MiB, 2.31% gc time)
+ z = 11
+
+  pb_200rnd0700.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000490 seconds (23.36 k allocations: 479.109 KiB)
+ z = 945
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.901700 seconds (1.28 M allocations: 1.259 GiB, 5.78% gc time)
+ z = 955
+
+  pb_200rnd0800.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000499 seconds (25.46 k allocations: 519.078 KiB)
+ z = 75
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.430955 seconds (490.05 k allocations: 600.482 MiB, 5.64% gc time)
+ z = 75
+
+  pb_200rnd0900.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.001214 seconds (35.55 k allocations: 722.578 KiB)
+ z = 1279
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  1.111247 seconds (2.47 M allocations: 2.620 GiB, 8.80% gc time)
+ z = 1302
+
+  pb_200rnd1000.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000730 seconds (37.06 k allocations: 751.438 KiB)
+ z = 115
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.405997 seconds (697.70 k allocations: 963.094 MiB, 8.74% gc time)
+ z = 115
+
+  pb_200rnd1100.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000329 seconds (13.85 k allocations: 286.422 KiB)
+ z = 531
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.167596 seconds (358.20 k allocations: 207.967 MiB, 4.92% gc time)
+ z = 534
+
+  pb_200rnd1200.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000364 seconds (15.30 k allocations: 318.063 KiB)
+ z = 42
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.178180 seconds (280.05 k allocations: 236.926 MiB, 5.17% gc time)
+ z = 42
+
+  pb_200rnd1300.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000404 seconds (14.76 k allocations: 307.094 KiB)
+ z = 497
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.506320 seconds (479.13 k allocations: 273.756 MiB, 2.17% gc time)
+ z = 499
+
+  pb_200rnd1400.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000404 seconds (15.19 k allocations: 315.594 KiB)
+ z = 39
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.365733 seconds (280.65 k allocations: 208.339 MiB, 1.99% gc time)
+ z = 39
+
+  pb_200rnd1500.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000656 seconds (28.55 k allocations: 583.828 KiB)
+ z = 887
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.657887 seconds (906.97 k allocations: 735.435 MiB, 4.16% gc time)
+ z = 895
+
+  pb_200rnd1600.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000624 seconds (27.43 k allocations: 561.063 KiB)
+ z = 70
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.558255 seconds (474.12 k allocations: 543.992 MiB, 3.59% gc time)
+ z = 70
+
+  pb_200rnd1700.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000232 seconds (5.99 k allocations: 131.594 KiB)
+ z = 217
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.084906 seconds (183.59 k allocations: 40.672 MiB, 2.63% gc time)
+ z = 217
+
+  pb_200rnd1800.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000222 seconds (5.49 k allocations: 122.031 KiB)
+ z = 15
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.080755 seconds (179.22 k allocations: 36.066 MiB, 2.73% gc time)
+ z = 15
+
+  pb_500.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000856 seconds (16.93 k allocations: 365.125 KiB)
+ z = 285
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.932314 seconds (1.07 M allocations: 276.279 MiB, 1.74% gc time)
+ z = 285
+
+  pb_500rnd0100.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000838 seconds (16.93 k allocations: 365.125 KiB)
+ z = 285
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.979825 seconds (1.07 M allocations: 276.279 MiB, 2.00% gc time)
+ z = 285
+
+  pb_500rnd0200.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000913 seconds (17.68 k allocations: 384.828 KiB)
+ z = 19
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  1.377444 seconds (1.08 M allocations: 341.946 MiB, 9.75% gc time)
+ z = 19
+
+  pb_500rnd0300.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.001649 seconds (44.89 k allocations: 919.250 KiB)
+ z = 674
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  5.783519 seconds (1.47 M allocations: 1.836 GiB, 1.79% gc time)
+ z = 674
+
+  pb_500rnd0400.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.001653 seconds (46.30 k allocations: 945.453 KiB)
+ z = 47
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  6.723881 seconds (1.48 M allocations: 1.912 GiB, 1.64% gc time)
+ z = 47
+
+  pb_500rnd0500.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000362 seconds (4.77 k allocations: 126.500 KiB)
+ z = 84
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.180425 seconds (1.01 M allocations: 35.266 MiB, 0.85% gc time)
+ z = 84
+
+  pb_500rnd0600.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000460 seconds (5.74 k allocations: 145.656 KiB)
+ z = 6
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.197149 seconds (1.00 M allocations: 44.905 MiB, 1.89% gc time)
+ z = 6
+
+  pb_500rnd0700.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.001760 seconds (73.56 k allocations: 1.435 MiB)
+ z = 1043
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  8.021651 seconds (6.34 M allocations: 7.303 GiB, 4.96% gc time)
+ z = 1065
+
+  pb_500rnd0800.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.003374 seconds (75.67 k allocations: 1.479 MiB, 42.81% gc time)
+ z = 78
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  5.359581 seconds (2.18 M allocations: 4.924 GiB, 4.93% gc time)
+ z = 78
+
+  pb_500rnd0900.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.002912 seconds (142.82 k allocations: 2.773 MiB)
+ z = 2163
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+ 66.868698 seconds (23.55 M allocations: 67.275 GiB, 5.44% gc time)
+ z = 2185
+
+  pb_500rnd1000.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.003027 seconds (146.83 k allocations: 2.858 MiB)
+ z = 171
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+ 18.373470 seconds (5.68 M allocations: 18.541 GiB, 5.62% gc time)
+ z = 171
+
+  pb_500rnd1100.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000723 seconds (23.43 k allocations: 479.453 KiB)
+ z = 344
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.872427 seconds (1.66 M allocations: 730.877 MiB, 4.57% gc time)
+ z = 345
+
+  pb_500rnd1200.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000851 seconds (27.40 k allocations: 557.578 KiB)
+ z = 28
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.979790 seconds (1.12 M allocations: 722.495 MiB, 14.81% gc time)
+ z = 28
+
+  pb_500rnd1300.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000988 seconds (25.96 k allocations: 538.969 KiB)
+ z = 380
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  2.809522 seconds (2.82 M allocations: 1.254 GiB, 2.43% gc time)
+ z = 384
+
+  pb_500rnd1400.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.001114 seconds (29.63 k allocations: 612.438 KiB)
+ z = 31
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  1.834883 seconds (1.21 M allocations: 880.703 MiB, 2.65% gc time)
+ z = 31
+
+  pb_500rnd1500.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.002151 seconds (72.27 k allocations: 1.419 MiB)
+ z = 1059
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+ 16.351837 seconds (5.85 M allocations: 7.201 GiB, 2.47% gc time)
+ z = 1075
+
+  pb_500rnd1600.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.002063 seconds (69.08 k allocations: 1.362 MiB)
+ z = 72
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+ 10.511236 seconds (2.08 M allocations: 4.254 GiB, 2.25% gc time)
+ z = 72
+
+  pb_500rnd1700.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000423 seconds (7.85 k allocations: 179.047 KiB)
+ z = 150
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.215288 seconds (1.02 M allocations: 70.317 MiB, 2.16% gc time)
+ z = 150
+
+  pb_500rnd1800.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne avec vecteur de vecteurs :
+  0.000479 seconds (8.57 k allocations: 194.297 KiB)
+ z = 9
+|----------ECHANGES----------|
+Solution kp-echange avec vecteur de vecteurs :
+  0.290370 seconds (1.00 M allocations: 85.448 MiB, 1.77% gc time)
+ z = 9
+

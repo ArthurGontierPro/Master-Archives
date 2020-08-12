@@ -1,0 +1,333 @@
+
+
+
+
+
+
+
+
+
+
+
+
+  data/pb_100rnd0100.dat
+
+Glouton : 91.94%
+accuracy: 98.39%
+
+  data/pb_100rnd0200.dat
+
+Glouton : 85.29%
+accuracy: 85.29%
+
+  data/pb_100rnd0300.dat
+
+Glouton : 95.07%
+accuracy: 95.57%
+
+  data/pb_100rnd0400.dat
+
+Glouton : 81.25%
+accuracy: 81.25%
+
+  data/pb_100rnd0500.dat
+
+Glouton : 97.18%
+accuracy: 99.06%
+
+  data/pb_100rnd0600.dat
+
+Glouton : 95.31%
+accuracy: 95.31%
+
+  data/pb_100rnd0700.dat
+
+Glouton : 98.41%
+accuracy: 98.61%
+
+  data/pb_100rnd0800.dat
+
+Glouton : 94.87%
+accuracy: 94.87%
+
+  data/pb_100rnd0900.dat
+
+Glouton : 95.46%
+accuracy: 96.76%
+
+  data/pb_100rnd1000.dat
+
+Glouton : 90.0%
+accuracy: 90.0%
+
+  data/pb_100rnd1100.dat
+
+Glouton : 100.0%
+accuracy: 100.0%
+
+  data/pb_100rnd1200.dat
+
+Glouton : 91.3%
+accuracy: 91.3%
+
+  data/pb_200rnd0100.dat
+
+Glouton : 84.38%
+accuracy: 94.71%
+
+  data/pb_200rnd0200.dat
+
+Glouton : 78.12%
+accuracy: 78.12%
+
+  data/pb_200rnd0300.dat
+
+Glouton : 93.3%
+accuracy: 96.72%
+
+  data/pb_200rnd0400.dat
+
+Glouton : 85.94%
+accuracy: 85.94%
+
+  data/pb_200rnd0500.dat
+
+Glouton : 88.04%
+accuracy: 89.67%
+
+  data/pb_200rnd0600.dat
+
+Glouton : 78.57%
+accuracy: 78.57%
+
+  data/pb_200rnd0700.dat
+
+Glouton : 94.12%
+accuracy: 96.61%
+
+  data/pb_200rnd0800.dat
+
+Glouton : 90.36%
+accuracy: 90.36%
+
+  data/pb_200rnd0900.dat
+
+Glouton : 96.6%
+accuracy: 98.87%
+
+  data/pb_200rnd1000.dat
+
+Glouton : 97.46%
+accuracy: 97.46%
+
+  data/pb_200rnd1100.dat
+
+Glouton : 97.43%
+accuracy: 98.35%
+
+  data/pb_200rnd1200.dat
+
+Glouton : 97.67%
+accuracy: 97.67%
+
+  data/pb_200rnd1300.dat
+
+Glouton : 87.04%
+accuracy: 97.9%
+
+  data/pb_200rnd1400.dat
+
+Glouton : 86.67%
+accuracy: 86.67%
+
+  data/pb_200rnd1500.dat
+
+Glouton : 95.79%
+accuracy: 98.06%
+
+  data/pb_200rnd1600.dat
+
+Glouton : 88.61%
+accuracy: 88.61%
+
+  data/pb_200rnd1700.dat
+
+Glouton : 85.1%
+accuracy: 92.16%
+
+  data/pb_200rnd1800.dat
+
+Glouton : 78.95%
+accuracy: 78.95%
+
+  data/pb_500rnd0100.dat
+
+Glouton : 88.24%
+accuracy: 93.19%
+
+  data/pb_500rnd0200.dat
+
+Glouton : 76.0%
+accuracy: 76.0%
+
+  data/pb_500rnd0300.dat
+
+Glouton : 86.86%
+accuracy: 95.1%
+
+  data/pb_500rnd0400.dat
+
+Glouton : 75.81%
+accuracy: 75.81%
+
+  data/pb_500rnd0500.dat
+
+Glouton : 68.85%
+accuracy: 81.15%
+
+  data/pb_500rnd0600.dat
+
+Glouton : 75.0%
+accuracy: 75.0%
+
+  data/pb_500rnd0700.dat
+
+Glouton : 91.41%
+accuracy: 98.95%
+
+  data/pb_500rnd0800.dat
+
+Glouton : 87.64%
+accuracy: 87.64%
+
+  data/pb_500rnd0900.dat
+
+Glouton : 96.74%
+accuracy: 98.43%
+
+  data/pb_500rnd1000.dat
+
+Glouton : 95.53%
+accuracy: 95.53%
+
+  data/pb_500rnd1100.dat
+
+Glouton : 81.13%
+accuracy: 95.28%
+
+  data/pb_500rnd1200.dat
+
+Glouton : 84.85%
+accuracy: 84.85%
+
+  data/pb_500rnd1300.dat
+
+Glouton : 80.17%
+accuracy: 95.15%
+
+  data/pb_500rnd1400.dat
+
+Glouton : 81.58%
+accuracy: 81.58%
+
+  data/pb_500rnd1500.dat
+
+Glouton : 88.55%
+accuracy: 98.75%
+
+  data/pb_500rnd1600.dat
+
+Glouton : 81.82%
+accuracy: 81.82%
+
+  data/pb_500rnd1700.dat
+
+Glouton : 78.12%
+accuracy: 80.21%
+
+  data/pb_500rnd1800.dat
+
+Glouton : 69.23%
+accuracy: 69.23%
+
+  data/pb_1000rnd0100.dat
+
+Glouton : 73.13%
+accuracy: 73.13%
+
+  data/pb_1000rnd0200.dat
+
+Glouton : 75.0%
+accuracy: 75.0%
+
+  data/pb_1000rnd0300.dat
+
+Glouton : 76.7%
+accuracy: 85.63%
+
+  data/pb_1000rnd0400.dat
+
+Glouton : 77.08%
+accuracy: 77.08%
+
+  data/pb_1000rnd0500.dat
+
+Glouton : 69.37%
+accuracy: 78.38%
+
+  data/pb_1000rnd0600.dat
+
+Glouton : 73.33%
+accuracy: 73.33%
+
+  data/pb_1000rnd0700.dat
+
+Glouton : 90.71%
+accuracy: 94.69%
+
+  data/pb_1000rnd0800.dat
+
+Glouton : 88.0%
+accuracy: 88.0%
+
+  data/pb_2000rnd0100.dat
+
+Glouton : 92.5%
+accuracy: 92.5%
+
+  data/pb_2000rnd0200.dat
+
+Glouton : 100.0%
+accuracy: 100.0%
+
+  data/pb_2000rnd0300.dat
+
+Glouton : 75.1%
+accuracy: 84.31%
+
+  data/pb_2000rnd0400.dat
+
+Glouton : 78.12%
+accuracy: 78.12%
+
+  data/pb_2000rnd0500.dat
+
+Glouton : 91.43%
+accuracy: 91.43%
+
+  data/pb_2000rnd0600.dat
+
+Glouton : 77.78%
+accuracy: 77.78%
+
+  data/pb_2000rnd0700.dat
+
+Glouton : 84.15%
+accuracy: 93.15%
+
+  data/pb_2000rnd0800.dat
+
+Glouton : 83.7%
+accuracy: 83.7%
+
+

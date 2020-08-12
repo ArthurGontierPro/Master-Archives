@@ -1,0 +1,528 @@
+machine : 
+RAM : 4 Gio
+CPU : Intel® Core™ i3-7130U CPU @ 2.70GHz × 4 
+GPU : Intel® HD Graphics 620 (Kaby Lake GT2)
+
+
+  didactic.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+  1.631937 seconds (195.33 k allocations: 10.413 MiB, 0.46% gc time)
+Problème Résolu !!!
+30.0
+
+  pb_1000rnd0100.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+103.690638 seconds (76.57 k allocations: 17.267 MiB, 0.00% gc time)
+Résolution exacte trop lourde
+
+  pb_1000rnd0200.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+120.429872 seconds (3.36 k allocations: 13.271 MiB, 0.00% gc time)
+Résolution exacte trop lourde
+
+  pb_1000rnd0300.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+102.747724 seconds (13.48 k allocations: 3.894 MiB)
+Résolution exacte trop lourde
+
+  pb_1000rnd0400.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+109.418234 seconds (8.13 k allocations: 3.631 MiB)
+Résolution exacte trop lourde
+
+  pb_1000rnd0500.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+100.296408 seconds (38.43 M allocations: 609.379 MiB, 0.10% gc time)
+Résolution exacte trop lourde
+
+  pb_1000rnd0600.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+100.921604 seconds (45.23 k allocations: 5.152 MiB, 0.01% gc time)
+Résolution exacte trop lourde
+
+  pb_1000rnd0700.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+100.201126 seconds (8.83 M allocations: 140.503 MiB, 0.01% gc time)
+Résolution exacte trop lourde
+
+  pb_1000rnd0800.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+100.389515 seconds (52.77 k allocations: 3.265 MiB)
+Résolution exacte trop lourde
+
+  pb_100rnd0100.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+  1.507884 seconds (269.68 k allocations: 5.471 MiB)
+Problème Résolu !!!
+372.0
+
+  pb_100rnd0200.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+  3.620866 seconds (486.50 k allocations: 10.145 MiB, 0.10% gc time)
+Problème Résolu !!!
+34.0
+
+  pb_100rnd0300.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.609349 seconds (7.78 k allocations: 566.578 KiB)
+Problème Résolu !!!
+203.0
+
+  pb_100rnd0400.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+  4.102347 seconds (1.96 M allocations: 33.574 MiB, 0.07% gc time)
+Problème Résolu !!!
+16.0
+
+  pb_100rnd0500.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.000640 seconds (313 allocations: 59.203 KiB)
+Problème Résolu !!!
+639.0
+
+  pb_100rnd0600.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.000745 seconds (313 allocations: 59.203 KiB)
+Problème Résolu !!!
+64.0
+
+  pb_100rnd0700.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.000742 seconds (313 allocations: 68.391 KiB)
+Problème Résolu !!!
+503.0
+
+  pb_100rnd0800.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.000990 seconds (313 allocations: 69.891 KiB)
+Problème Résolu !!!
+39.0
+
+  pb_100rnd0900.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.120019 seconds (3.17 k allocations: 244.953 KiB)
+Problème Résolu !!!
+463.0
+
+  pb_100rnd1000.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.302615 seconds (8.20 k allocations: 489.984 KiB)
+Problème Résolu !!!
+40.0
+
+  pb_100rnd1100.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.075641 seconds (1.26 k allocations: 185.078 KiB)
+Problème Résolu !!!
+306.0
+
+  pb_100rnd1200.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.752859 seconds (10.93 k allocations: 671.688 KiB)
+Problème Résolu !!!
+23.0
+
+  pb_2000rnd0100.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+139.062996 seconds (4.78 k allocations: 51.239 MiB, 0.01% gc time)
+Résolution exacte trop lourde
+
+  pb_2000rnd0200.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+433.309757 seconds (4.26 k allocations: 51.218 MiB, 0.00% gc time)
+Résolution exacte trop lourde
+
+  pb_2000rnd0300.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+140.751949 seconds (5.00 k allocations: 11.683 MiB)
+Résolution exacte trop lourde
+
+  pb_2000rnd0400.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+347.868211 seconds (4.33 k allocations: 11.691 MiB)
+Résolution exacte trop lourde
+
+  pb_2000rnd0500.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+103.625331 seconds (14.09 k allocations: 11.113 MiB)
+Résolution exacte trop lourde
+
+  pb_2000rnd0600.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+113.150067 seconds (5.78 k allocations: 10.796 MiB)
+Résolution exacte trop lourde
+
+  pb_2000rnd0700.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+102.019180 seconds (17.62 k allocations: 3.388 MiB)
+Résolution exacte trop lourde
+
+  pb_2000rnd0800.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+104.469508 seconds (13.58 k allocations: 3.211 MiB)
+Résolution exacte trop lourde
+
+  pb_200rnd0100.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+100.037878 seconds (57.90 M allocations: 925.594 MiB, 0.06% gc time)
+Résolution exacte trop lourde
+
+  pb_200rnd0200.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+100.060002 seconds (26.53 M allocations: 427.829 MiB, 0.03% gc time)
+Résolution exacte trop lourde
+
+  pb_200rnd0300.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+100.011224 seconds (107.79 M allocations: 1.666 GiB, 0.20% gc time)
+Résolution exacte trop lourde
+
+  pb_200rnd0400.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+100.012082 seconds (50.46 M allocations: 797.753 MiB, 0.04% gc time)
+Résolution exacte trop lourde
+
+  pb_200rnd0500.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+ 31.000620 seconds (16.69 M allocations: 274.030 MiB, 0.07% gc time)
+Problème Résolu !!!
+183.99999999999994
+
+  pb_200rnd0600.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+ 99.642949 seconds (211.47 M allocations: 3.291 GiB, 0.17% gc time)
+Problème Résolu !!!
+14.0
+
+  pb_200rnd0700.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.002321 seconds (522 allocations: 132.516 KiB)
+Problème Résolu !!!
+1004.0
+
+  pb_200rnd0800.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.005001 seconds (522 allocations: 130.891 KiB)
+Problème Résolu !!!
+83.0
+
+  pb_200rnd0900.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.001649 seconds (514 allocations: 110.547 KiB)
+Problème Résolu !!!
+1324.0
+
+  pb_200rnd1000.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.001922 seconds (517 allocations: 115.891 KiB)
+Problème Résolu !!!
+118.0
+
+  pb_200rnd1100.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.036771 seconds (936 allocations: 191.766 KiB)
+Problème Résolu !!!
+545.0000000000001
+
+  pb_200rnd1200.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.174344 seconds (2.05 k allocations: 249.484 KiB)
+Problème Résolu !!!
+43.0
+
+  pb_200rnd1300.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+ 54.716552 seconds (64.94 M allocations: 1.031 GiB, 0.12% gc time)
+Problème Résolu !!!
+571.0
+
+  pb_200rnd1400.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+100.044348 seconds (390.80 M allocations: 5.972 GiB, 0.29% gc time)
+Résolution exacte trop lourde
+
+  pb_200rnd1500.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+  6.726683 seconds (611.41 k allocations: 12.089 MiB, 0.04% gc time)
+Problème Résolu !!!
+926.0
+
+  pb_200rnd1600.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+100.007463 seconds (19.57 M allocations: 323.136 MiB, 0.02% gc time)
+Résolution exacte trop lourde
+
+  pb_200rnd1700.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+ 28.875789 seconds (29.99 M allocations: 485.935 MiB, 0.11% gc time)
+Problème Résolu !!!
+255.0
+
+  pb_200rnd1800.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+100.046387 seconds (338.58 M allocations: 5.191 GiB, 0.27% gc time)
+Résolution exacte trop lourde
+
+  pb_500rnd0100.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+100.351647 seconds (27.33 M allocations: 428.819 MiB, 0.03% gc time)
+Résolution exacte trop lourde
+
+  pb_500rnd0200.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+100.887426 seconds (49.93 k allocations: 4.176 MiB)
+Résolution exacte trop lourde
+
+  pb_500rnd0300.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+100.311053 seconds (58.44 k allocations: 3.770 MiB)
+Résolution exacte trop lourde
+
+  pb_500rnd0400.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+100.593241 seconds (51.90 k allocations: 3.459 MiB)
+Résolution exacte trop lourde
+
+  pb_500rnd0500.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+100.368924 seconds (59.32 M allocations: 931.794 MiB, 0.05% gc time)
+Résolution exacte trop lourde
+
+  pb_500rnd0600.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+101.202045 seconds (1.06 M allocations: 21.360 MiB, 0.00% gc time)
+Résolution exacte trop lourde
+
+  pb_500rnd0700.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+  4.602699 seconds (16.34 k allocations: 1.169 MiB)
+Problème Résolu !!!
+1141.0000000000002
+
+  pb_500rnd0800.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+100.075874 seconds (31.70 M allocations: 512.996 MiB, 0.04% gc time)
+Résolution exacte trop lourde
+
+  pb_500rnd0900.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.013703 seconds (1.14 k allocations: 334.078 KiB)
+Problème Résolu !!!
+2236.0
+
+  pb_500rnd1000.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+  0.107003 seconds (1.36 k allocations: 344.422 KiB)
+Problème Résolu !!!
+179.0
+
+  pb_500rnd1100.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+100.065582 seconds (102.03 M allocations: 1.563 GiB, 0.17% gc time)
+Résolution exacte trop lourde
+
+  pb_500rnd1200.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+100.100832 seconds (113.37 M allocations: 1.753 GiB, 0.09% gc time)
+Résolution exacte trop lourde
+
+  pb_500rnd1300.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+100.206349 seconds (71.78 M allocations: 1.101 GiB, 0.06% gc time)
+Résolution exacte trop lourde
+
+  pb_500rnd1400.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+100.451340 seconds (74.88 k allocations: 4.552 MiB)
+Résolution exacte trop lourde
+
+  pb_500rnd1500.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+100.135165 seconds (36.35 M allocations: 571.476 MiB, 0.04% gc time)
+Résolution exacte trop lourde
+
+  pb_500rnd1600.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+100.310132 seconds (15.32 M allocations: 242.774 MiB, 0.02% gc time)
+Résolution exacte trop lourde
+
+  pb_500rnd1700.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+100.186935 seconds (62.45 M allocations: 985.875 MiB, 0.06% gc time)
+Résolution exacte trop lourde
+
+  pb_500rnd1800.dat
+
+|----------SIMPLEX----------|
+Résolution exacte : 
+WARNING: Not solved to optimality, status: UserLimit
+100.575323 seconds (15.22 M allocations: 240.404 MiB, 0.02% gc time)
+Résolution exacte trop lourde
+
+
+

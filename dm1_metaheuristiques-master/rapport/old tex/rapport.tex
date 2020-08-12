@@ -1,0 +1,118 @@
+\documentclass[11pt]{article}
+
+\usepackage[french]{babel}
+
+\usepackage[utf8]{inputenc}
+\usepackage{palatino}
+\usepackage[T1]{fontenc}
+
+
+\usepackage{url}
+\usepackage{amsmath}
+
+\usepackage[top=2cm,bottom=2cm,left=2.1cm,right=2.1cm,headsep=10pt,a4paper]{geometry}
+\usepackage{fancyhdr}
+
+
+\usepackage{graphicx,float,subcaption} % figure et placement de figure
+
+\pagestyle{fancy}
+\lhead{}
+\chead{\fontsize{10}{10}{LIP - 2018}}
+\rhead{\thepage}
+\lfoot{\fontsize{10}{10}{Rapport de stage}}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+
+ \author{\fontsize{14}{14}{\bf Arthur Gontier}\\
+\fontsize{14}{14}{Encadrement: Laure Gonnord}}
+\title{\fontsize{16}{16}{{\bf Rapport}}}
+
+      
+\date{\fontsize{11}{11}{2018}}
+
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}% \documentclass[a4paper,11pt]{article}
+% \usepackage[margin=2cm]{geometry}
+% \usepackage[utf8]{inputenc}
+
+\usepackage{graphicx} 
+\usepackage{wrapfig}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+
+
+\usepackage[]{amsmath,amsfonts,amssymb,stmaryrd,amsthm}
+\usepackage{fullpage}
+\usepackage{multirow}
+\usepackage[rounded]{syntax}
+\usepackage[section]{placeins}
+\newtheorem{example}{Exemple} %%% modifier ici si on veut en fr/en
+
+\usepackage{todonotes}
+
+%\input{macros}
+
+\usepackage{listings} 
+\input{alllistings}
+
+\lstset{language=lustre}
+
+\newcommand{\laure}[1]{\textcolor{red}{#1}}
+\newcommand{\arthur}[1]{\textcolor{violet}{#1}}
+\newcommand{\lustre}{\xspace{\sc Lustre}\xspace}
+\newcommand{\lic}{\xspace{\sc Lic}\xspace}
+\newcommand{\smt}{\xspace{\sc SMT}\xspace}
+
+\setcounter{tocdepth}{2}     % Dans la table des matieres
+\setcounter{secnumdepth}{3}  % Avec un numero.
+
+\begin{document}
+
+\thispagestyle{empty}
+\maketitle
+
+
+
+\begin{abstract}
+
+  Rapport
+
+\medskip
+  Dans ce travail, nous proposons \arthur{patate} \todo{de trucs}
+
+  Dans ce rapport nous présentons 
+
+\end{abstract}
+
+\tableofcontents
+
+\newpage
+\input{content}
+\newpage
+\bibliographystyle{plain}
+\bibliography{lustohorn}
+
+
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "rapport_gontier."
+%%% End:

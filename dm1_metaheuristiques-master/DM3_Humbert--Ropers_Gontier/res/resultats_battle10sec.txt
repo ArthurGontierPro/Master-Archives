@@ -1,0 +1,593 @@
+
+  data/pb_100rnd0100.dat
+
+Glouton : 92.2%
+accuracy tabou : 94.35%
+accuracy recuit: 95.7%
+accuracy RGrasp: 100.0%
+[372, 356, 351]
+REACTIVE GRASP/Path WIN
+
+  data/pb_100rnd0200.dat
+
+Glouton : 85.29%
+accuracy tabou : 100.0%
+accuracy recuit: 100.0%
+accuracy RGrasp: 97.06%
+[34, 34, 33]
+TABOU BAT TOUTSIMULATED ANNEALING WIN
+
+  data/pb_100rnd0300.dat
+
+Glouton : 95.57%
+accuracy tabou : 95.57%
+accuracy recuit: 95.57%
+accuracy RGrasp: 100.0%
+[203, 194, 194]
+REACTIVE GRASP/Path WIN
+
+  data/pb_100rnd0400.dat
+
+Glouton : 81.25%
+accuracy tabou : 93.75%
+accuracy recuit: 93.75%
+accuracy RGrasp: 100.0%
+[16, 15, 15]
+REACTIVE GRASP/Path WIN
+
+  data/pb_100rnd0500.dat
+
+Glouton : 97.97%
+accuracy tabou : 97.97%
+accuracy recuit: 97.97%
+accuracy RGrasp: 100.0%
+[639, 626, 626]
+REACTIVE GRASP/Path WIN
+
+  data/pb_100rnd0600.dat
+
+Glouton : 95.31%
+accuracy tabou : 100.0%
+accuracy recuit: 100.0%
+accuracy RGrasp: 100.0%
+[64, 64, 64]
+TABOU BAT TOUTSIMULATED ANNEALINGREACTIVE GRASP/Path WIN
+
+  data/pb_100rnd0700.dat
+
+Glouton : 98.41%
+accuracy tabou : 98.61%
+accuracy recuit: 98.41%
+accuracy RGrasp: 100.0%
+[503, 496, 495]
+REACTIVE GRASP/Path WIN
+
+  data/pb_100rnd0800.dat
+
+Glouton : 94.87%
+accuracy tabou : 97.44%
+accuracy recuit: 100.0%
+accuracy RGrasp: 100.0%
+[39, 39, 38]
+SIMULATED ANNEALINGREACTIVE GRASP/Path WIN
+
+  data/pb_100rnd0900.dat
+
+Glouton : 95.46%
+accuracy tabou : 95.46%
+accuracy recuit: 97.62%
+accuracy RGrasp: 100.0%
+[463, 452, 442]
+REACTIVE GRASP/Path WIN
+
+  data/pb_100rnd1000.dat
+
+Glouton : 90.0%
+accuracy tabou : 100.0%
+accuracy recuit: 97.5%
+accuracy RGrasp: 97.5%
+[40, 39, 39]
+TABOU BAT TOUT WIN
+
+  data/pb_100rnd1100.dat
+
+Glouton : 100.0%
+accuracy tabou : 100.0%
+accuracy recuit: 100.0%
+accuracy RGrasp: 100.0%
+[306, 306, 306]
+TABOU BAT TOUTSIMULATED ANNEALINGREACTIVE GRASP/Path WIN
+
+  data/pb_100rnd1200.dat
+
+Glouton : 91.3%
+accuracy tabou : 100.0%
+accuracy recuit: 100.0%
+accuracy RGrasp: 100.0%
+[23, 23, 23]
+TABOU BAT TOUTSIMULATED ANNEALINGREACTIVE GRASP/Path WIN
+
+  data/pb_200rnd0100.dat
+
+Glouton : 87.98%
+accuracy tabou : 87.98%
+accuracy recuit: 93.27%
+accuracy RGrasp: 99.28%
+[413, 388, 366]
+REACTIVE GRASP/Path WIN
+
+  data/pb_200rnd0200.dat
+
+Glouton : 78.12%
+accuracy tabou : 87.5%
+accuracy recuit: 100.0%
+accuracy RGrasp: 90.62%
+[32, 29, 28]
+SIMULATED ANNEALING WIN
+
+  data/pb_200rnd0300.dat
+
+Glouton : 94.25%
+accuracy tabou : 94.25%
+accuracy recuit: 95.76%
+accuracy RGrasp: 96.58%
+[706, 700, 689]
+REACTIVE GRASP/Path WIN
+
+  data/pb_200rnd0400.dat
+
+Glouton : 85.94%
+accuracy tabou : 98.44%
+accuracy recuit: 98.44%
+accuracy RGrasp: 92.19%
+[63, 63, 59]
+TABOU BAT TOUTSIMULATED ANNEALING WIN
+
+  data/pb_200rnd0500.dat
+
+Glouton : 88.04%
+accuracy tabou : 88.04%
+accuracy recuit: 88.04%
+accuracy RGrasp: 100.0%
+[184, 162, 162]
+REACTIVE GRASP/Path WIN
+
+  data/pb_200rnd0600.dat
+
+Glouton : 78.57%
+accuracy tabou : 85.71%
+accuracy recuit: 85.71%
+accuracy RGrasp: 92.86%
+[13, 12, 12]
+REACTIVE GRASP/Path WIN
+
+  data/pb_200rnd0700.dat
+
+Glouton : 95.12%
+accuracy tabou : 95.12%
+accuracy recuit: 95.92%
+accuracy RGrasp: 99.2%
+[996, 963, 955]
+REACTIVE GRASP/Path WIN
+
+  data/pb_200rnd0800.dat
+
+Glouton : 90.36%
+accuracy tabou : 97.59%
+accuracy recuit: 100.0%
+accuracy RGrasp: 97.59%
+[83, 81, 81]
+SIMULATED ANNEALING WIN
+
+  data/pb_200rnd0900.dat
+
+Glouton : 99.55%
+accuracy tabou : 99.55%
+accuracy recuit: 99.55%
+accuracy RGrasp: 99.92%
+[1323, 1318, 1318]
+REACTIVE GRASP/Path WIN
+
+  data/pb_200rnd1000.dat
+
+Glouton : 97.46%
+accuracy tabou : 98.31%
+accuracy recuit: 100.0%
+accuracy RGrasp: 99.15%
+[118, 117, 116]
+SIMULATED ANNEALING WIN
+
+  data/pb_200rnd1100.dat
+
+Glouton : 98.35%
+accuracy tabou : 98.35%
+accuracy recuit: 98.72%
+accuracy RGrasp: 99.82%
+[544, 538, 536]
+REACTIVE GRASP/Path WIN
+
+  data/pb_200rnd1200.dat
+
+Glouton : 97.67%
+accuracy tabou : 100.0%
+accuracy recuit: 100.0%
+accuracy RGrasp: 100.0%
+[43, 43, 43]
+TABOU BAT TOUTSIMULATED ANNEALINGREACTIVE GRASP/Path WIN
+
+  data/pb_200rnd1300.dat
+
+Glouton : 90.19%
+accuracy tabou : 91.94%
+accuracy recuit: 92.82%
+accuracy RGrasp: 98.77%
+[564, 530, 525]
+REACTIVE GRASP/Path WIN
+
+  data/pb_200rnd1400.dat
+
+Glouton : 86.67%
+accuracy tabou : 97.78%
+accuracy recuit: 100.0%
+accuracy RGrasp: 95.56%
+[45, 44, 43]
+SIMULATED ANNEALING WIN
+
+  data/pb_200rnd1500.dat
+
+Glouton : 99.35%
+accuracy tabou : 99.78%
+accuracy recuit: 99.35%
+accuracy RGrasp: 100.0%
+[926, 924, 920]
+REACTIVE GRASP/Path WIN
+
+  data/pb_200rnd1600.dat
+
+Glouton : 88.61%
+accuracy tabou : 100.0%
+accuracy recuit: 98.73%
+accuracy RGrasp: 93.67%
+[79, 78, 74]
+TABOU BAT TOUT WIN
+
+  data/pb_200rnd1700.dat
+
+Glouton : 85.49%
+accuracy tabou : 87.45%
+accuracy recuit: 85.49%
+accuracy RGrasp: 94.9%
+[242, 223, 218]
+REACTIVE GRASP/Path WIN
+
+  data/pb_200rnd1800.dat
+
+Glouton : 78.95%
+accuracy tabou : 94.74%
+accuracy recuit: 89.47%
+accuracy RGrasp: 94.74%
+[18, 18, 17]
+TABOU BAT TOUTREACTIVE GRASP/Path WIN
+
+  data/pb_500rnd0100.dat
+
+Glouton : 88.24%
+accuracy tabou : 93.19%
+accuracy recuit: 88.24%
+accuracy RGrasp: 94.12%
+[304, 301, 285]
+REACTIVE GRASP/Path WIN
+
+  data/pb_500rnd0200.dat
+
+Glouton : 76.0%
+accuracy tabou : 92.0%
+accuracy recuit: 88.0%
+accuracy RGrasp: 84.0%
+[23, 22, 21]
+TABOU BAT TOUT WIN
+
+  data/pb_500rnd0300.dat
+
+Glouton : 88.79%
+accuracy tabou : 89.43%
+accuracy recuit: 94.72%
+accuracy RGrasp: 95.49%
+[741, 735, 694]
+REACTIVE GRASP/Path WIN
+
+  data/pb_500rnd0400.dat
+
+Glouton : 75.81%
+accuracy tabou : 96.77%
+accuracy recuit: 93.55%
+accuracy RGrasp: 88.71%
+[60, 58, 55]
+TABOU BAT TOUT WIN
+
+  data/pb_500rnd0500.dat
+
+Glouton : 68.85%
+accuracy tabou : 68.85%
+accuracy recuit: 75.41%
+accuracy RGrasp: 98.36%
+[120, 92, 84]
+REACTIVE GRASP/Path WIN
+
+  data/pb_500rnd0600.dat
+
+Glouton : 75.0%
+accuracy tabou : 87.5%
+accuracy recuit: 87.5%
+accuracy RGrasp: 87.5%
+[7, 7, 7]
+TABOU BAT TOUTSIMULATED ANNEALINGREACTIVE GRASP/Path WIN
+
+  data/pb_500rnd0700.dat
+
+Glouton : 96.67%
+accuracy tabou : 97.63%
+accuracy recuit: 98.33%
+accuracy RGrasp: 98.69%
+[1126, 1122, 1114]
+REACTIVE GRASP/Path WIN
+
+  data/pb_500rnd0800.dat
+
+Glouton : 87.64%
+accuracy tabou : 100.0%
+accuracy recuit: 98.88%
+accuracy RGrasp: 91.01%
+[89, 88, 81]
+TABOU BAT TOUT WIN
+
+  data/pb_500rnd0900.dat
+
+Glouton : 97.54%
+accuracy tabou : 98.26%
+accuracy recuit: 98.17%
+accuracy RGrasp: 99.06%
+[2215, 2197, 2195]
+REACTIVE GRASP/Path WIN
+
+  data/pb_500rnd1000.dat
+
+Glouton : 95.53%
+accuracy tabou : 98.32%
+accuracy recuit: 99.44%
+accuracy RGrasp: 97.77%
+[178, 176, 175]
+SIMULATED ANNEALING WIN
+
+  data/pb_500rnd1100.dat
+
+Glouton : 86.56%
+accuracy tabou : 91.51%
+accuracy recuit: 88.21%
+accuracy RGrasp: 95.05%
+[403, 388, 374]
+REACTIVE GRASP/Path WIN
+
+  data/pb_500rnd1200.dat
+
+Glouton : 84.85%
+accuracy tabou : 93.94%
+accuracy recuit: 93.94%
+accuracy RGrasp: 93.94%
+[31, 31, 31]
+TABOU BAT TOUTSIMULATED ANNEALINGREACTIVE GRASP/Path WIN
+
+  data/pb_500rnd1300.dat
+
+Glouton : 80.38%
+accuracy tabou : 82.28%
+accuracy recuit: 82.7%
+accuracy RGrasp: 97.47%
+[462, 392, 390]
+REACTIVE GRASP/Path WIN
+
+  data/pb_500rnd1400.dat
+
+Glouton : 81.58%
+accuracy tabou : 94.74%
+accuracy recuit: 94.74%
+accuracy RGrasp: 89.47%
+[36, 36, 34]
+TABOU BAT TOUTSIMULATED ANNEALING WIN
+
+  data/pb_500rnd1500.dat
+
+Glouton : 90.8%
+accuracy tabou : 93.31%
+accuracy recuit: 91.72%
+accuracy RGrasp: 94.73%
+[1133, 1116, 1097]
+REACTIVE GRASP/Path WIN
+
+  data/pb_500rnd1600.dat
+
+Glouton : 81.82%
+accuracy tabou : 100.0%
+accuracy recuit: 96.59%
+accuracy RGrasp: 87.5%
+[88, 85, 77]
+TABOU BAT TOUT WIN
+
+  data/pb_500rnd1700.dat
+
+Glouton : 80.21%
+accuracy tabou : 88.54%
+accuracy recuit: 84.38%
+accuracy RGrasp: 92.71%
+[178, 170, 162]
+REACTIVE GRASP/Path WIN
+
+  data/pb_500rnd1800.dat
+
+Glouton : 69.23%
+accuracy tabou : 92.31%
+accuracy recuit: 100.0%
+accuracy RGrasp: 92.31%
+[13, 12, 12]
+SIMULATED ANNEALING WIN
+
+  data/pb_1000rnd0100.dat
+
+Glouton : 73.13%
+accuracy tabou : 73.13%
+accuracy recuit: 73.13%
+accuracy RGrasp: 88.06%
+[59, 49, 49]
+REACTIVE GRASP/Path WIN
+
+  data/pb_1000rnd0200.dat
+
+Glouton : 75.0%
+accuracy tabou : 75.0%
+accuracy recuit: 75.0%
+accuracy RGrasp: 75.0%
+[3, 3, 3]
+TABOU BAT TOUTSIMULATED ANNEALINGREACTIVE GRASP/Path WIN
+
+  data/pb_1000rnd0300.dat
+
+Glouton : 79.43%
+accuracy tabou : 80.94%
+accuracy recuit: 79.43%
+broken link
+accuracy RGrasp: 86.69%
+[573, 535, 525]
+REACTIVE GRASP/Path WIN
+
+  data/pb_1000rnd0400.dat
+
+Glouton : 77.08%
+accuracy tabou : 93.75%
+accuracy recuit: 93.75%
+accuracy RGrasp: 83.33%
+[45, 45, 40]
+TABOU BAT TOUTSIMULATED ANNEALING WIN
+
+  data/pb_1000rnd0500.dat
+
+Glouton : 71.62%
+accuracy tabou : 71.62%
+accuracy recuit: 71.62%
+accuracy RGrasp: 94.14%
+[209, 159, 159]
+REACTIVE GRASP/Path WIN
+
+  data/pb_1000rnd0600.dat
+
+Glouton : 73.33%
+accuracy tabou : 80.0%
+accuracy recuit: 86.67%
+accuracy RGrasp: 86.67%
+[13, 13, 12]
+SIMULATED ANNEALINGREACTIVE GRASP/Path WIN
+
+  data/pb_1000rnd0700.dat
+
+Glouton : 92.83%
+accuracy tabou : 95.22%
+accuracy recuit: 94.87%
+accuracy RGrasp: 94.78%
+[2152, 2144, 2142]
+TABOU BAT TOUT WIN
+
+  data/pb_1000rnd0800.dat
+
+Glouton : 88.0%
+accuracy tabou : 93.14%
+accuracy recuit: 96.57%
+accuracy RGrasp: 91.43%
+[169, 163, 160]
+SIMULATED ANNEALING WIN
+
+  data/pb_2000rnd0100.dat
+
+Glouton : 92.5%
+accuracy tabou : 92.5%
+accuracy recuit: 92.5%
+accuracy RGrasp: 100.0%
+[40, 37, 37]
+REACTIVE GRASP/Path WIN
+
+  data/pb_2000rnd0200.dat
+
+Glouton : 100.0%
+accuracy tabou : 100.0%
+accuracy recuit: 100.0%
+accuracy RGrasp: 100.0%
+[2, 2, 2]
+TABOU BAT TOUTSIMULATED ANNEALINGREACTIVE GRASP/Path WIN
+
+  data/pb_2000rnd0300.dat
+
+Glouton : 75.52%
+accuracy tabou : 76.15%
+accuracy recuit: 80.54%
+accuracy RGrasp: 88.08%
+[421, 385, 364]
+REACTIVE GRASP/Path WIN
+
+  data/pb_2000rnd0400.dat
+
+Glouton : 78.12%
+accuracy tabou : 90.62%
+accuracy recuit: 87.5%
+accuracy RGrasp: 84.38%
+[29, 28, 27]
+TABOU BAT TOUT WIN
+
+  data/pb_2000rnd0500.dat
+
+Glouton : 91.43%
+accuracy tabou : 91.43%
+accuracy recuit: 91.43%
+accuracy RGrasp: 92.86%
+[130, 128, 128]
+REACTIVE GRASP/Path WIN
+
+  data/pb_2000rnd0600.dat
+
+Glouton : 77.78%
+accuracy tabou : 77.78%
+accuracy recuit: 88.89%
+accuracy RGrasp: 88.89%
+[8, 8, 7]
+SIMULATED ANNEALINGREACTIVE GRASP/Path WIN
+
+  data/pb_2000rnd0700.dat
+
+Glouton : 86.25%
+accuracy tabou : 89.18%
+accuracy recuit: 88.79%
+accuracy RGrasp: 89.56%
+[1622, 1615, 1608]
+REACTIVE GRASP/Path WIN
+
+  data/pb_2000rnd0800.dat
+
+Glouton : 83.7%
+accuracy tabou : 97.04%
+accuracy recuit: 91.85%
+broken link
+accuracy RGrasp: 86.67%
+[131, 124, 117]
+TABOU BAT TOUT WIN
+Médailles
+---Or---
+TABOU : 22
+SA    : 22
+GRASP : 44
+---Argent---
+TABOU : 38
+SA    : 46
+GRASP : 17
+---Bronze---
+TABOU : 37
+SA    : 30
+GRASP : 26
+
+

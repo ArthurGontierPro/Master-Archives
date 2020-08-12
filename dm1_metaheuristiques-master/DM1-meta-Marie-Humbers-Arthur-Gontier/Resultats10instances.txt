@@ -1,0 +1,472 @@
+
+machine : 
+RAM : 4 Gio
+CPU : Intel® Core™ i3-7130U CPU @ 2.70GHz × 4 
+GPU : Intel® HD Graphics 620 (Kaby Lake GT2)
+
+
+
+
+  pb_1000rnd0300.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.008775 seconds (1 allocation: 7.938 KiB)
+ z = 351
+Solution gloutonne qui part d'un tri des poids :
+  0.010590 seconds (6 allocations: 39.703 KiB)
+ z = 504
+Solution gloutonne à supression dans la matrice :
+  1.850464 seconds (1.00 M allocations: 1.984 GiB, 48.46% gc time)
+ z = 507
+Solution gloutonne à modification dans matrice :
+  0.130910 seconds (6.90 k allocations: 45.167 MiB, 1.89% gc time)
+ z = 507
+Solution gloutonne à manipulation de vecteurs :
+  0.002170 seconds (61.16 k allocations: 1.280 MiB)
+ z = 507
+|----------ECHANGES----------|
+2-1 : xxxxxx
+1-1 : xxxxxxxxxxxxxx
+0-1 : xxxxxxxxxx
+  0.069109 seconds (403.63 k allocations: 34.083 MiB, 7.50% gc time)
+simple descente depuis un glouton simple : 
+ z = 528
+2-1 : 
+1-1 : xxxxxxxxxxx
+0-1 : 
+  0.046411 seconds (64.31 k allocations: 16.614 MiB, 9.55% gc time)
+plus profonde descente depuis un glouton simple : 
+ z = 416
+2-1 : 
+1-1 : xxxx
+0-1 : 
+  0.025537 seconds (66.30 k allocations: 16.591 MiB, 5.72% gc time)
+plus profonde descente depuis un glouton à tri : 
+ z = 525
+2-1 : 
+1-1 : xxxx
+0-1 : 
+  0.054189 seconds (75.98 k allocations: 13.311 MiB, 61.45% gc time)
+plus profonde descente économe depuis un glouton à tri : 
+ z = 525
+
+  pb_1000rnd0700.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.003924 seconds (1 allocation: 7.938 KiB)
+ z = 1229
+Solution gloutonne qui part d'un tri des poids :
+  0.005638 seconds (6 allocations: 39.703 KiB)
+ z = 1878
+Solution gloutonne à supression dans la matrice :
+  1.733921 seconds (1.25 M allocations: 2.772 GiB, 35.17% gc time)
+ z = 2050
+Solution gloutonne à modification dans matrice :
+  0.091845 seconds (4.47 k allocations: 15.093 MiB, 2.38% gc time)
+ z = 2050
+Solution gloutonne à manipulation de vecteurs :
+  0.006371 seconds (295.10 k allocations: 5.710 MiB)
+ z = 2050
+|----------ECHANGES----------|
+2-1 : xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+1-1 : xxxxxxxxxxxxxxxxxxxxx
+0-1 : xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  0.157854 seconds (426.17 k allocations: 32.070 MiB, 5.53% gc time)
+simple descente depuis un glouton simple : 
+ z = 2077
+2-1 : 
+1-1 : xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+0-1 : 
+  0.020181 seconds (249.20 k allocations: 19.841 MiB)
+plus profonde descente depuis un glouton simple : 
+ z = 1692
+2-1 : 
+1-1 : xxxxxxxxxxxx
+0-1 : 
+  0.021901 seconds (305.28 k allocations: 20.324 MiB, 23.65% gc time)
+plus profonde descente depuis un glouton à tri : 
+ z = 2082
+2-1 : 
+1-1 : xxxxxxxxxxxx
+0-1 : x
+  0.012117 seconds (18.60 k allocations: 8.991 MiB, 37.33% gc time)
+plus profonde descente économe depuis un glouton à tri : 
+ z = 2098
+
+  pb_100rnd0500.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000021 seconds (1 allocation: 896 bytes)
+ z = 533
+Solution gloutonne qui part d'un tri des poids :
+  0.000038 seconds (6 allocations: 4.391 KiB)
+ z = 623
+Solution gloutonne à supression dans la matrice :
+  0.010806 seconds (35.85 k allocations: 11.112 MiB, 50.15% gc time)
+ z = 621
+Solution gloutonne à modification dans matrice :
+  0.000270 seconds (663 allocations: 294.188 KiB)
+ z = 621
+Solution gloutonne à manipulation de vecteurs :
+  0.000148 seconds (8.59 k allocations: 179.297 KiB)
+ z = 621
+|----------ECHANGES----------|
+2-1 : xxxxxxxxxxx
+1-1 : xxxx
+0-1 : xxxxxxxxxxxx
+  0.002202 seconds (7.54 k allocations: 405.547 KiB)
+simple descente depuis un glouton simple : 
+ z = 621
+2-1 : 
+1-1 : xxxxxxxxx
+0-1 : 
+  0.002334 seconds (9.59 k allocations: 346.641 KiB)
+plus profonde descente depuis un glouton simple : 
+ z = 596
+2-1 : 
+1-1 : xx
+0-1 : 
+  0.001129 seconds (9.57 k allocations: 340.313 KiB)
+plus profonde descente depuis un glouton à tri : 
+ z = 626
+2-1 : 
+1-1 : xx
+0-1 : 
+  0.000928 seconds (752 allocations: 120.047 KiB)
+plus profonde descente économe depuis un glouton à tri : 
+ z = 626
+
+  pb_2000rnd0700.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.019139 seconds (1 allocation: 15.750 KiB)
+ z = 866
+Solution gloutonne qui part d'un tri des poids :
+  0.026417 seconds (6 allocations: 78.766 KiB)
+ z = 1310
+Solution gloutonne à supression dans la matrice :
+  6.245873 seconds (1.83 M allocations: 5.983 GiB, 48.00% gc time)
+ z = 1524
+Solution gloutonne à modification dans matrice :
+  0.259427 seconds (7.00 k allocations: 46.415 MiB, 0.32% gc time)
+ z = 1524
+Solution gloutonne à manipulation de vecteurs :
+  0.013657 seconds (414.26 k allocations: 8.011 MiB, 15.46% gc time)
+ z = 1524
+|----------ECHANGES----------|
+2-1 : xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+1-1 : xxxxxxxxxxxxxxxxxxxxxxx
+0-1 : xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  0.303181 seconds (646.69 k allocations: 66.111 MiB, 5.18% gc time)
+simple descente depuis un glouton simple : 
+ z = 1515
+2-1 : 
+1-1 : xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+0-1 : 
+  0.067378 seconds (364.88 k allocations: 67.863 MiB, 4.44% gc time)
+plus profonde descente depuis un glouton simple : 
+ z = 1141
+2-1 : 
+1-1 : xxxxxx
+0-1 : 
+  0.049690 seconds (424.89 k allocations: 68.197 MiB, 6.49% gc time)
+plus profonde descente depuis un glouton à tri : 
+ z = 1552
+2-1 : 
+1-1 : xxxxxx
+0-1 : xx
+  0.025904 seconds (60.19 k allocations: 36.350 MiB, 12.38% gc time)
+plus profonde descente économe depuis un glouton à tri : 
+ z = 1562
+
+  pb_200rnd0100.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000324 seconds (1 allocation: 1.766 KiB)
+ z = 215
+Solution gloutonne qui part d'un tri des poids :
+  0.000251 seconds (6 allocations: 8.844 KiB)
+ z = 348
+Solution gloutonne à supression dans la matrice :
+  0.042346 seconds (121.41 k allocations: 78.064 MiB, 18.59% gc time)
+ z = 351
+Solution gloutonne à modification dans matrice :
+  0.007225 seconds (1.99 k allocations: 2.210 MiB)
+ z = 351
+Solution gloutonne à manipulation de vecteurs :
+  0.000250 seconds (9.69 k allocations: 218.063 KiB)
+ z = 351
+|----------ECHANGES----------|
+2-1 : xxxxxxxxxx
+1-1 : xxxxx
+0-1 : xxxxxxxxxxxx
+  0.002710 seconds (15.81 k allocations: 947.359 KiB)
+simple descente depuis un glouton simple : 
+ z = 375
+2-1 : 
+1-1 : xxxxxxxxxxx
+0-1 : 
+  0.001966 seconds (10.64 k allocations: 905.766 KiB)
+plus profonde descente depuis un glouton simple : 
+ z = 292
+2-1 : 
+1-1 : xxx
+0-1 : 
+  0.004903 seconds (11.02 k allocations: 897.938 KiB)
+plus profonde descente depuis un glouton à tri : 
+ z = 359
+2-1 : 
+1-1 : xxx
+0-1 : x
+  0.001333 seconds (8.31 k allocations: 838.047 KiB)
+plus profonde descente économe depuis un glouton à tri : 
+ z = 366
+
+  pb_200rnd0300.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.003471 seconds (1 allocation: 1.766 KiB)
+ z = 424
+Solution gloutonne qui part d'un tri des poids :
+  0.000508 seconds (6 allocations: 8.844 KiB)
+ z = 616
+Solution gloutonne à supression dans la matrice :
+  0.093298 seconds (282.53 k allocations: 206.351 MiB, 15.61% gc time)
+ z = 682
+Solution gloutonne à modification dans matrice :
+  0.003796 seconds (3.21 k allocations: 2.679 MiB)
+ z = 682
+Solution gloutonne à manipulation de vecteurs :
+  0.000434 seconds (21.36 k allocations: 451.031 KiB)
+ z = 682
+|----------ECHANGES----------|
+2-1 : xxxxxxxxxxxxxxxxx
+1-1 : xxxxxx
+0-1 : xxxxxxxxxxxxxxxxxxxxxxx
+  0.010585 seconds (77.89 k allocations: 4.148 MiB, 25.78% gc time)
+simple descente depuis un glouton simple : 
+ z = 677
+2-1 : 
+1-1 : xxxxxxxxxxxxxxxx
+0-1 : 
+  0.002225 seconds (19.61 k allocations: 1.034 MiB)
+plus profonde descente depuis un glouton simple : 
+ z = 551
+2-1 : 
+1-1 : xxx
+0-1 : 
+  0.002173 seconds (22.82 k allocations: 1.063 MiB)
+plus profonde descente depuis un glouton à tri : 
+ z = 689
+2-1 : 
+1-1 : xxx
+0-1 : 
+  0.001336 seconds (4.93 k allocations: 606.594 KiB)
+plus profonde descente économe depuis un glouton à tri : 
+ z = 689
+
+  pb_200rnd0700.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000061 seconds (1 allocation: 1.766 KiB)
+ z = 702
+Solution gloutonne qui part d'un tri des poids :
+  0.000158 seconds (6 allocations: 8.844 KiB)
+ z = 822
+Solution gloutonne à supression dans la matrice :
+  0.026194 seconds (96.54 k allocations: 58.120 MiB, 16.81% gc time)
+ z = 945
+Solution gloutonne à modification dans matrice :
+  0.001321 seconds (981 allocations: 894.781 KiB)
+ z = 945
+Solution gloutonne à manipulation de vecteurs :
+  0.000659 seconds (23.36 k allocations: 482.641 KiB)
+ z = 945
+|----------ECHANGES----------|
+2-1 : xxxxxxxxxxxxxxxxx
+1-1 : xx
+0-1 : xxxxxxxxxxxxxxxxxxxxxx
+  0.004580 seconds (13.94 k allocations: 843.109 KiB)
+simple descente depuis un glouton simple : 
+ z = 937
+2-1 : 
+1-1 : xxxxxxxxxxxxxxxxx
+0-1 : 
+  0.004385 seconds (23.29 k allocations: 1.095 MiB)
+plus profonde descente depuis un glouton simple : 
+ z = 849
+2-1 : 
+1-1 : xxx
+0-1 : 
+  0.001720 seconds (25.28 k allocations: 1.103 MiB)
+plus profonde descente depuis un glouton à tri : 
+ z = 955
+2-1 : 
+1-1 : xxx
+0-1 : 
+  0.001014 seconds (2.18 k allocations: 466.078 KiB)
+plus profonde descente économe depuis un glouton à tri : 
+ z = 955
+
+  pb_200rnd0900.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.000092 seconds (1 allocation: 1.766 KiB)
+ z = 1015
+Solution gloutonne qui part d'un tri des poids :
+  0.000123 seconds (6 allocations: 8.844 KiB)
+ z = 1267
+Solution gloutonne à supression dans la matrice :
+  0.033477 seconds (132.43 k allocations: 75.825 MiB, 19.43% gc time)
+ z = 1279
+Solution gloutonne à modification dans matrice :
+  0.001330 seconds (1.28 k allocations: 1.086 MiB)
+ z = 1279
+Solution gloutonne à manipulation de vecteurs :
+  0.000489 seconds (35.55 k allocations: 726.109 KiB)
+ z = 1279
+|----------ECHANGES----------|
+2-1 : xxxxxxxxxxxxxxxxxxxxxxx
+1-1 : xxxxxxxxxxxxxxxxxx
+0-1 : xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  0.015460 seconds (63.18 k allocations: 3.361 MiB)
+simple descente depuis un glouton simple : 
+ z = 1276
+2-1 : 
+1-1 : xxxxxxxxxxxxxxxxxxxxxxxxxx
+0-1 : 
+  0.005575 seconds (33.91 k allocations: 1.278 MiB)
+plus profonde descente depuis un glouton simple : 
+ z = 1180
+2-1 : 
+1-1 : xxxxxxxx
+0-1 : 
+  0.002598 seconds (37.11 k allocations: 1.298 MiB)
+plus profonde descente depuis un glouton à tri : 
+ z = 1309
+2-1 : 
+1-1 : xxxxxxxx
+0-1 : x
+  0.001561 seconds (1.45 k allocations: 415.594 KiB)
+plus profonde descente économe depuis un glouton à tri : 
+ z = 1318
+
+  pb_500rnd0700.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.002245 seconds (1 allocation: 4.063 KiB)
+ z = 667
+Solution gloutonne qui part d'un tri des poids :
+  0.000716 seconds (6 allocations: 20.328 KiB)
+ z = 936
+Solution gloutonne à supression dans la matrice :
+  0.145437 seconds (267.20 k allocations: 362.766 MiB, 10.62% gc time)
+ z = 1043
+Solution gloutonne à modification dans matrice :
+  0.006458 seconds (2.04 k allocations: 3.891 MiB)
+ z = 1043
+Solution gloutonne à manipulation de vecteurs :
+  0.001288 seconds (73.56 k allocations: 1.443 MiB)
+ z = 1043
+|----------ECHANGES----------|
+2-1 : xxxxxxxxxxxxxxxxx
+1-1 : xxxxxxxxxx
+0-1 : xxxxxxxxxxxxxxxxxxxxxxxxxxx
+  0.014237 seconds (56.33 k allocations: 4.271 MiB)
+simple descente depuis un glouton simple : 
+ z = 1008
+2-1 : 
+1-1 : xxxxxxxxxxxxxxxxxxxx
+0-1 : 
+  0.014051 seconds (61.51 k allocations: 5.017 MiB, 39.67% gc time)
+plus profonde descente depuis un glouton simple : 
+ z = 792
+2-1 : 
+1-1 : xxxxxx
+0-1 : 
+  0.004580 seconds (77.58 k allocations: 5.211 MiB)
+plus profonde descente depuis un glouton à tri : 
+ z = 1065
+2-1 : 
+1-1 : xxxxxx
+0-1 : xxx
+  0.002500 seconds (9.27 k allocations: 2.604 MiB)
+plus profonde descente économe depuis un glouton à tri : 
+ z = 1103
+
+  pb_500rnd0900.dat
+
+|----------GLOUTONS----------|
+Solution gloutonne :
+  0.001329 seconds (1 allocation: 4.063 KiB)
+ z = 1527
+Solution gloutonne qui part d'un tri des poids :
+  0.004547 seconds (6 allocations: 20.328 KiB)
+ z = 2032
+Solution gloutonne à supression dans la matrice :
+  0.282291 seconds (554.66 k allocations: 769.652 MiB, 14.35% gc time)
+ z = 2163
+Solution gloutonne à modification dans matrice :
+  0.011376 seconds (2.57 k allocations: 5.004 MiB)
+ z = 2163
+Solution gloutonne à manipulation de vecteurs :
+  0.002403 seconds (142.82 k allocations: 2.781 MiB)
+ z = 2163
+|----------ECHANGES----------|
+2-1 : xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+1-1 : xxxxxxxxxxxxxxxxxxxxxxxx
+0-1 : xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  0.078460 seconds (275.54 k allocations: 17.462 MiB, 5.15% gc time)
+simple descente depuis un glouton simple : 
+ z = 2143
+2-1 : 
+1-1 : xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+0-1 : 
+  0.010796 seconds (122.05 k allocations: 6.086 MiB)
+plus profonde descente depuis un glouton simple : 
+ z = 1880
+2-1 : 
+1-1 : xxxxxx
+0-1 : 
+  0.006794 seconds (147.09 k allocations: 6.286 MiB)
+plus profonde descente depuis un glouton à tri : 
+ z = 2181
+2-1 : 
+1-1 : xxxxxx
+0-1 : 
+  0.002367 seconds (5.99 k allocations: 2.307 MiB)
+plus profonde descente économe depuis un glouton à tri : 
+ z = 2181
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

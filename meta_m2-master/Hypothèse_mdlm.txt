@@ -1,0 +1,31 @@
+Après analyse de la notice du ROADEF
+	- sont donnés la liste de véhicules à ordonnancés à la journée J
+	- sont donnés une partie de la liste des véhicules de la journée J-1
+Après analyse du modèle 
+	- on constate l'existence d'une variable e_{c,i} = 1 si le composant c était en position i à la journée J-1
+Hypothèse : 
+	- Dans le modèle, on suppose que les informations sur les véhicules de la journée précédente nous sont communiqués pour initialiser le modèle (avec les contraintes de fenêtre glissantes et de ratio)
+	- Le nombre des voitures de la journée J-1 sont après analyse du modèle = max(s+1,m_{c})
+	- L'analyse des contraintes 13 et 15 du modèle nous invite à la réflexion suivante : la variable e_{c,i} de vérifier les viols des slides windows et des paints batch limits de la journée précédente respectivement.
+		
+
+Sur la construction des konfigurations : 
+	La construction de la matrice A nous impose de booleaniriser les valeurs des couleurs i.e. transformer les couleurs de chaque voitures sous forme d'un vecteur booléen de taille |F| tq
+		col[k] = 1; 0 partout sinon;
+	Ainsi la couleur 2 pour un ensemble de |F| = 3 couleurs est transformée en 0 1 0
+	
+	Ensuite, on concatène à la configuration le vecteur des couleurs booleanirisé;
+	c([config],[col])
+
+
+
+
+Un peu d'R dans ce monde de brute
+	# Pour compter les différentes configuration d'une instance
+	setwd("~/Desktop")
+	data <-read.table("vehicles.txt", header = TRUE, sep=";")
+	table(data$Paint.Color)
+	sub_data <- data[,4:ncol(data)]
+	sub_data
+	nrow(unique(sub_data))
+

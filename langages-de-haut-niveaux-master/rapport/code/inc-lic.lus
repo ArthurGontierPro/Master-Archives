@@ -1,0 +1,9 @@
+node inc() returns (x:int);
+var 
+  var_1:int;
+  var_2:int;
+let
+  var_1 = pre(x);
+  var_2 = var_1 + 1;
+  x = 0 -> var_2;
+tel

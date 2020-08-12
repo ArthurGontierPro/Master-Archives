@@ -1,0 +1,16 @@
+node lus() returns (x:int);
+var s:int; T:int^10;
+let
+	x = 21 + 3 * 7;
+	s = modulo(T[5],2);
+tel
+
+
+node lic() returns (x:int);
+var s,split_1,split_2:int; T:int^10;
+let
+	x = 21 + split_1;
+	split_1 = 3 * 7;
+	s = modulo(split_2,2);
+	split_2 = T[5];
+tel

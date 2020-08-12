@@ -1,0 +1,161 @@
+Data/Instances_Set_A/022_3_4_EP_RAF_ENP/
+#Cars(J-1)	= 14
+#Cars(J) 	= 485
+#Cpmt		= 9
+#Color		= 12
+            TIME OUT
+
+Data/Instances_Set_A/022_3_4_RAF_EP_ENP/
+#Cars(J-1)	= 14
+#Cars(J) 	= 485
+#Cpmt		= 9
+#Color		= 12
+            TIME OUT
+
+Data/Instances_Set_A/024_38_3_EP_ENP_RAF/
+            MANUALY REMOVED
+
+Data/Instances_Set_A/024_38_3_EP_RAF_ENP/
+            MANUALY REMOVED
+
+Data/Instances_Set_A/024_38_5_EP_ENP_RAF/
+            MANUALY REMOVED
+
+Data/Instances_Set_A/024_38_5_EP_RAF_ENP/
+            MANUALY REMOVED
+
+Data/Instances_Set_A/025_38_1_EP_ENP_RAF/
+            MANUALY REMOVED
+
+Data/Instances_Set_A/025_38_1_EP_RAF_ENP/
+            MANUALY REMOVED
+
+Data/Instances_Set_A/039_38_4_EP_RAF_ch1/
+            MANUALY REMOVED
+
+Data/Instances_Set_A/039_38_4_RAF_EP_ch1/
+            MANUALY REMOVED
+
+Data/Instances_Set_A/048_39_1_EP_ENP_RAF/
+            MANUALY REMOVED
+
+Data/Instances_Set_A/048_39_1_EP_RAF_ENP/
+            MANUALY REMOVED
+
+Data/Instances_Set_A/064_38_2_EP_RAF_ENP_ch1/
+            MANUALY REMOVED
+
+Data/Instances_Set_A/064_38_2_EP_RAF_ENP_ch2/
+#Cars(J-1)	= 99
+#Cars(J) 	= 335
+#Cpmt		= 6
+#Color		= 12
+            TIME OUT
+
+Data/Instances_Set_A/064_38_2_RAF_EP_ENP_ch1/
+            MANUALY REMOVED
+
+Data/Instances_Set_A/064_38_2_RAF_EP_ENP_ch2/
+#Cars(J-1)	= 99
+#Cars(J) 	= 335
+#Cpmt		= 6
+#Color		= 12
+            TIME OUT
+
+Data/Instances_set_X/022_RAF_EP_ENP_S49_J2/
+#Cars(J-1)	= 14
+#Cars(J) 	= 704
+#Cpmt		= 12
+#Color		= 13
+            TIME OUT
+
+Data/Instances_set_X/023_EP_RAF_ENP_S49_J2/
+            MANUALY REMOVED
+
+Data/Instances_set_X/024_EP_RAF_ENP_S49_J2/
+            MANUALY REMOVED
+
+Data/Instances_set_X/025_EP_ENP_RAF_S49_J1/
+            MANUALY REMOVED
+
+Data/Instances_set_X/028_CH1_EP_ENP_RAF_S50_J4/
+            MANUALY REMOVED
+
+Data/Instances_set_X/028_CH2_EP_ENP_RAF_S51_J1/
+#Cars(J-1)	= 13
+#Cars(J) 	= 65
+#Cpmt		= 6
+#Color		= 5
+            OPTIMAL
+
+Data/Instances_set_X/029_EP_RAF_ENP_S49_J5/
+#Cars(J-1)	= 42
+#Cars(J) 	= 780
+#Cpmt		= 7
+#Color		= 14
+            TIME OUT
+
+Data/Instances_set_X/034_VP_EP_RAF_ENP_S51_J1_J2_J3/
+#Cars(J-1)	= 64
+#Cars(J) 	= 921
+#Cpmt		= 8
+#Color		= 10
+            TIME OUT
+
+Data/Instances_set_X/034_VU_EP_RAF_ENP_S51_J1_J2_J3/
+#Cars(J-1)	= 21
+#Cars(J) 	= 231
+#Cpmt		= 8
+#Color		= 7
+            TIME OUT
+
+Data/Instances_set_X/035_CH1_RAF_EP_S50_J4/
+#Cars(J-1)	= 1
+#Cars(J) 	= 90
+#Cpmt		= 1
+#Color		= 6
+            OPTIMAL
+
+Data/Instances_set_X/035_CH2_RAF_EP_S50_J4/
+#Cars(J-1)	= 1
+#Cars(J) 	= 376
+#Cpmt		= 2
+#Color		= 7
+            TIME OUT
+
+Data/Instances_set_X/039_CH1_EP_RAF_ENP_S49_J1/
+            MANUALY REMOVED
+
+Data/Instances_set_X/039_CH3_EP_RAF_ENP_S49_J1/
+            MANUALY REMOVED
+
+Data/Instances_set_X/048_CH1_EP_RAF_ENP_S50_J4/
+            MANUALY REMOVED
+
+Data/Instances_set_X/048_CH2_EP_RAF_ENP_S49_J5/
+            MANUALY REMOVED
+
+Data/Instances_set_X/064_CH1_EP_RAF_ENP_S49_J1/
+            MANUALY REMOVED
+
+Data/Instances_set_X/064_CH2_EP_RAF_ENP_S49_J4/
+#Cars(J-1)	= 99
+#Cars(J) 	= 273
+#Cpmt		= 6
+#Color		= 12
+            TIME OUT
+
+Data/Instances_set_X/655_CH1_EP_RAF_ENP_S51_J2_J3_J4/
+#Cars(J-1)	= 14
+#Cars(J) 	= 264
+#Cpmt		= 5
+#Color		= 9
+            TIME OUT
+
+Data/Instances_set_X/655_CH2_EP_RAF_ENP_S52_J1_J2_S01_J1/
+#Cars(J-1)	= 15
+#Cars(J) 	= 219
+#Cpmt		= 4
+#Color		= 7
+            TIME OUT
+

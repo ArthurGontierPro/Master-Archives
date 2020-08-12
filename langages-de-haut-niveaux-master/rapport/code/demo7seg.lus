@@ -1,0 +1,7 @@
+node cpt(reset:bool) returns
+     (sevseg:  int; led_on: bool) ;
+let
+  sevseg = 0  -> if (reset or pre(sevseg = 9))
+      	      	  then 0 else pre(sevseg)+1;
+   led_on = true -> if reset then not(pre(led_on)) else pre(led_on);
+tel

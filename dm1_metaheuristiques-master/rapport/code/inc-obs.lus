@@ -1,0 +1,6 @@
+node obs() returns(ok:bool);
+  var aux:int;
+let
+  aux = inc();
+  ok = aux >= 0; 
+tel

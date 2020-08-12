@@ -1,0 +1,58 @@
+Data/Instances_set_X/022_RAF_EP_ENP_S49_J2/
+Coupe à 20 voitures
+            INFEASIBLE_OR_UNBOUNDED
+
+Coupe à 30 voitures
+            INFEASIBLE_OR_UNBOUNDED
+
+Coupe à 40 voitures
+            INFEASIBLE_OR_UNBOUNDED
+
+Coupe à 50 voitures
+            INFEASIBLE_OR_UNBOUNDED
+
+Coupe à 60 voitures
+            INFEASIBLE_OR_UNBOUNDED
+
+Coupe à 70 voitures
+            INFEASIBLE_OR_UNBOUNDED
+
+Coupe à 80 voitures
+            INFEASIBLE_OR_UNBOUNDED
+
+Coupe à 90 voitures
+            INFEASIBLE_OR_UNBOUNDED
+
+Coupe à 100 voitures
+            INFEASIBLE_OR_UNBOUNDED
+
+Coupe à 110 voitures
+            INFEASIBLE_OR_UNBOUNDED
+
+Coupe à 120 voitures
+            INFEASIBLE_OR_UNBOUNDED
+
+Coupe à 130 voitures
+            INFEASIBLE_OR_UNBOUNDED
+
+Coupe à 140 voitures
+            INFEASIBLE_OR_UNBOUNDED
+
+Coupe à 150 voitures
+            INFEASIBLE_OR_UNBOUNDED
+
+Coupe à 160 voitures
+            INFEASIBLE_OR_UNBOUNDED
+
+Coupe à 170 voitures
+            INFEASIBLE_OR_UNBOUNDED
+
+Coupe à 180 voitures
+            INFEASIBLE_OR_UNBOUNDED
+
+Coupe à 190 voitures
+            TIME OUT
+
+Coupe à 200 voitures
+            TIME OUT
+

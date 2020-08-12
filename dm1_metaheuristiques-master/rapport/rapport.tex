@@ -1,0 +1,115 @@
+% Document : compte rendu des DM
+% Auteur : Xavier Gandibleux
+% Année académique : 2018-2019
+
+\documentclass[a4paper,10pt]{article}
+
+
+% passe en mode large sur la page A4
+\usepackage{a4wide} 
+
+% document francisé
+\usepackage[francais]{babel} 
+
+% permet la frappe de caracteres accentues (sur macOS)
+\usepackage[utf8x]{inputenc} 
+
+\usepackage{graphicx,float,subcaption} % figure et placement de figure
+\usepackage[top=10mm, bottom=10mm, left=20mm, right=20mm]{geometry}
+
+
+%\usepackage[T1]{fontenc}
+%\usepackage{graphicx}
+%\usepackage{grffile}
+%\usepackage{longtable}
+%\usepackage{wrapfig}
+%\usepackage{rotating}
+%\usepackage[normalem]{ulem}
+%\usepackage{amsmath}
+%\usepackage{textcomp}
+%\usepackage{amssymb}
+%\usepackage{capt-of}
+%\usepackage{hyperref}% \documentclass[a4paper,11pt]{article}
+% \usepackage[margin=2cm]{geometry}
+% \usepackage[utf8]{inputenc}
+
+%\usepackage{graphicx} 
+%\usepackage{wrapfig}
+\usepackage{color}
+\usepackage{xcolor}
+%\usepackage{hyperref}
+
+
+%\usepackage[]{amsmath,amsfonts,amssymb,stmaryrd,amsthm}
+%\usepackage{fullpage}
+%\usepackage{multirow}
+%\usepackage[rounded]{syntax}
+%\usepackage[section]{placeins}
+\newtheorem{example}{Exemple} %%% modifier ici si on veut en fr/en
+
+\usepackage{todonotes}
+\usepackage{listings} 
+\input{alllistings}
+
+\newcommand{\arthur}[1]{\textcolor{violet}{#1}}
+\newcommand{\marie}[1]{\textcolor{red}{#1}}
+\newcommand{\prof}[1]{\textcolor{gray}{#1}}
+
+%% IL faut mettre le package pour tabular 
+
+
+% individualisation des parametres de la page
+\parskip8pt
+\setlength{\topmargin}{-25mm}
+\setlength{\textheight}{250mm}
+
+%
+% -----------------------------------------------------------------------------------------------------------------------------------------------------
+%
+
+\begin{document}
+
+~
+\vspace{50mm}
+{\large
+\begin{center}
+  Université de Nantes --- UFR Sciences et Techniques\\
+  Master informatique parcours ``optimisation en recherche opérationnelle (ORO)''\\
+  Année académique 2018-2019
+  \vspace{30mm}
+ 
+  { \LARGE
+ 
+     Dossier Devoirs Maison\\
+     \vspace{5mm}
+ 
+     {\huge \textbf{Métaheursitiques}}
+     \vspace{5mm}
+ 
+     Marie \textsc{Humbert--Ropers}$^1$ --  Arthur \textsc{Gontier}$^2$
+     \vspace{50mm}
+  
+     \today
+  }  
+\end{center}
+}
+
+\vfill
+\break
+
+% -----------------------------------------------------------------------------------------------------------------------------------------------------
+
+%\input{DM1/CR_DM1.tex} % decommenter lors de la remise du DM1 uniquement
+
+% -----------------------------------------------------------------------------------------------------------------------------------------------------
+
+%\input{DM2/CR_DM2.tex}  % decommenter lors de la remise du DM2 uniquement
+
+% -----------------------------------------------------------------------------------------------------------------------------------------------------
+
+\input{DM3/CR_DM3.tex} % decommenter lors de la remise du DM3 uniquement
+
+
+
+\end{document}
+

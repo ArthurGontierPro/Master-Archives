@@ -1,0 +1,11 @@
+node modulus(x:int) returns(xpos:int);
+let
+  xpos = if x >= 0 then x else -x;
+tel
+
+node obs(in:int) returns(ok:bool);
+var aux:int;
+let
+  aux = modulus(in);
+  ok = aux >= 0;
+tel

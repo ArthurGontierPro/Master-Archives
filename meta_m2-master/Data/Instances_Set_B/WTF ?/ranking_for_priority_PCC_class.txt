@@ -1,0 +1,14 @@
+ Rank ; Candidate      ; Relative Mark
+ 1    ; Celso          ; 100.000%
+ 2    ; Pawlak         ; 97.292%
+ 3    ; Stuetzle       ; 96.535%
+ 4    ; Nouioua-Gardi  ; 91.312%
+ 5    ; VanWieren      ; 80.337%
+ 6    ; Jourdan        ; 74.544%
+ 7    ; Ribeiro        ; 73.230%
+ 8    ; Zufferey       ; 72.249%
+ 9    ; Dutot          ; 71.838%
+ 10   ; Nault          ; 65.373%
+ 11   ; Klau           ; 52.976%
+ 12   ; Bonizzoni      ; 29.912%
+ 13   ; Douche         ; 0.000%
