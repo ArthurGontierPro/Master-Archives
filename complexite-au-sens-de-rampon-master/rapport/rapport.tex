@@ -1,0 +1,237 @@
+% Document : compte rendu des DM
+% Auteur : Xavier Gandibleux
+% Année académique : 2018-2019
+
+\documentclass[a4paper,10pt]{article}
+\usepackage{tikz}
+
+
+% passe en mode large sur la page A4
+\usepackage{a4wide} 
+
+% document francisé
+\usepackage[polutonikogreek,english,francais]{babel} 
+
+% permet la frappe de caracteres accentues (sur macOS)
+%\usepackage[utf8x]{inputenc} 
+
+\usepackage{graphicx,float,subcaption} % figure et placement de figure
+\usepackage[top=10mm, bottom=10mm, left=20mm, right=20mm]{geometry}
+
+\usepackage[linesnumbered,frenchkw,ruled,french]{algorithm2e}
+
+
+\usepackage[T1]{fontenc}
+\usepackage{dsfont}
+%\usepackage{graphicx}
+%\usepackage{grffile}
+%\usepackage{longtable}
+%\usepackage{wrapfig}
+%\usepackage{rotating}
+%\usepackage[normalem]{ulem}
+%\usepackage{amsmath}
+%\usepackage{amsthm}
+%\usepackage{textcomp}
+%\usepackage{amssymb}
+%\usepackage{capt-of}
+\usepackage{hyperref}% \documentclass[a4paper,12pt]{article}
+%\usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+
+\usepackage{color}
+\usepackage{xcolor}
+
+\usepackage{amsmath,amsfonts,amssymb,stmaryrd,amsthm}
+%\usepackage{fullpage}
+%\usepackage{multirow}
+%\usepackage[rounded]{syntax}
+%\usepackage[section]{placeins}
+\newtheorem{example}{Exemple} %%% modifier ici si on veut en fr/en
+
+\usepackage{todonotes}
+\usepackage{listings} 
+\input{alllistings}
+
+\newcommand{\arthur}[1]{\textcolor{violet}{#1}}
+\newcommand{\marie}[1]{\textcolor{red}{#1}}
+\newcommand{\prof}[1]{\textcolor{gray}{#1}}
+
+% individualisation des parametres de la page
+\parskip8pt
+\setlength{\topmargin}{-25mm}
+\setlength{\textheight}{250mm}
+
+%
+% -----------------------------------------------------------------------------------------------------------------------------------------------------
+%
+
+\newtheorem{thm}{Théorème}
+
+%document
+\title{Mini}
+\begin{document}
+
+\vspace{50mm}
+{\large
+\begin{center}
+  Université de Nantes --- UFR Sciences et Techniques\\
+  Master informatique parcours ``optimisation en recherche opérationnelle (ORO)''\\
+  Année académique 2018-2019
+  \vspace{30mm}
+ 
+  { \LARGE
+ 
+     Complexité des algorithmes\\
+     \vspace{5mm}
+ 
+     {\huge \textbf{preuve du Master Théorème}}
+     \vspace{5mm}
+ 
+     Marie \textsc{Humbert--Ropers}$^1$ --  Arthur \textsc{Gontier}$^2$
+     \vspace{50mm}
+  
+     \today
+  }  
+\end{center}
+}
+
+\vfill
+\break
+
+La définition prise du master Théorème est la suivante :
+\begin{thm}
+  Master théorème :
+
+
+  Soit n $\in$ $\mathbb{N^*}$ et, C(n) une fonction telle que
+\begin{equation}
+    C(n) \leq a.C(\frac{n}{b})+f(n)
+\end{equation}
+\begin{equation}
+    $$C(1)=c$$
+\end{equation}
+  où $a\geq 1, b \geq 2, c \geq 0$.
+
+  Si $f(n) = \Theta (n^d)$ avec $d \geq 0$, alors :
+
+  \begin{itemize}
+  \item si $a<b^d, C(n) \in \mathcal{O}(n^d)$
+  \item si $a=b^d, C(n) \in \mathcal{O}(n^d.log(n))$
+  \item si $a>b^d, C(n) \in \mathcal{O}(n^{log_b(a)})$
+  \end{itemize}
+  
+\end{thm}
+\begin{proof}
+  \`A partir de l'équation $(1)$, il est possible d'établir la relation suivante, en remplaçant $C(\frac{n}{b})$ :
+  $$C(n)
+  \leq aC(\frac{n}{b})+f(n)
+  \leq a(aC(\frac{n}{b^2})+f(\frac{n}{b}))+f(n)$$
+
+De la même manière, on établit que :
+
+  $$C(n)
+  \leq aC(\frac{n}{b})+f(n)
+  \leq a(aC(\frac{n}{b^2})+f(\frac{n}{b}))+f(n)
+  \leq a(a(aC(\frac{n}{b^3})+f(\frac{n}{b^2}))+f(\frac{n}{b})))+f(n)$$
+
+  Ainsi, récursivement, on établit pour la $k^{ieme}$ itération la relation suivante :
+\begin{equation}
+  C(n) \leq a^kC(\frac{n}{b^i})+\sum_{i=0}^{k-1}a^if(\frac{n}{b^i})
+\end{equation}
+
+Dans l'objectif de majorer $C(n)$, on s'intéresse à l'itération $k$ tel que $n \leq b^{k}$. Nous partons de l'hypothèse que n est une puissance de b. Nous nous intéressons donc uniquement au cas de $n = b^{k}$, dans le but de faire apparaître $C(1)$ dans l'inéquation (2):
+
+\begin{equation}
+  C(n) \leq a^kC(1)+\sum_{i=0}^{k-1}a^if(\frac{n}{b^i})
+\end{equation}
+
+Or, d'après l'énoncé, $C(1) = c$ avec c une constante. On note aussi que   $$\frac{n}{b^k}=1 \Leftrightarrow n=b^k \Leftrightarrow ln(n)=k.ln(b) \Leftrightarrow k=\frac{ln(n)}{ln(b)}$$ . 
+
+D'où : $a^{k} = a^{\frac{ln(n)}{ln(b)}} = n^{\frac{ln(n)}{ln(b)}} = n^{log_{b}(a)}$
+
+Ainsi, $a^kC(1)$ est en $(\Theta (n^{log_{b}(a)}))$. Il est donc nécessaire de s'intéresser au second terme de la partie de droite de (4). Nous distinguons alors 3 cas.\\
+
+\begin{itemize}
+  \item $a<b^d$ \\
+	Dans ce cas, $a<b^d \Leftrightarrow ln(a) < d \times ln(b) \Leftrightarrow \frac{ln(a)}{ln(b)} < d \Leftrightarrow log_{b}(a) < d$, car $a \leq 2$ .
+
+
+On sait que $f(n) \in \Theta (n^d)$ avec $d \geq 0$ donc, ici, nous nous intéressons asymptotiquement au terme suivant :
+\begin{equation}
+	\sum_{i=0}^{k-1}a^i(\frac{n}{b^i})^d
+\end{equation}
+Or, 
+\begin{equation}
+\sum_{i=0}^{k-1}a^i(\frac{n}{b^i})^d = \sum_{i=0}^{k-1}(\frac{a}{b^d})^in^d = n^d * \sum_{i=0}^{k-1}(\frac{a}{b^d})
+\end{equation}
+Comme $a<b^d$, on remarque que l'on est en présence d'une suite géométrique de raison $\frac{a}{b^d}$. Il est donc possible de l'écrire :
+\begin{equation}
+\sum_{i=0}^{k-1}a^i(\frac{n}{b^i})^d = n^d * \frac{1 - (\frac{a}{b^d})^k}{1 - \frac{a}{b^d}} = n^d * \frac{1 - (\frac{a}{b^d})^{log_{b}(n)}}{1 - \frac{a}{b^d}}
+\end{equation}
+Ainsi,
+\begin{equation}
+C(n) \in \mathcal{O}(n^{log_{b}(a)}c+n^d\frac{1-(\frac{a}{b^d})^{{log_{b}(n)}}}{1-\frac{a}{b^d}})
+\end{equation}
+Le dénominateur est une constante et, comme $k = log_{b}(n)$ et que $a<b^d$, alors asymptotiquement, $(\frac{a}{b^d})^k$ tend vers 0 et, le numérateur tend vers 1. Ainsi, on peut réduire le facteur de droite de l'inéquation précédente,  et comme $log_{b}(a) < d$, par suite, $C(n) \in \mathcal{O}(n^{d})$\\
+
+  \item $a=b^d$ \\
+	Dans ce cas, $a=b^d \Leftrightarrow ln(a) = dln(b) \Leftrightarrow \frac{ln(a)}{ln(b)} = d $. 
+On sait que $f(n) = \Theta (n^d)$ avec $d \geq 0$ donc, ici, par substitution , on étudie asymptotiquement le comportement de :
+	$$\sum_{i=0}^{k-1}a^i(\frac{n}{b^i})^d$$
+Ainsi, on remarque que, comme $a=b^d$ :
+$$\sum_{i=0}^{k-1}a^i(\frac{n}{b^i})^d = \sum_{i=0}^{k-1}(\frac{a}{b^d})^in^d = n^d\sum_{i=0}^{k-1}1 = n^d*k = n^d*log_{b}(n) $$
+Or, $k = log_{b}(n)$ et $ d = log_{b}(a) $, nous obtenons donc l'expression suivante :
+
+Ainsi,
+\begin{equation}
+C(n) \in \mathcal{O}(n^{log_{b}(a)}c+n^{log_{b}(a)}*log_{b}(n))
+\end{equation} 
+Comme $log_{b}(a) = d$, $(n^{d}*ln(n))$ majore asymptotiquement $n^{log_{b}(a)}c$, d'où :  $C(n) \in \mathcal{O}(n^{d}*ln(n))$\\
+
+  \item $a>b^d$ \\
+On sait que $f(n) = \Theta (n^d)$ avec $d \geq 0$, et $f(\frac{n}{b^i}) = \mathcal{O}((\frac{n}{b^i})^d)$ donc, asymptotiquement :
+\begin{equation}
+	\sum_{i=0}^{k-1}a^i(\frac{n}{b^i})^d 
+\end{equation}
+
+Par suite, 
+\begin{equation}
+	\sum_{i=0}^{k-1}a^i(\frac{n}{b^i})^d = a^k*\sum_{i=0}^{k-1}\frac{a^in^d}{b^{d*i}a^k} = a^k*\sum_{i=0}^{k-1}\frac{n^d}{b^{d*i}a^{k-i}}
+\end{equation}
+
+En substituant les i par j, tel que $j = k-i$ et en sommant en "sens inverse" :
+\begin{equation}
+	\sum_{i=0}^{k-1}a^i(\frac{n}{b^i})^d = a^k*\sum_{j=0}^{k-1}\frac{n^d}{b^{d*(k-j)}a^{j}} = a^k*\sum_{j=0}^{k-1}\frac{n^db^j}{b^{d*k}a^{j}} = a^k*\sum_{j=0}^{k-1}\frac{n^db^{j*d}}{b^{d*k}a^{j}}
+\end{equation}
+
+  Or :
+  $$ b^k=(e^{ln(b)})^{\frac{ln(n)}{ln(b)}}=e^{\frac{ln(b)ln(n)}{ln(b)}}=n$$
+
+Cela nous permet de simplifier l'expression suivante :
+
+\begin{equation}
+	\sum_{i=0}^{k-1}a^i(\frac{n}{b^i})^d = a^k*\sum_{j=0}^{k-1}\frac{b^{j*d}}{a^j}
+\end{equation}
+
+Par hypothèse,  $a>b^d$, donc $ \frac{b^d}{a} \leq 1$ . En utilisant une suite géométrique de raison  $ \frac{b^d}{a}$ : 
+
+\begin{equation}
+	\sum_{i=0}^{k-1}a^i(\frac{n}{b^i})^d = a^k*(\frac{1-(\frac{b^d}{a})^k}{1-\frac{b^d}{a}})
+\end{equation}
+
+Comme $k = log_{b}(n)$ et que $a>b^d$, alors asymptotiquement, $(\frac{b^d}{a})^k$ tend vers 0 et, le fraction tend vers une constante. 
+Donc, ce terme aussi est d'ordre $\mathcal{O}(n^{log_b(a)})$ tout comme $a^kc$
+
+Donc, $$C(n) \in \mathcal{O}(n^{log_b(a)})$$
+
+
+\end{itemize}
+
+
+Il est donc nécessaire dans un second temps de généraliser cette preuve à tout nombre n qui n'est pas une puissance de b. Pour ce faire, il faut se préoccuper de trouver des bornes à $aC(\lfloor \frac{n}{b} \rfloor)+f(n)$ et à $aC(\lceil \frac{n}{b} \rceil)+f(n)$. La démonstration est ensuite sensiblement la même.
+
+\end{proof}
+
+\end{document}
+
+
